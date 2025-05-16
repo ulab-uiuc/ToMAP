@@ -1,8 +1,8 @@
-export CUDA_VISIBLE_DEVICES=6
-overall_base_dir=/data
+export CUDA_VISIBLE_DEVICES=4
+overall_base_dir=/mnt/data_from_server1
 export LLM_DIR=${overall_base_dir}/models
 
-vllm serve ${LLM_DIR}/Qwen2.5-3B-Instruct \
+vllm serve ${LLM_DIR}/Qwen2.5-7B-Instruct \
   --host "127.0.0.1" \
   --port 1279 \
   --max-model-len 8192 \

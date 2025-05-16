@@ -1,5 +1,5 @@
 # This script evaluates the model using multiple tasks.
-export CUDA_VISIBLE_DEVICES=8 ###
+export CUDA_VISIBLE_DEVICES=5 ###
 export WANDB_ENTITY=hanpx20 ###
 export RAY_DEDUP_LOGS=0
 export HYDRA_FULL_ERROR=1
@@ -8,7 +8,7 @@ export VLLM_ATTENTION_BACKEND=XFORMERS
 set -e
 set -o pipefail
 
-overall_base_dir=/data
+overall_base_dir=/mnt/data_from_server1
 OUTPUT_BASE_DIR=${overall_base_dir}/ph16/TinyZero ###
 OUTPUT_DIR=${OUTPUT_BASE_DIR}/validate
 N_GPUS=$(echo $CUDA_VISIBLE_DEVICES | awk -F',' '{print NF}')
@@ -27,11 +27,11 @@ corresponding_ports=(1568)
 
 settings=("ToMAP")
 model_paths=(
-    "/data/ph16/TinyZero/checkpoints/debate/Qwen2.5-3B-Instruct-v10-ToMAP/actor/global_step_200"
+    "/mnt/data_from_server1/ph16/TinyZero/checkpoints/debate/Qwen2.5-3B-Instruct-v10-ToMAP/actor/global_step_200"
 )
 
-n_turns=10
-val_bsz=64
+n_turns=2
+val_bsz=4
 
 for task in "${tasks[@]}"; do
     echo "==============================================="
@@ -41,7 +41,7 @@ for task in "${tasks[@]}"; do
     if [ "$task" = "debate" ]; then
         val_proportion=0.2
     elif [ "$task" = "debate_anthropic" ]; then
-        val_proportion=1
+        val_proportion=0.07
     elif [ "$task" = "debate_argsme" ]; then
         val_proportion=0.5
     fi

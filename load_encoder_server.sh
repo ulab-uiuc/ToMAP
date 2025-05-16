@@ -1,4 +1,4 @@
-export CUDA_VISIBLE_DEVICES=8
+export CUDA_VISIBLE_DEVICES=4
 # vllm >= 0.8.4
 vllm serve BAAI/bge-m3 \
   --host "127.0.0.1" \

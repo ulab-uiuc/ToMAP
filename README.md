@@ -23,10 +23,15 @@ Peixuan Han, Zijia Liu, Jiaxuan You
 Theory of Mind Augmented Persuader (**ToMAP**) is a novel persuader training schema that incorporates theory of mind information, enabling the model to analyse the opponent's current thoughts, and develop more effective, targeted persuasion strategy. ToMAP enables language models of 3B size to obtain impressive persuasion capability, outperforming much larger LLMs.
 
 
-# Understanding ToMAP
+# Repo Structure
 
 ### Persuasion Setup
-Refer to 
+Refer to `verl/env_feedback/argument_graph.py`.
+
+### RL Workflow
+Refer to `verl/trainer/main_ppo.py` and `verl/trainer/ppo/ray_trainer.py`.
+The original single-turn rollout is replaced by the multi-turn rollout in `verl/llm_agent/generation.py`.
+The implementation is pretty slow and there are definitely rooms for improvement. Any suggestions welcomed.
 
 ### Reward Design
 Refer to `verl/utils/rewards.py` and `verl/trainer/main_ppo.py RewardManager`.
@@ -34,7 +39,7 @@ Refer to `verl/utils/rewards.py` and `verl/trainer/main_ppo.py RewardManager`.
 ### Hparams
 Refer to `verl/trainer/config/ppo_trainer.yaml`.
 
-Specially, you should always set `trainer.is_debate=True`.
+Specially, you should always set `trainer.is_debate=True` when running persuasion tasks.
 
 # Preperation
 

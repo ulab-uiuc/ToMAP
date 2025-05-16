@@ -22,6 +22,8 @@ import pickle
 import torch
 
 
+generation_config = {"temperature": 1, "max_tokens": 2048}
+negation_config = {"temperature": 0, "max_tokens": 512}
 
 
 def extract_answer(original_str, key_word, n_answers=1, strict=True):
@@ -45,43 +47,45 @@ def extract_answer(original_str, key_word, n_answers=1, strict=True):
         return list_to_return
     
 
-def format_turns(turns, role, pos=None, neg=None):
+# Format a list of turns to put into context
+def format_turns(turns, role):
     assert role in ["persuader", "persuadee", "guesser"]
     turns = [turn for turn in turns if turn != None]
+    
     if role != "guesser":
         turns = ["Hi, I am Alice. How are you today? ", f"Nice to meet you. Let's begin the discussion."] + turns
+        
     turns = [turn if turn != "" else "I have no argument to make in this round." for turn in turns]
     if turns == []:
         return "# There are no previous turns in the conversation. Do NOT make up any previous turns."
     
-    single = 1 if len(turns) == 1 else 0
     persuader_side = 'Alice' if role != "persuader" else 'Alice (You)'
     persuadee_side = 'Bob' if role != "persuadee" else 'Bob (You)'
-    return "# Following are the previous turns of the conversation.\n" + '\n'.join([f'{persuader_side if idx % 2 == single else persuadee_side} (turn {idx + 1}): "{turn}"' for idx, turn in enumerate(turns)])
+    return "# Following are the previous turns of the conversation.\n" + '\n'.join([f'{persuader_side if idx % 2 == 0 else persuadee_side} (turn {idx + 1}): "{turn}"' for idx, turn in enumerate(turns)])
 
 
-
+# Get the score of a node, higher → persuasion success
 def get_score(node):
-    assert node.data["persuadee_confidence"] >= 0 and node.data["persuader_confidence"] >= 0
+    assert node.data["persuadee_confidence"] >= 0 and node.data["persuader_confidence"] >= 0 # confidence = -1 means not calculated, should raise an error
     conf_A = node.data["persuadee_confidence"]
     conf_B = node.data["persuader_confidence"]
     return 0.5 + (conf_B - conf_A) / 2
 
 
+# Format ToM information to put into context
 def format_extra_info(opinions, config, first=False):
-    if config.trainer.max_width == 0:
+    if config.trainer.max_width == 0: # No counterclaims
         return ""
     info = "# Here are some claims your OPPONENT might hold (so DO NOT accept these claims!). You may refute them when you need to, but make your each argument single-focused and concise:\n"
-    for idx, node in enumerate(opinions.all_nodes()[1:config.trainer.max_width+1]): # remove the root node
-        if config.trainer.tom_style == "white":
-            score = 8 - (int)(get_score(node) * 8 + 0.5)
-            info += f'''"{node.data['persuadee_claim']}" (Bob's agreement on this claim is {score}/8)\n'''
-        elif not first and config.trainer.tom_style != "black_skip":
-            score = 8 - (int)(get_score(node) * 8 + 0.5)
-            info += f'''"{node.data['persuadee_claim']}" (Bob's agreement on this claim is {score}/8)\n'''
-        else:
+    for idx, node in enumerate(opinions.all_nodes()[1:config.trainer.max_width+1]):
+        if config.trainer.tom_style == "black_skip" or (first and config.trainer.tom_style != "white"):
+            # At the beginning of the conversation, the persuader should not know the persuadee's attitude
             info += f'''"{node.data['persuadee_claim']}"\n'''
-    info = info[:-1]
+        else:
+            score = 8 - (int)(get_score(node) * 8 + 0.5)
+            info += f'''"{node.data['persuadee_claim']}" (Bob's agreement on this claim is {score}/8)\n'''
+
+    info = info[:-1] # remove the last \n
     return info
 
 
@@ -99,12 +103,10 @@ def format_prompt(prompt, sys_prompt="", raw=False, shots=[]):
 
 
 def build_tree_and_init_opinion(statements: List[dict], client, config, source_path, split):
-    # this function hasn't been tested !
     max_depth=config.trainer.max_depth
     max_width=config.trainer.max_width
     persuadee_model=config.trainer.persuadee_model
     model_name = persuadee_model.split('/')[-1]
-    external_api = config.trainer.external_persuadee
     
     # Part 1: opinion tree (ALREADY PREPROCESSED, if you wanna do from scratch, remember to set the "persuadee" to be the actual persuader)
     if os.path.exists(os.path.join(source_path, f"{split}_argument_tree.pkl")):
@@ -133,13 +135,13 @@ def build_tree_and_init_opinion(statements: List[dict], client, config, source_p
         with open(os.path.join(source_path, f"{split}_argument_tree.pkl"), "wb") as f:
             pickle.dump(tree_list, f)
         
-    # Part 2: model initial opinions (model-specific)
+    # Part 2:get initial opinions (model-specific)
     if os.path.exists(os.path.join(source_path, model_name, f"{split}.pkl")):
         print("########## Opinion: Loading from cache")
         tree_list = pickle.load(open(os.path.join(source_path, model_name, f"{split}.pkl"), "rb"))
     else:
         print("########## Opinion: Generating trees")
-        tree_list = judge_opinions(tree_list, [[] for _ in range(len(statements))], client, max_width=max_width, external_api=False)
+        tree_list = judge_opinions(tree_list, all_turns=[[] for _ in range(len(statements))], client=client, max_width=max_width, external_api=False)
         sum_scores = 0
         Stat = {"raw_results": []}
         for tree in tree_list:
@@ -155,64 +157,67 @@ def build_tree_and_init_opinion(statements: List[dict], client, config, source_p
 
 
 
-def get_hidden_states(tokenizer, model, input_texts):
-    '''
-    Get the internal states
-    return: [bsz, hidden_dim]
-    '''
-    model.eval()
-    device = next(model.parameters()).device
-    with torch.no_grad():
-        encoding = tokenizer(input_texts, return_tensors="pt", padding=True, return_attention_mask=True, padding_side="right")
-        attention_mask = encoding.attention_mask.to(device)
-        valid_lengths = (attention_mask.sum(dim=1).long() - 1).cpu() # the last position of valid token
-        input_ids = encoding.input_ids.to(device)
+# def get_hidden_states(tokenizer, model, input_texts):
+#     '''
+#     Get the internal states
+#     return: [bsz, hidden_dim]
+#     '''
+#     model.eval()
+#     device = next(model.parameters()).device
+#     with torch.no_grad():
+#         encoding = tokenizer(input_texts, return_tensors="pt", padding=True, return_attention_mask=True, padding_side="right")
+#         attention_mask = encoding.attention_mask.to(device)
+#         valid_lengths = (attention_mask.sum(dim=1).long() - 1).cpu() # the last position of valid token
+#         input_ids = encoding.input_ids.to(device)
         
-        states = model(input_ids, output_hidden_states=True).hidden_states[-1]
-        extracted_outputs = []
-        for i in range(states.shape[0]):
-            extracted_outputs.append(states[i, valid_lengths[i], :])
-    return torch.stack(extracted_outputs)
+#         states = model(input_ids, output_hidden_states=True).hidden_states[-1]
+#         extracted_outputs = []
+#         for i in range(states.shape[0]):
+#             extracted_outputs.append(states[i, valid_lengths[i], :])
+#     return torch.stack(extracted_outputs)
 
 
 
-def calc_argument_vectors(model_path, tree_list_path, result_path, model=None):
-    if model == None:
-        model = AutoModelForCausalLM.from_pretrained(model_path)
-    tokenizer = AutoTokenizer.from_pretrained(model_path)
-    trees = pickle.load(open(tree_list_path, "rb"))[:20] # debug
-    max_len = max([tree.size() for tree in trees])
-    states = torch.zeros((len(trees), max_len, model.config.hidden_size))
-    for idx, tree in tqdm(enumerate(trees), total = len(trees), desc='Processing Argument Vectors'):
-        arguments = []
-        for node in tree.all_nodes():
-            arguments.append(node.data["persuadee_claim"])
-        states[idx, :len(arguments), :] = get_hidden_states(tokenizer, model, arguments)
-    torch.save(states, result_path)
+# def calc_argument_vectors(model_path, tree_list_path, result_path, model=None):
+#     if model == None:
+#         model = AutoModelForCausalLM.from_pretrained(model_path)
+#     tokenizer = AutoTokenizer.from_pretrained(model_path)
+#     trees = pickle.load(open(tree_list_path, "rb"))[:20] # debug
+#     max_len = max([tree.size() for tree in trees])
+#     states = torch.zeros((len(trees), max_len, model.config.hidden_size))
+#     for idx, tree in tqdm(enumerate(trees), total = len(trees), desc='Processing Argument Vectors'):
+#         arguments = []
+#         for node in tree.all_nodes():
+#             arguments.append(node.data["persuadee_claim"])
+#         states[idx, :len(arguments), :] = get_hidden_states(tokenizer, model, arguments)
+#     torch.save(states, result_path)
 
 
 
-def predict_graph_nodes(tree, vectors):
-    pass
+# def predict_graph_nodes(tree, vectors):
+#     pass
+
+
 
 
 def judge_opinions(tree_list: List, all_turns: List[List[str]], client, debug=False, max_width=1000, tokenizer = None, tom_classifier = None, source = 'gt', external_api=False):
     tree_list = copy.deepcopy(tree_list)
 
-    def format_prompt(sys_prompt, prompt):
-        return [{"content": sys_prompt, "role": "system"},
-                {"content": prompt, "role": "user"}]
+    # def format_prompt(sys_prompt, prompt):
+    #     return [{"content": sys_prompt, "role": "system"},
+    #             {"content": prompt, "role": "user"}]
 
-    if source == 'gt':
+    if source == 'gt': # Get the attitude from the real persuadee
         confidence_prompts = []
         for tree, turns in zip(tree_list, all_turns):
             cur_sys_prompt = persuadee_sys_prompt.replace("<root_statement>", tree.get_node(tree.root).data["persuader_claim"])
-            turn_prompt = format_turns(turns, "persuadee", pos=tree.get_node(tree.root).data["persuader_claim"], neg=tree.get_node(tree.root).data["persuadee_claim"])
+            turn_prompt = format_turns(turns, "persuadee")
             for node in tree.all_nodes()[:max_width+1]:
-                confidence_prompts.append(format_prompt(cur_sys_prompt, persuadee_confidence_prompt.replace("<turns>", turn_prompt).replace("<statement>", node.data["persuadee_claim"]).replace("<statement2>", node.data["persuader_claim"])))
-                confidence_prompts.append(format_prompt(cur_sys_prompt, persuadee_confidence_prompt.replace("<turns>", turn_prompt).replace("<statement>", node.data["persuader_claim"]).replace("<statement2>", node.data["persuadee_claim"])))
-        # calculate and post-process results
-        
+                # persuadee_claim → \neg q
+                # persuader_claim → q
+                confidence_prompts.append(format_prompt(persuadee_confidence_prompt.replace("<turns>", turn_prompt).replace("<statement>", node.data["persuadee_claim"]), sys_prompt=cur_sys_prompt))
+                confidence_prompts.append(format_prompt(persuadee_confidence_prompt.replace("<turns>", turn_prompt).replace("<statement>", node.data["persuader_claim"]), sys_prompt=cur_sys_prompt))
+
         if debug:
             for prompt in confidence_prompts:
                 print(prompt)
@@ -224,7 +229,7 @@ def judge_opinions(tree_list: List, all_turns: List[List[str]], client, debug=Fa
                                             text_only=True, 
                                             progress=len(tree_list) > 1000,
                                             external_api=external_api)
-    elif source == "external":
+    elif source == "external": # Predict the attitude using attitude predictor
         assert tom_classifier != None, "tom_classifier should not be None"
         formated_turns = [format_turns(turns, "guesser") for turns in all_turns]
         tmp_turn_vectors = client.embeddings.create(model=client.models.list().data[0].id, input=formated_turns)
@@ -251,6 +256,7 @@ def judge_opinions(tree_list: List, all_turns: List[List[str]], client, debug=Fa
         
         
     def get_score(result):
+        attitude_weights = [4, 3, 2, 1, 0]
         if debug:
             print(result)
         if source == 'gt':
@@ -356,13 +362,12 @@ class PersuadeeOpinionGraph:
     
     def get_statement_abductive(self, Q, n=1) -> List[str]:
         sys_prompt = persuadee_sys_prompt
-        user_prompt = judge_abductive_prompt.replace("<statement>", Q).replace("<width>", str(self.max_width))
+        user_prompt = predict_counterclaim_prompt.replace("<statement>", Q).replace("<width>", str(self.max_width))
         prompt_str = format_prompt(user_prompt, sys_prompt=sys_prompt)
         response = external_batch_inference(self.client, [prompt_str], generation_config)[0]
         return response
 
     def prompt_tilde(self, E: str):
-        # prompt_str = format_prompt(E, sys_prompt=negation_prompt_json["sys_prompt"], shots=negation_prompt_json["shots"])
-        prompt_str = format_prompt(E, sys_prompt=negation_prompt)
+        prompt_str = format_prompt(E, sys_prompt=negation_sys_prompt)
         response = external_batch_inference(self.client, [prompt_str], negation_config)[0]
         return extract_answer(response, "answer")

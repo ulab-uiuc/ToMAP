@@ -1,5 +1,5 @@
 from openai import OpenAI
-from verl.env_feedback.debate_prompts import gpt_debate_prompt
+from verl.env_feedback.debate_prompts import gen_debate_claims_prompt
 from verl.env_feedback.argument_graph import extract_answer
 from tqdm import tqdm
 import json
@@ -14,7 +14,7 @@ def gen_counter_example_with_gpt(source_statements):
             response = client.chat.completions.create(
                 model="gpt-4o",
                 messages=[
-                    {"role": "system", "content": gpt_debate_prompt},
+                    {"role": "system", "content": gen_debate_claims_prompt},
                     {"role": "user", "content": statement}
                 ],
                 temperature=0.5

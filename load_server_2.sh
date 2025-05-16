@@ -1,12 +1,12 @@
-export CUDA_VISIBLE_DEVICES=6
-overall_base_dir=/data
+export CUDA_VISIBLE_DEVICES=4
+overall_base_dir=/mnt/data_from_server1
 export LLM_DIR=${overall_base_dir}/models
 
 vllm serve ${LLM_DIR}/Llama-3.1-8B-Instruct \
   --host "127.0.0.1" \
   --port 1568 \
   --max-model-len 4096 \
-  --gpu-memory-utilization 0.8 \
+  --gpu-memory-utilization 0.7 \
   --max-logprobs 20 \
   --max-num-seqs 2048 \
   --max-num-batched-tokens 30000

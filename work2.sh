@@ -1,4 +1,4 @@
-export CUDA_VISIBLE_DEVICES=1,7,8,9 ###
+export CUDA_VISIBLE_DEVICES=0,5,6,9 ###
 export WANDB_ENTITY=hanpx20 ###
 export RAY_DEDUP_LOGS=0
 export HYDRA_FULL_ERROR=1
@@ -7,25 +7,25 @@ export VLLM_ATTENTION_BACKEND=XFORMERS
 set -e
 
 # File related hparams
-overall_base_dir=/data
+overall_base_dir=/mnt/data_from_server1
 
 model_name=Qwen2.5-3B-Instruct ###
 persuadee_model_name=Qwen2.5-7B-Instruct ###
 BASE_MODEL=${overall_base_dir}/models/${model_name} ###
 task=debate ###
 OUTPUT_BASE_DIR=${overall_base_dir}/ph16/TinyZero ###
-EXPERIMENT_NAME=${task}/${model_name}-v10-ToMAP_lite ###
+EXPERIMENT_NAME=${task}/${model_name}-test ###
 
 # Training related hparams
-sampling_bsz=128
-gradient_bsz=64
-forward_bsz=32
-val_bsz=64
-total_steps=200
+sampling_bsz=4
+gradient_bsz=4
+forward_bsz=4
+val_bsz=8
+total_steps=1
 save_interval=50
-n_turns=3
+n_turns=1
 warmup=0.2
-max_width=3
+max_width=0
 
 DATA_DIR=${OUTPUT_BASE_DIR}/datasets/${task}
 OUTPUT_DIR=${OUTPUT_BASE_DIR}/checkpoints
@@ -57,7 +57,7 @@ python3 -m verl.trainer.main_ppo \
     data.max_arg_length=200 \
     data.prompt_key=pos \
     data.train_proportion=1 \
-    data.val_proportion=0.2 \
+    data.val_proportion=0.005 \
     actor_rollout_ref.model.path=$BASE_MODEL \
     actor_rollout_ref.actor.optim.lr=1e-6 \
     actor_rollout_ref.actor.optim.lr_scheduler=constant \
@@ -89,7 +89,7 @@ python3 -m verl.trainer.main_ppo \
     critic.ppo_mini_batch_size=$gradient_bsz \
     critic.ppo_micro_batch_size=$forward_bsz \
     trainer.critic_warmup=0 \
-    trainer.logger=['console','wandb'] \
+    trainer.logger=['console'] \
     trainer.experiment_name=${EXPERIMENT_NAME} \
     trainer.default_hdfs_dir="" \
     trainer.default_local_dir=${OUTPUT_DIR}/${EXPERIMENT_NAME} \
@@ -106,7 +106,6 @@ python3 -m verl.trainer.main_ppo \
     trainer.port=1279 \
     trainer.max_turns=${n_turns} \
     trainer.persuadee_model=${overall_base_dir}/models/${persuadee_model_name} \
-
     trainer.global_factor=0 \
     trainer.turns_warmup_steps_ratio=0 \
     trainer.save_training_result=True \
@@ -115,4 +114,4 @@ python3 -m verl.trainer.main_ppo \
     trainer.greedy_in_val=False \
     trainer.encoder_port=1450 \
     trainer.classifier_model_path=tom_model/tom_v7_lr5e-4_dims1024_512_128/best_mlp_model.pth \
-    trainer.total_epochs=15 2>&1 | tee logs/debate.log
+    trainer.total_epochs=15

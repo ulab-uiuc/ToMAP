@@ -17,7 +17,6 @@ Note that we don't combine the main with ray_trainer as ray_trainer is used by o
 
 from verl import DataProto
 import torch
-from verl.utils.reward_score import gsm8k, math, multiply, countdown, mmlu, debate
 from verl.utils.rewards import *
 from verl.trainer.ppo.ray_trainer import RayPPOTrainer
 import numpy as np
@@ -129,16 +128,6 @@ import hydra
 
 
 
-class ExternalLLM:
-    def __init__(self, config):
-        model_name = config.persuadee_model
-        self.tokenizer = AutoTokenizer.from_pretrained(model_name)
-        self.model = LLM(model_name, tokenizer=model_name, gpu_memory_utilization=0.8)
-    
-    def generate(self, prompts, **generate_kwargs):
-        return self.model.generate(prompts, **generate_kwargs)
-
-
 @hydra.main(config_path='config', config_name='ppo_trainer', version_base=None)
 def main(config):
     if config.trainer.default_hdfs_dir == '':
@@ -207,11 +196,6 @@ def main_task(config):
     resource_pool_spec = {
         global_pool_id: [config.trainer.n_gpus_per_node] * config.trainer.nnodes
     }
-    # external_llm_pool = 'external_llm_pool'
-    # resource_pool_spec = {
-    #     global_pool_id: [config.trainer.n_gpus_per_node] * config.trainer.nnodes,
-    #     external_llm_pool: [1],
-    # }
     mapping = {
         Role.ActorRollout: global_pool_id,
         Role.Critic: global_pool_id,
@@ -249,9 +233,7 @@ def main_task(config):
         assert test_client.models.list().data[0].id == "BAAI/bge-m3", "We only support BAAI/bge-m3 as encoder"
         assert os.path.exists(config.trainer.classifier_model_path), "The classifier model path does not exist"
         del test_client
-    # if config.trainer.is_debate and config.trainer.external_persuadee:
-    #     assert config.trainer.persuadee_model == 'gpt-4o', "The gpt persuadee model should be gpt-4o"
-        
+
         
     reward_fn = RewardManager(tokenizer, 1, config.trainer.reward_funcs, config.trainer.reward_weights, config=config, div='train')
     # Note that we always use function-based RM for validation

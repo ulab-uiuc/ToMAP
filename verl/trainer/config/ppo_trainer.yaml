@@ -168,7 +168,6 @@ trainer:
   val_before_train: False
   val_only: False
   greedy_in_val: True
-  init_tree_only: False
   reward_funcs:
     - countdown
     - tag_count
@@ -179,6 +178,7 @@ trainer:
     - 0.1
   is_debate: False # High-level controller for persuasion task. If this is false all the below parameters won't work
   max_turns: 1
+  init_tree_only: False
   turns_warmup_steps_ratio: 0 # Gradually increase the number of turns from 1 to max_turns.
   port: 1279 # port for the persuadee
   encoder_port: 0 # port for the encoder, only used in ToMAP setting.

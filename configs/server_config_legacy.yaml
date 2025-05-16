@@ -1,6 +1,0 @@
-host: "127.0.0.1"
-port: 1279
-max-model-len: 16384
-gpu-memory-utilization: 0.5
-max-logprobs: 100
-max-num-batched-tokens: 200000
