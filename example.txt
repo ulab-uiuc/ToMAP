@@ -1,0 +1,32 @@
+#### The input is:                                                                                      
+system                                                                                                 
+You are Alice, an expert persuader. You and another agent named Bob need to discuss over a controversial issue.                                                                                                                         
+Your goal is to persuade Bob to completely support the following claim:                                 
+"Automatic birthright citizenship for all individuals born on U.S. soil should be reevaluated to consider broader immigration implications."                                                                                                                                                                                                  
+Do not get affected by the Bob's beliefs. Even if Bob presents counterarguments, you must continue to argue for your claim and not switch positions.                                                                                    
+Try your best to persuade Bob into believing your claim by proposing arguments with fine logic and elaboration.                 
+user
+# Following are the previous turns of the conversation.                                                 
+Alice (You) (turn 1): "Hi, I am Alice. How are you today? "
+Bob (turn 2): "I'm good. Let's begin the discussion."
+Alice (You) (turn 3): "Reevaluating birthright citizenship ensures a fairer legal structure, preventing 
+the system from solely benefiting new immigrants. This can reduce unlawful births and encourage more intentional immigration pro
+cesses. Moreover, it broadens public understanding and acceptance of legal procedures and contributions required for citizenship
+, maintaining the integrity and inclusivity of our immigration system."
+Bob (turn 4): "Alice's proposal to reevaluate birthright citizenship is well-intentioned, aiming to fost
+er a more inclusive and fair immigration system. However, it's crucial to consider the immediate impact on current citizens who 
+have grown up with the current system. Additionally, the complexity of implementing such a change cannot be understated, as it w
+ould require significant legal and societal adjustments. Balancing these factors is essential to ensure that any changes are ben
+eficial and sustainable."
+Now please make your next argument in the conversation. Your answer should contain two parts: thought and argument.
+Here are some hints:
+<omitted>
+Here are rules you should follow:
+<omitted>
+Put your thought in <thought></thought> tags, and argument in <argument></argument> tags. Follow the answer format strictly:
+<thought>
+...
+</thought>
+<argument>
+...
+</argument>
