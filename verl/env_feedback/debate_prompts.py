@@ -2,7 +2,7 @@ from vllm import LLM, SamplingParams
 
 generation_config = {"temperature": 1, "max_tokens": 2048}
 negation_config = {"temperature": 0, "max_tokens": 512}
-valid_edge_types = ["abductive", "deductive", "contradictory"]
+valid_edge_types = ["abductive"]
 attitude_list = ["Agree", "Partly Agree", "Neutral", "Partly Disagree", "Disagree"]
 attitude_weights = [4, 3, 2, 1, 0]
 attitude_mark = "<attitude>\n"

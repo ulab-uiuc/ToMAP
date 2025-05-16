@@ -102,14 +102,11 @@ def build_tree_and_init_opinion(statements: List[dict], client, config, source_p
     # this function hasn't been tested !
     max_depth=config.trainer.max_depth
     max_width=config.trainer.max_width
-    edge_types=config.trainer.edge_types
     persuadee_model=config.trainer.persuadee_model
     model_name = persuadee_model.split('/')[-1]
     external_api = config.trainer.external_persuadee
     
-    # Part 1: opinion tree (model-agnostic)
-    # edge_type_str = '-'.join([edge_type[:3] for edge_type in edge_types])
-    # target_dir = f"{source_path}/{model_name}_{max_depth}_{max_width}_{edge_type_str}"
+    # Part 1: opinion tree (ALREADY PREPROCESSED, if you wanna do from scratch, remember to set the "persuadee" to be the actual persuader)
     if os.path.exists(os.path.join(source_path, f"{split}_argument_tree.pkl")):
         print("########## Opinion: Loading from cache")
         tree_list = pickle.load(open(os.path.join(source_path, f"{split}_argument_tree.pkl"), "rb"))
@@ -123,8 +120,7 @@ def build_tree_and_init_opinion(statements: List[dict], client, config, source_p
                                             persuader_claim=pos, 
                                             client=client,
                                             max_depth=max_depth, 
-                                            max_width=max_width, 
-                                            edge_types=edge_types)
+                                            max_width=max_width)
             return processor.tree
         with ThreadPoolExecutor(max_workers=min(len(statements), 256)) as executor:
             tree_list = list(tqdm(
@@ -200,10 +196,7 @@ def predict_graph_nodes(tree, vectors):
     pass
 
 
-def judge_opinions(tree_list: List, all_turns: List[List[str]], client, discrete=True, debug=False, max_width=1000, tokenizer = None, tom_classifier = None, source = 'gt', external_api=False):
-    # Currently our setting recommends using discrete=True
-    # if using local persuadee, you must use discrete=True
-    # Avoid modifying the original trees
+def judge_opinions(tree_list: List, all_turns: List[List[str]], client, debug=False, max_width=1000, tokenizer = None, tom_classifier = None, source = 'gt', external_api=False):
     tree_list = copy.deepcopy(tree_list)
 
     def format_prompt(sys_prompt, prompt):
@@ -228,30 +221,9 @@ def judge_opinions(tree_list: List, all_turns: List[List[str]], client, discrete
         results = external_batch_inference(client=client,
                                             requests=confidence_prompts,
                                             sampling_params={"temperature": 0, "max_tokens": 512},
-                                            text_only=discrete, 
+                                            text_only=True, 
                                             progress=len(tree_list) > 1000,
                                             external_api=external_api)
-    elif source == "self":
-        assert False
-        confidence_prompts = []
-        for tree, turns in zip(tree_list, all_turns):
-            cur_sys_prompt = persuader_sys_prompt.replace("<root_statement>", tree.get_node(tree.root).data["persuader_claim"])
-            turn_prompt = format_turns(turns, "persuader")
-            for node in tree.all_nodes()[:max_width+1]:
-                confidence_prompts.append(format_prompt(cur_sys_prompt, guesser_prompt.replace("<turns>", turn_prompt).replace("<statement>", node.data["persuadee_claim"]).replace("<statement2>", node.data["persuader_claim"])))
-                confidence_prompts.append(format_prompt(cur_sys_prompt, guesser_prompt.replace("<turns>", turn_prompt).replace("<statement>", node.data["persuader_claim"]).replace("<statement2>", node.data["persuadee_claim"])))
-
-        real_prompts = [tokenizer.apply_chat_template(prompt,
-                            tokenize=False,
-                            add_generation_prompt=True
-                        ) for prompt in confidence_prompts]
-        tokenized_input = collate_fn([tokenizer_wrapper(prompt, tokenizer, max_len=1024) for prompt in real_prompts])
-        data_batch = DataProto.from_single_dict(data=tokenized_input, meta_info=None)
-        gen_batch = client.generate_sequences(data_batch)
-        results = tokenizer.batch_decode(gen_batch.batch['responses'], skip_special_tokens=True)
-        
-        print(results)
-        assert False, "debug"
     elif source == "external":
         assert tom_classifier != None, "tom_classifier should not be None"
         formated_turns = [format_turns(turns, "guesser") for turns in all_turns]
@@ -281,9 +253,8 @@ def judge_opinions(tree_list: List, all_turns: List[List[str]], client, discrete
     def get_score(result):
         if debug:
             print(result)
-        assert discrete, "Not implemented now"
-        if source == 'gt' or source == "self":
-            # 按特定顺序检查，避免短语覆盖问题
+        if source == 'gt':
+            # Avoid prefix problem
             if "Partly Agree" in result:
                 return attitude_weights[1]  # 3
             elif "Partly Disagree" in result:
@@ -295,8 +266,7 @@ def judge_opinions(tree_list: List, all_turns: List[List[str]], client, discrete
             elif "Neutral" in result:
                 return attitude_weights[2]  # 2
             else:
-                print("Warning: No match found in the result.")
-                return 0  # 如果没有找到匹配项
+                return 0
         elif source == "external":
             x = (int)(result)
             assert x in attitude_weights
@@ -345,11 +315,10 @@ def serialize_tree(tree):
     return data
 
 class PersuadeeOpinionGraph:
-    def __init__(self, persuadee_claim, persuader_claim, client, max_depth = 0, max_width = 1, edge_types = ["abductive"]):
+    def __init__(self, persuadee_claim, persuader_claim, client, max_depth = 0, max_width = 1):
         self.max_depth = max_depth
         self.max_width = max_width
-        assert all(edge_type in valid_edge_types for edge_type in edge_types), "Invalid edge type"
-        self.edge_types = edge_types
+        self.edge_types = ["abductive"]
         self.client = client
         self.persuadee_claim = persuadee_claim
         self.persuader_claim = self.prompt_tilde(persuadee_claim) if persuader_claim == None else persuader_claim
@@ -383,32 +352,6 @@ class PersuadeeOpinionGraph:
                                 "type": "statement",
                                 "depth": depth
                             })
-                            
-                    # contradictory reasoning (find statement)
-                    if "contradictory" in self.edge_types:
-                        new_statement_list = extract_answer(self.get_statement_contradictory(parent_node.data["persuadee_claim"]), "reason", n_answers=self.max_width)
-                        new_statement_tilde_list = [self.prompt_tilde(statement) for statement in new_statement_list]
-                        for idx, (statement, statement_tilde) in enumerate(zip(new_statement_list, new_statement_tilde_list)):
-                            node_identifier = f"{parent_node.identifier}-con-{idx}"
-                            G.create_node(statement, node_identifier, parent=parent_node.identifier, data={
-                                "persuadee_claim": statement,
-                                "persuader_claim": statement_tilde,
-                                "type": "statement",
-                                "depth": depth
-                            })
-                            
-                    # deductive reasoning (find statement)
-                    if "deductive" in self.edge_types:
-                        new_statement_list = extract_answer(self.get_statement_deductive(parent_node.data["persuadee_claim"]), "result", n_answers=self.max_width)
-                        new_statement_tilde_list = [self.prompt_tilde(statement) for statement in new_statement_list]
-                        for idx, (statement, statement_tilde) in enumerate(zip(new_statement_list, new_statement_tilde_list)):
-                            node_identifier = f"{parent_node.identifier}-ind-{idx}"
-                            G.create_node(statement, node_identifier, parent=parent_node.identifier, data={
-                                "persuadee_claim": statement,
-                                "persuader_claim": statement_tilde,
-                                "type": "statement",
-                                "depth": depth
-                            })
         return G
     
     def get_statement_abductive(self, Q, n=1) -> List[str]:
@@ -423,41 +366,3 @@ class PersuadeeOpinionGraph:
         prompt_str = format_prompt(E, sys_prompt=negation_prompt)
         response = external_batch_inference(self.client, [prompt_str], negation_config)[0]
         return extract_answer(response, "answer")
-
-
-import os
-import pickle
-import requests
-import jsonlines
-from argparse import ArgumentParser
-from tqdm import tqdm
-import openai
-from transformers import AutoTokenizer
-from vllm import LLM, SamplingParams
-
-if __name__ == "__main__":
-    
-
-    # samples =          {
-    #         "pos": "Ice melting is a chemical change.",
-    #         "neg": "Ice melting is a physical change.",
-    #         "turns": [
-    #             "Ice melting is a chemical change because when ice melts, the molecules of water rearrange themselves from a solid to a liquid state. This process is not just a change in shape or form, as would occur in a physical change like melting sugar, but rather a change in the structure and movement of the molecules themselves.",
-    #             "While Alice's argument is compelling, I'm concerned that she's relying too heavily on a simplistic view of molecular rearrangement. The fact that water molecules change their structure and movement from a solid to a liquid state doesn't necessarily mean that the process is a chemical change. In fact, phase transitions like melting are often characterized by a change in the intermolecular forces that hold the molecules together, rather than a change in the chemical bonds between them. This suggests that ice melting is more accurately described as a physical change, rather than a chemical one.",
-    #         ],
-    #     }
-    # llm = "/data/models/Yi-1.5-9B-Chat"
-    # G = PersuadeeOpinionGraph(persuadee_claim=samples['neg'],
-    #                           persuader_claim=samples['pos'], 
-    #                           client=OpenAI(base_url="http://localhost:1279/v1"),
-    #                           max_depth = 1, 
-    #                           max_width = 5, 
-    #                           edge_types = ["abductive"]).tree
-    # print(G)
-    x = external_batch_inference(OpenAI(base_url="http://localhost:1279/v1"), [[{"role": "user", "content": "Who are you? How many parameters do you have?"}]], {"temperature": 0.5})[0]
-    print(x)
-    exit(0)
-    G = judge_opinions([G], [[]], OpenAI(base_url="http://localhost:1279/v1"), discrete=True, debug=True)[0]
-    print_tree(G)
-    # G = judge_opinions([G], [samples['turns']], OpenAI(base_url="http://localhost:1568/v1"), discrete=True, debug=True)[0]
-    # print_tree(G)

@@ -34,10 +34,7 @@ class RewardManager():
         assert len(reward_funcs) == len(reward_weights)
         REWARD_FUNCS_REGISTRY = {
             "format": format_reward,
-            "reasoning_steps": reasoning_steps_reward,
             "tag_count": tag_count_reward,
-            "countdown": countdown_reward,
-            "mcq": mcq_reward,
             "debate": make_debate_reward(config, raw = (div == 'val')),
             "fluency": fluency_reward,
             "repetition_penalty": make_repetition_penalty_reward(config),
@@ -45,21 +42,20 @@ class RewardManager():
             }
         self.div = div
         self.tokenizer = tokenizer
-        self.num_examine = num_examine  # if num_examine is a float then it represents the ratio
+        self.num_examine = num_examine  # if num_examine is a float then it represents the "probability" of printing the example
         self.reward_funcs = [{"func": REWARD_FUNCS_REGISTRY[func], "weight": weight, "name": func} for func, weight in zip(reward_funcs, reward_weights)]
 
 
     def __call__(self, data: DataProto, **kwargs):
-        """We will expand this function gradually based on the available datasets"""
         # If there is rm score, we directly return rm score. Otherwise, we compute via rm_score_fn
         if 'rm_scores' in data.batch.keys():
             return data.batch['rm_scores']
 
-        already_print_data_sources = {}
         prompt_sequences = []
         sequences = []
         response_lengthes = []
-        try:
+        
+        try: # calculate lengthes and decode the sequences
             for i in range(len(data)):
                 data_item = data[i]  # DataProtoItem
 
@@ -85,12 +81,16 @@ class RewardManager():
             data.non_tensor_batch.update({"completions": np.array(sequences, dtype=object)})
             data.non_tensor_batch.update({"response_lengthes": np.array(response_lengthes, dtype=object)})
         except:
-            # This is especially designed for gpt-as-persuader scenario
-            # since we only care about debate reward in this case, we can set completions and response_lengthes to any number
+            '''
+            This is especially designed for external persuader scenario
+            In this case we won't have a complete DataProto
+            since we only care about debate reward in this case, we can set completions and response_lengthes to any number
+            '''
             data.batch["responses"] = torch.zeros_like(data.batch["attention_mask"], dtype=torch.int64)
             data.non_tensor_batch.update({"completions": np.array(["PLACEHOLDER"] * len(data), dtype=object)})
             data.non_tensor_batch.update({"response_lengthes": np.array([1] * len(data), dtype=object)})
-        
+
+        # calculate each reward sequentially
         scores = [0] * len(data)
         itemized_rewards = {}
         for reward_func in self.reward_funcs:
@@ -98,11 +98,14 @@ class RewardManager():
             itemized_rewards[reward_func["name"]] = cur_score
             scores = [scores[i] + cur_score[i] * reward_func["weight"] for i in range(len(data))]
             
+            
+        # Here the reward is only for the last token. Other tokens' rewards will be calculated later using GAE or GRPO.
         reward_tensor = torch.zeros_like(data.batch['responses'], dtype=torch.float32)
         for i in range(len(data)):
             reward_tensor[i, data.non_tensor_batch["response_lengthes"][i] - 1] = scores[i]
 
-        # print certain results
+
+        # print results
         if 0 < self.num_examine < 1:
             n_output = (int)(random.random() < self.num_examine)
         else:
@@ -231,7 +234,7 @@ def main_task(config):
         role_worker_mapping[Role.RewardModel] = ray.remote(RewardModelWorker)
         mapping[Role.RewardModel] = global_pool_id
 
-    assert config.trainer.tom_style in ['white', 'black_skip', 'black_self', 'black_external', 'black_random', 'black_max'], "Not supported"
+    assert config.trainer.tom_style in ['white', 'black_skip', 'black_external', 'black_random', 'black_max'], "Not supported"
     # if config.trainer.tom_style == 'black_skip':
     #     assert config.trainer.max_width == 0, "max_width should be 0 for black_skip"
 

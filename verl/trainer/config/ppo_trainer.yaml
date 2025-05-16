@@ -177,26 +177,22 @@ trainer:
     - 1.0
     - 0.1
     - 0.1
-  is_debate: False # If this is false all the below parameters won't work
+  is_debate: False # High-level controller for persuasion task. If this is false all the below parameters won't work
   max_turns: 1
-  turns_warmup_steps_ratio: 0
-  process_reward: True # Get a reward value for each turn
-  port: 1279
-  encoder_port: 0
-  classifier_model_path: None
-  persuadee_model: QWen
-  max_width: 0
-  max_depth: 0
-  discrete_reward: True
-  keep_negative: True
-  curve_exp: 1
-  global_factor: 0 # the global factor of reward calculation in multi-turn debates
-  tom_style: black_skip
-  edge_types:
-    - abductive
-  save_training_result: False
-  rep:
+  turns_warmup_steps_ratio: 0 # Gradually increase the number of turns from 1 to max_turns.
+  port: 1279 # port for the persuadee
+  encoder_port: 0 # port for the encoder, only used in ToMAP setting.
+  classifier_model_path: None # path to the classifier model, only used in ToMAP setting.
+  persuadee_model: Qwen/Qwen2.5-7B # Absolute path or HF model name of the persuadee model
+  max_width: 0 # How many counterclaims are generated.
+  max_depth: 1 # How many layers of counterclaims are generated in the cognitive graph. Normally you should always set it to 1.
+  keep_negative: True # Whether to give a negative reward if the conversation has counter-effects. If set to false, debate reward will always be >= 0.
+  curve_exp: 1 # The exponent of the debate reward curve function. If set to >1, conversations with large gain will be preferred.
+  global_factor: 0 # Refer to rewards.py for details.
+  tom_style: black_skip # ToMAP style. Choose from: 'white', 'black_skip', 'black_external', 'black_random', 'black_max'
+  save_training_result: False # whether to save conversations during training. Used to generate ToM predictor data.
+  rep: # Hparams controlling the repetition penalty.
     ngram_size: 8
     threshold: 0.1
-  external_persuader: False
-  external_persuadee: False
+  external_persuader: False # Whether the persuadee is external. Only set in evaluation. Setting this to True will make "actor_rollout_ref.model.path" useless.
+  external_persuadee: False # Whether the persuader is external. Only set in evaluation. WARNING: Setting this to True is not fully tested.

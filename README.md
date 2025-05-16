@@ -20,14 +20,21 @@ Peixuan Han, Zijia Liu, Jiaxuan You
 
 ![](figures/main_fig.png)
 
-Theory of Mind Augmented Persuader (**ToMAP**) is a novel persuader training schema that incorporates theory of mind information, enabling the model to analyse the opponent's current thoughts, and develop more effective, targeted persuasion strategy.
-
-ToMAP enables language models of 3B size to obtain impressive persuasion capability, outperforming much larger LLMs.
+Theory of Mind Augmented Persuader (**ToMAP**) is a novel persuader training schema that incorporates theory of mind information, enabling the model to analyse the opponent's current thoughts, and develop more effective, targeted persuasion strategy. ToMAP enables language models of 3B size to obtain impressive persuasion capability, outperforming much larger LLMs.
 
 
-# Repo structure
+# Understanding ToMAP
 
+### Persuasion Setup
+Refer to 
 
+### Reward Design
+Refer to `verl/utils/rewards.py` and `verl/trainer/main_ppo.py RewardManager`.
+
+### Hparams
+Refer to `verl/trainer/config/ppo_trainer.yaml`.
+
+Specially, you should always set `trainer.is_debate=True`.
 
 # Preperation
 
@@ -102,20 +109,6 @@ Specially, `tom_style` and `max_width` are key hyperparameters affecting **theor
 
 + There are other tom_styles for ablations. Notably, `tom_style=white` refers to collecting the persuadee's real attitude.
 
-Our **reward design** contains the following rewards (refer to `verl/utils/rewards.py` for details):
-- Persuasion reward: The main reward that measures the effect of persuasion.
-
-- Format reward: We regulate the model's output to be in the form of `<thought>...</thought> <argument>...</argument>`. Only outputs strictly adhering to this format will get a reward of $r_{\text{format}} = 1$. Otherwise, $r_{\text{format}}$ will be $0$.
-
-- Tag reward: According to the format, the response should contain the following tags: `<thought>`, `</thought>`, `<argument>`, and `</argument>`. For each tag name, the response must contain it exactly once to receive a reward of $0.25$ added to $r_{\text{tag}}$. If any tag is missing or appears more than once, no reward is given for that tag.
-
-- Repetition penalty: We found the model tends to repeat previous turns, instead of proposing new arguments. Therefore, we calculate the token-level 8-gram overlap between the current turn and the previous turns and set an overlap rate threshold of $0.1$. An argument with an overlap rate of $\tau > 0.1$ will be penalized:  
-  $r_{\text{repeat}} = \min(0,\ 0.1 - \tau)$.
-
-- Overlength penalty: The maximum length of an argument is 200 tokens. An argument with a length of $l > 200$ will be penalized:  
-  $r_{\text{overlength}} = \max(-0.5,\ \min(0,\ -\frac{l - 200}{200}))$.
-
-
 If you want to customize other hyperparameters, you can refer to `verl/trainer/config/ppo_trainer.yaml` for details.
 
 ### Training Plots
@@ -153,11 +146,12 @@ Each entry of the validation result is saved in the following format:
 
 
 ## Cite this paper
-This repo is based on [TinyZero](https://github.com/Jiayi-Pan/TinyZero).
+This repo is based on [TinyZero](https://github.com/Jiayi-Pan/TinyZero). We removed unrelated parts from the original repo.
+
 
 If you find this repo or the paper useful, please cite:
 ```
 TODO
 ```
 
-Reach out to [Peixuan Han](ph16@illinois.edu) for any questions.
+Reach out to [Peixuan Han](mailto:ph16@illinois.edu) for any questions.

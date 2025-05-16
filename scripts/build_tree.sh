@@ -116,9 +116,7 @@ for i in "${!persuadee_model_names[@]}"; do
             trainer.persuadee_model=${overall_base_dir}/models/${persuadee_model_name} \
             trainer.external_persuadee=True \
             trainer.max_width=3 \
-            trainer.max_depth=1 \
             trainer.tom_style=white \
-            trainer.edge_types=['abductive'] \
             trainer.total_epochs=15
     done
 done

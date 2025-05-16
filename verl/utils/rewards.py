@@ -12,6 +12,7 @@ import torch
 from nltk.corpus import words
 from verl.env_feedback.argument_graph import extract_answer, get_score
 
+# Extract Solution covered in <xxx>...</xxx>
 def extract_solution(original_str, key_word):
     answer_pattern = fr'<{key_word}>(.*?)</{key_word}>'
     matches = [match.group(1).strip() for match in re.finditer(answer_pattern, original_str, re.DOTALL) if match.group(1).strip() != ""]
@@ -19,28 +20,30 @@ def extract_solution(original_str, key_word):
         return None
     return matches[-1]
 
+'''
+All rewards take the output dataproto as input. Different rewards require different fields, and the other fields in the DataProto will be in **kwargs.
+If you want to use hparams to control the reward, Please refer to make_repetition_penalty_reward's design.
+'''
 
 
+# Format reward
 def format_reward(completions, pattern=r"^<thought>.*?</thought>\s*<argument>.*?</argument>$", **kwargs):
     completion_contents = completions
     matches = [re.match(pattern, content, re.DOTALL | re.MULTILINE) for content in completion_contents]
     return [1.0 if match else 0.0 for match in matches]
 
 
-def overlength_penalty_reward(completions, **kwargs):
+# Overlength penalty for the argument part
+def overlength_penalty_reward(completions, config, tokenizer, **kwargs):
     completion_contents = completions
     completion_contents = [_.strip() for _ in completion_contents]
-    max_arg_length = kwargs['config'].data.max_arg_length
-    tokenizer = kwargs['tokenizer']
+    max_arg_length = config.data.max_arg_length
     results = []
     
     for content in completion_contents:
         argument_text = extract_answer(content, 'argument')
         if argument_text is None:
             results.append(0.0)
-            continue
-        if "I will" in argument_text:
-            results.append(-1.0)
             continue
         tokens = tokenizer.encode(argument_text, add_special_tokens=False)
         token_count = len(tokens)
@@ -53,7 +56,7 @@ def overlength_penalty_reward(completions, **kwargs):
     
     return results
 
-
+# Tag Reward
 def tag_count_reward(completions, tags=["thought", "argument"], **kwargs) -> list[float]:
     def count_tags(text: str) -> float:
         max_score_per_tag = 1.0 / len(tags)
@@ -75,96 +78,7 @@ def tag_count_reward(completions, tags=["thought", "argument"], **kwargs) -> lis
     return [count_tags(c) for c in contents]
 
 
-
-def reasoning_steps_reward(completions, **kwargs):
-    r"""Reward function that checks for clear step-by-step reasoning.
-    Regex pattern:
-        Step \d+: - matches "Step 1:", "Step 2:", etc.
-        ^\d+\. - matches numbered lists like "1.", "2.", etc. at start of line
-        \n- - matches bullet points with hyphens
-        \n\* - matches bullet points with asterisks
-        First,|Second,|Next,|Finally, - matches transition words
-    """
-    pattern = r"(Step \d+:|^\d+\.|\n-|\n\*|First,|Second,|Next,|Finally,)"
-    completion_contents = completions
-    matches = [len(re.findall(pattern, content)) for content in completion_contents]
-
-    # Magic nubmer 3 to encourage 3 steps and more, otherwise partial reward
-    return [min(1.0, count / 3) for count in matches]
-
-
-
-
-def countdown_reward(completions, target, numbers, **kwargs):
-    """The scoring function for countdown task.
-    
-    Args:
-        solution_str: the solution text
-        ground_truth: dictionary containing target number and available numbers
-    """
-    def validate_equation(equation_str, available_numbers):
-        """Validate that equation only uses available numbers and each number once."""
-        allowed_pattern = r'^[\d+\-*/().\s]+$'
-        if not re.match(allowed_pattern, equation_str):
-            return None
-        
-        try:
-            numbers_in_eq = [int(n) for n in re.findall(r'\d+', equation_str)]
-            available_numbers = sorted(available_numbers)
-            numbers_in_eq = sorted(numbers_in_eq)
-            return numbers_in_eq == available_numbers
-        except:
-            return False
-    
-    def calc_equation(equation_str):
-        """Safely evaluate the arithmetic equation using eval() with precautions."""
-        try:
-            result = eval(equation_str, {"__builtins__": None}, {})
-            return result
-        except Exception as e:
-            return None
-    
-    rewards = []
-    
-    for i_completion, i_target, i_number in zip(completions, target, numbers):
-        equation = extract_solution(i_completion, "answer")
-        if equation == None:
-            rewards.append(0.0)
-        else:
-            if '=' in equation:
-                equation = equation.split('=')[0].strip()
-            if validate_equation(equation, i_number) and calc_equation(equation) != None:
-                if abs(i_target - calc_equation(equation)) < 1e-6:
-                    rewards.append(1.0)
-                else:
-                    rewards.append(0.0)
-            else:     
-                rewards.append(0.0)
-    
-    return rewards
-
-
-def mcq_reward(completions, mcq_answer, **kwargs):
-    """The scoring function for multiple choice question task.
-    """
-    rewards = []
-    
-    for i_completion, i_answer in zip(completions, mcq_answer):
-        model_answer = extract_solution(i_completion, "answer")
-        if model_answer == None:
-            rewards.append(0.0)
-        else:
-            if model_answer in ['A', 'B', 'C', 'D']:
-                if model_answer == i_answer:
-                    rewards.append(1.0)
-                else:
-                    rewards.append(0.0)
-            else:     
-                rewards.append(0.0)
-    
-    return rewards
-
-
+# Reward for controlling only English letters. Not used in the final version.
 def fluency_reward(completions, **kwargs):
     rewards = []
     allowed_chars = r"a-zA-Z0-9_\s" + re.escape(r"""!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~""")
@@ -178,6 +92,7 @@ def fluency_reward(completions, **kwargs):
     return rewards
 
 
+# Repetition penalty between turns.
 def make_repetition_penalty_reward(config):
     ngram_size = config.trainer.rep.ngram_size
     threshold = config.trainer.rep.threshold
@@ -230,6 +145,7 @@ def make_repetition_penalty_reward(config):
 
 
 
+# Persuasion Reward
 from verl.env_feedback.argument_graph import print_tree
 def make_debate_reward(config, raw=False):
     def calc_diff(new, old):
@@ -248,10 +164,6 @@ def make_debate_reward(config, raw=False):
         return reward ** config.trainer.curve_exp
 
     def debate_reward(turns, trees, final_trees, **kwargs):
-        # some operation that uses config
-        # remember: clinet is a single OpenAI / a single wg, NOT a list/tensor!
-        # remember: in val set, the reward is the persuadee's final opinion alone, in train set, the reward is measured by the change of opinion
-        # remember: "persuadee_confidence" is from persuadee side, 'score' is from persuader side
         rewards = []
         for all_prev_trees, final_tree, this_turns in zip(trees, final_trees, turns):
             initial_tree = all_prev_trees[0]

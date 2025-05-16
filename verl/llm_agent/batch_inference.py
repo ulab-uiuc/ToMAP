@@ -14,7 +14,6 @@ def external_batch_inference(client, requests, sampling_params, text_only=True, 
     
     if external_api:
         model = os.environ.get("EXTERNAL_MODEL_NAME", "gpt-4o")
-        print(model)
         if model == "gpt-4o" or model == "gpt-4o-mini":
             active_client = OpenAI()
         else:
@@ -66,8 +65,4 @@ def external_batch_inference(client, requests, sampling_params, text_only=True, 
     if text_only:
         results = [result.choices[0].message.content for result in results]
     
-    if external_api:
-        print("External API Inference Finished")
-    else:
-        print("Local Inference Finished")
     return results

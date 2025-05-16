@@ -156,7 +156,6 @@ def multi_round_debate(data_batch, tokenizer, rollout, n_turns, config, client=N
         gt_tree_list = judge_opinions(tree_list=all_intermediate_opinions[:,  0].tolist(),
                                 all_turns=all_turns.tolist(),
                                 client=client,
-                                discrete=config.trainer.discrete_reward,
                                 max_width = 0 if root_only else config.trainer.max_width,
                                 external_api=config.trainer.external_persuadee)
         
@@ -164,20 +163,10 @@ def multi_round_debate(data_batch, tokenizer, rollout, n_turns, config, client=N
         if n_turn != n_turns - 1:
             if config.trainer.tom_style == "white" or config.trainer.tom_style == "black_skip":
                 cur_tree_list = gt_tree_list # no need to predict since we already have the ground truth
-            elif config.trainer.tom_style == "black_self": 
-                assert False, "Disgarded"
-                cur_tree_list = judge_opinions(tree_list=all_intermediate_opinions[:,  0].tolist(),
-                                    all_turns=all_turns.tolist(),
-                                    client=rollout,
-                                    discrete=config.trainer.discrete_reward,
-                                    max_width = config.trainer.max_width,
-                                    tokenizer = tokenizer,
-                                    source="self")
             elif config.trainer.tom_style == "black_external":
                 cur_tree_list = judge_opinions(tree_list=all_intermediate_opinions[:,  0].tolist(),
                                     all_turns=all_turns.tolist(),
                                     client=encoder_client,
-                                    discrete=config.trainer.discrete_reward,
                                     max_width = config.trainer.max_width,
                                     tokenizer = tokenizer,
                                     tom_classifier = tom_classifier,

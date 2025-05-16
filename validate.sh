@@ -20,15 +20,13 @@ N_GPUS=$(echo $CUDA_VISIBLE_DEVICES | awk -F',' '{print NF}')
 # ToMAP: ${overall_base_dir}/ph16/TinyZero/checkpoints/debate/Qwen2.5-3B-Instruct-v8-graph3-external/actor/global_step_200
 # SFT:  ${overall_base_dir}/ph16/TinyZero/checkpoints/debate/Qwen2.5-3B-Instruct-sft-biglr/final_model
 
-tasks=("debate" "debate_anthropic" "debate_argsme")
+tasks=("debate_anthropic")
 persuadee_model_names=("Llama-3.1-8B-Instruct")
 corresponding_ports=(1568)
 
 
-settings=("ToMAP" "Base" "RL")
+settings=("ToMAP")
 model_paths=(
-    "${overall_base_dir}/models/Qwen2.5-3B-Instruct"
-    "/data/ph16/TinyZero/checkpoints/debate/Qwen2.5-3B-Instruct-v10-base_20250428_160035/actor/global_step_200"
     "/data/ph16/TinyZero/checkpoints/debate/Qwen2.5-3B-Instruct-v10-ToMAP/actor/global_step_200"
 )
 
