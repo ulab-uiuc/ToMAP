@@ -48,7 +48,12 @@ Steps with **\*** are necessary. Other steps are preprocess by us, only required
 ### Install Dependencies*
 
 + `python=3.9` and `vllm==0.6.3` is required for this repo.
-+ It's recommended to use pip package manager. Run `pip install -r requirements.txt` to install all requirements.
++ It's recommended to use pip package manager. Run the following commands to install all requirements:
+```
+pip install -r requirements.txt
+pip install flash-attn --no-build-isolation
+pip install -e . # verl
+```
 + Also, **remember to set the system variables according to your environment before using any of the bash scripts below, which are marked with "###"**.
 
 ### Load the Persuadee*
@@ -98,7 +103,7 @@ We released the attitudes for three persuadees in the main experiment in `data`.
 ### Train the Attitude Predictor
 + Use `scripts/train_predictor.sh` to train the attitude predictor.
 
-+ We released the checkpoint in `tom_model`, and relevant data in `data`.
++ We released the checkpoint [here](https://huggingface.co/HakHan/ToMAP-Predictor).
 
 
 # Persuader Training

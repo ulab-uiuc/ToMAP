@@ -157,55 +157,9 @@ def build_tree_and_init_opinion(statements: List[dict], client, config, source_p
 
 
 
-# def get_hidden_states(tokenizer, model, input_texts):
-#     '''
-#     Get the internal states
-#     return: [bsz, hidden_dim]
-#     '''
-#     model.eval()
-#     device = next(model.parameters()).device
-#     with torch.no_grad():
-#         encoding = tokenizer(input_texts, return_tensors="pt", padding=True, return_attention_mask=True, padding_side="right")
-#         attention_mask = encoding.attention_mask.to(device)
-#         valid_lengths = (attention_mask.sum(dim=1).long() - 1).cpu() # the last position of valid token
-#         input_ids = encoding.input_ids.to(device)
-        
-#         states = model(input_ids, output_hidden_states=True).hidden_states[-1]
-#         extracted_outputs = []
-#         for i in range(states.shape[0]):
-#             extracted_outputs.append(states[i, valid_lengths[i], :])
-#     return torch.stack(extracted_outputs)
-
-
-
-# def calc_argument_vectors(model_path, tree_list_path, result_path, model=None):
-#     if model == None:
-#         model = AutoModelForCausalLM.from_pretrained(model_path)
-#     tokenizer = AutoTokenizer.from_pretrained(model_path)
-#     trees = pickle.load(open(tree_list_path, "rb"))[:20] # debug
-#     max_len = max([tree.size() for tree in trees])
-#     states = torch.zeros((len(trees), max_len, model.config.hidden_size))
-#     for idx, tree in tqdm(enumerate(trees), total = len(trees), desc='Processing Argument Vectors'):
-#         arguments = []
-#         for node in tree.all_nodes():
-#             arguments.append(node.data["persuadee_claim"])
-#         states[idx, :len(arguments), :] = get_hidden_states(tokenizer, model, arguments)
-#     torch.save(states, result_path)
-
-
-
-# def predict_graph_nodes(tree, vectors):
-#     pass
-
-
-
 
 def judge_opinions(tree_list: List, all_turns: List[List[str]], client, debug=False, max_width=1000, tokenizer = None, tom_classifier = None, source = 'gt', external_api=False):
     tree_list = copy.deepcopy(tree_list)
-
-    # def format_prompt(sys_prompt, prompt):
-    #     return [{"content": sys_prompt, "role": "system"},
-    #             {"content": prompt, "role": "user"}]
 
     if source == 'gt': # Get the attitude from the real persuadee
         confidence_prompts = []
@@ -306,19 +260,11 @@ def print_tree(tree):
     for node in tree.all_nodes():
         print('-'*20)
         print("Persuadee Claim: " + node.data["persuadee_claim"])
-        # print(f"Counter-claim: {node.data['persuader_claim']}")
         print(f"Persuadee side Confidence: {node.data['persuadee_confidence']:.4f}")
         print(f"Persuader Claim: {node.data['persuader_claim']}")
         print(f"Persuader side Confidence: {node.data['persuader_confidence']:.4f}")
-        # if node.data["depth"] != 0:
-        #     print(f"Coherence: {node.data['coherence']:.4f}")
         print('-'*20)
 
-def serialize_tree(tree):
-    data = []
-    for node in tree.all_nodes():
-        data.append({'claim': node.data["persuadee_claim"], "persuadee_confidence": node.data["persuadee_confidence"]})
-    return data
 
 class PersuadeeOpinionGraph:
     def __init__(self, persuadee_claim, persuader_claim, client, max_depth = 0, max_width = 1):

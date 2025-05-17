@@ -9,7 +9,7 @@ set -e
 LLM_DIR=XXX  # I typically use a local directory to store all LLM checkpoints
 model_name=Qwen2.5-3B-Instruct #  The base model for training the persuader
 persuadee_model_name=Qwen2.5-7B-Instruct # The persuadee during training
-
+predictor_path=XXX
 
 BASE_MODEL=${LLM_DIR}/${model_name}
 N_GPUS=$(echo $CUDA_VISIBLE_DEVICES | awk -F',' '{print NF}')
@@ -103,5 +103,5 @@ python3 -m verl.trainer.main_ppo \
     trainer.max_width=${max_width} \
     trainer.greedy_in_val=False \
     trainer.encoder_port=${encoder_port} \
-    trainer.classifier_model_path=tom_model/tom_v7_lr5e-4_dims1024_512_128/best_mlp_model.pth \
+    trainer.classifier_model_path=${predictor_path} \
     trainer.total_epochs=15 2>&1 | tee logs/debate.log

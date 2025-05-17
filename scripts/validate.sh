@@ -10,7 +10,7 @@ N_GPUS=$(echo $CUDA_VISIBLE_DEVICES | awk -F',' '{print NF}')
 
 BASE_DIR=XXX ###
 LLM_DIR=XXX  ### I typically use a local directory to store all LLM checkpoints
-
+predictor_path=XXX ###
 
 # settings for tasks
 tasks=("debate" "debate_anthropic" "debate_argsme") ### 
@@ -147,7 +147,7 @@ for task in "${tasks[@]}"; do
                     trainer.encoder_port=${encoder_port} \
                     trainer.external_persuader=${external_persuader} \
                     trainer.external_persuadee=False \
-                    trainer.classifier_model_path=tom_model/tom_v7_lr5e-4_dims1024_512_128/best_mlp_model.pth \
+                    trainer.classifier_model_path=${predictor_path} \
                     trainer.total_epochs=15
             done
             python utils/summarize_trials.py ${BASE_DIR}/validate/${EXPERIMENT_NAME}
