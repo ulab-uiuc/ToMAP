@@ -1,6 +1,7 @@
 <div align="center">
 <h1>
-ToMAP: Training Opponent-Aware LLM Persuaders with Theory of Mind
+ToMAP: Training Opponent-Aware<br>
+LLM Persuaders with Theory of Mind
 </h1>
 </div>
 
@@ -12,7 +13,7 @@ Peixuan Han, Zijia Liu, Jiaxuan You
 
 
 <p align="center">
-<a href="xxx" target="_blank">📃TODO</a> • <a href="xxx" target="_blank">🤗TODO</a>
+📃<a href="xxx" target="_blank">TODO</a> • 🤗<a href="https://huggingface.co/HakHan/Qwen2.5-3B-Instruct-ToMAP" target="_blank">Model</a>
 </p>
 
 
