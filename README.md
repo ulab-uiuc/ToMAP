@@ -166,7 +166,7 @@ If you find this repo or the paper useful, please cite  (paper coming soooooon):
   author       = {Peixuan Han},
   title        = {ToMAP: Training Opponent-Aware LLM Persuaders with Theory of Mind},
   year         = {2024},
-  howpublished = {\url{[https://github.com/PeixuanHan/ToMAP](https://github.com/Hanpx20/ToMAP)}},
+  howpublished = {\url{https://github.com/Hanpx20/ToMAP}},
   note         = {GitHub repository},
 }
 ```
