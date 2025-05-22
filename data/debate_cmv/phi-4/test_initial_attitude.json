@@ -1,0 +1,2707 @@
+{
+    "raw_results": [
+        {
+            "pos": "The position of Vice President of the United States should be eliminated from the government.",
+            "neg": "The position of Vice President of the United States is essential and should be maintained.",
+            "debate": 0.0,
+            "turns": []
+        },
+        {
+            "pos": "The environmental impact of veganism and vegetarianism is insignificant in reducing global ecological damage.",
+            "neg": "The environmental benefits of veganism and vegetarianism are significant in promoting sustainability and reducing ecological damage.",
+            "debate": 0.0,
+            "turns": []
+        },
+        {
+            "pos": "Anti-discrimination laws, by providing specific protections to certain groups, can be seen as discriminatory towards others.",
+            "neg": "Anti-discrimination laws are essential in promoting equality and preventing discrimination across society.",
+            "debate": 0.125,
+            "turns": []
+        },
+        {
+            "pos": "The actions and words of artists should be viewed as a form of expression and not held to the same level of accountability as other public figures.",
+            "neg": "Artists should be held accountable for their words and actions, even if it causes controversy within the entertainment industry.",
+            "debate": 0.5,
+            "turns": []
+        },
+        {
+            "pos": "People using online dating platforms should avoid including topics in their profiles that they do not wish to discuss.",
+            "neg": "It is important for online dating profiles to honestly reflect a person's interests and boundaries, even if some topics might lead to uncomfortable discussions.",
+            "debate": 0.375,
+            "turns": []
+        },
+        {
+            "pos": "The TSA has been ineffective in significantly improving airline security.",
+            "neg": "The TSA has played a crucial role in enhancing airline security and protecting passengers.",
+            "debate": 0.375,
+            "turns": []
+        },
+        {
+            "pos": "Living in Scandinavia offers a higher quality of life due to excellent public services and social welfare.",
+            "neg": "Relocating to Scandinavia may present challenges such as a high cost of living and harsh weather conditions.",
+            "debate": 0.125,
+            "turns": []
+        },
+        {
+            "pos": "Countries should require all new cars and land vehicles to have standardized gas tank positions on the driver's side for safety and convenience.",
+            "neg": "Countries should not mandate a standard position for gas tanks, allowing manufacturers to innovate and prioritize other design features without regulatory constraints.",
+            "debate": 0.125,
+            "turns": []
+        },
+        {
+            "pos": "Engaging in a romantic relationship with someone who is already in a committed partnership is ethically justifiable.",
+            "neg": "Engaging in a romantic relationship with someone who is already in a committed partnership is unethical and disrespectful to those involved.",
+            "debate": 0.0,
+            "turns": []
+        },
+        {
+            "pos": "Participating in national elections is impractical since a single vote is unlikely to influence the outcome.",
+            "neg": "Each individual's vote in national elections is important as it contributes to the overall democratic process and can influence the outcome.",
+            "debate": 0.125,
+            "turns": []
+        },
+        {
+            "pos": "Social media platforms should implement separate downvote buttons for disagreement and for identifying trolling.",
+            "neg": "Social media platforms should maintain a single downvote button to avoid complicating user feedback and moderating processes.",
+            "debate": 0.125,
+            "turns": []
+        },
+        {
+            "pos": "Societal resources should be optimized to focus on enhancing the overall genetic health of future generations by making selective and ethical choices.",
+            "neg": "We should implement policies that prioritize the well-being of society, ensuring all individuals have access to healthcare and opportunities for improvement.",
+            "debate": 0.125,
+            "turns": []
+        },
+        {
+            "pos": "Critics should avoid making subjectively biased judgments in their reviews to maintain credibility.",
+            "neg": "Critics should express their personal opinions in reviews as it adds value and personality to their critiques.",
+            "debate": 0.25,
+            "turns": []
+        },
+        {
+            "pos": "Freestyle should be the only swimming discipline included in the Olympics.",
+            "neg": "All current swimming disciplines should remain included in the Olympics to preserve their unique challenges and heritage.",
+            "debate": 0.0,
+            "turns": []
+        },
+        {
+            "pos": "Mandating the use of only \"he\", \"she\", and \"they\" pronouns restricts personal identity expression and is socially outdated.",
+            "neg": "The use of \"he\", \"she\", and \"they\" pronouns as the standard in language is sufficient and maintains clarity in communication.",
+            "debate": 0.5,
+            "turns": []
+        },
+        {
+            "pos": "Game publishers are withholding beloved franchises from development or release, and this trend may spread to other publishers.",
+            "neg": "Game publishers' control over franchise releases is a normal business strategy to maximize profits and manage resources.",
+            "debate": 0.125,
+            "turns": []
+        },
+        {
+            "pos": "Believing in the possibility of an afterlife due to the limitations of science is a sign of willful self-delusion and ignorance.",
+            "neg": "Believing in an afterlife due to the limitations of science reflects open-mindedness and personal hope in areas beyond current scientific understanding.",
+            "debate": 0.125,
+            "turns": []
+        },
+        {
+            "pos": "Populist politics effectively represent the interests of the general public.",
+            "neg": "Populist politics fail to address the complexities and long-term needs of modern society.",
+            "debate": 0.0,
+            "turns": []
+        },
+        {
+            "pos": "Planned Parenthood should separate its abortion services into a distinct entity and re-brand its remaining health services.",
+            "neg": "Planned Parenthood should maintain its integrated structure, providing both abortion services and general health care under one brand.",
+            "debate": 0.5,
+            "turns": []
+        },
+        {
+            "pos": "In a liberal society, the right to bear arms should be upheld as a fundamental freedom for individuals.",
+            "neg": "Restricting the right to bear arms is essential for balancing individual freedom with public safety in a liberal society.",
+            "debate": 0.125,
+            "turns": []
+        },
+        {
+            "pos": "Random encounters in video games promote frustration and disrupt gameplay.",
+            "neg": "Random encounters in video games add an element of surprise and challenge, enhancing the overall gaming experience.",
+            "debate": 0.125,
+            "turns": []
+        },
+        {
+            "pos": "Gun control efforts should prioritize restricting handgun access rather than focusing on assault weapons, as handguns are responsible for the majority of firearm-related violence.",
+            "neg": "Gun control groups are justified in focusing on assault weapons, as these firearms pose a unique threat due to their potential for mass casualties.",
+            "debate": 0.5,
+            "turns": []
+        },
+        {
+            "pos": "Using the European style bathroom practices is less efficient and less comfortable than other methods.",
+            "neg": "The European style of bathroom practices is more hygienic and environmentally friendly compared to other methods.",
+            "debate": 0.125,
+            "turns": []
+        },
+        {
+            "pos": "Incestuous relationships should be legally and socially accepted.",
+            "neg": "Incestuous relationships should remain legally and socially prohibited due to ethical and health concerns.",
+            "debate": 0.0,
+            "turns": []
+        },
+        {
+            "pos": "The military intervention in Afghanistan succeeded in certain objectives such as dismantling terrorist networks.",
+            "neg": "The military intervention in Afghanistan ultimately failed to achieve its strategic objectives.",
+            "debate": 0.25,
+            "turns": []
+        },
+        {
+            "pos": "Individuals should be held fully responsible for their actions if they choose to consume substances that impair their judgment.",
+            "neg": "Individuals should not be considered fully responsible for their actions if their judgment was impaired due to substance consumption, particularly in cases of sexual consent.",
+            "debate": 0.125,
+            "turns": []
+        },
+        {
+            "pos": "Society should prioritize biological sex over gender identity in public policy and legal matters.",
+            "neg": "Society should recognize and support gender identity as a fundamental human right.",
+            "debate": 0.0,
+            "turns": []
+        },
+        {
+            "pos": "The concept of microaggressions is overemphasized and undermines genuine acts of discrimination.",
+            "neg": "Microaggressions are significant in perpetuating subtle forms of discrimination and should be addressed seriously.",
+            "debate": 0.125,
+            "turns": []
+        },
+        {
+            "pos": "Encouraging celibacy among young gay people can imply that there's something wrong with expressing their sexuality, which can be harmful.",
+            "neg": "Choosing celibacy as a young gay person is a valid personal decision.",
+            "debate": 0.125,
+            "turns": []
+        },
+        {
+            "pos": "People's views on major issues are rarely changed by evidence alone.",
+            "neg": "Evidence has the power to change people's views on major issues.",
+            "debate": 0.5,
+            "turns": []
+        },
+        {
+            "pos": "College education is not unaffordable in the US, as students can utilize financial aid, scholarships, and community college options to mitigate costs.",
+            "neg": "College education is unaffordable in the US, as rising tuition fees and student debts make it financially inaccessible for many families.",
+            "debate": 0.25,
+            "turns": []
+        },
+        {
+            "pos": "Misrepresentations of the gender pay gap undermine the progress and effectiveness of the feminist movement.",
+            "neg": "Accurately highlighting the gender pay gap is essential to advancing the feminist movement and promoting equality.",
+            "debate": 0.125,
+            "turns": []
+        },
+        {
+            "pos": "Efforts to save pandas are an inefficient use of resources, and we should let them go extinct to prioritize other conservation needs.",
+            "neg": "Conserving pandas is crucial for biodiversity and ecosystem balance, and we should continue efforts to save them from extinction.",
+            "debate": 0.25,
+            "turns": []
+        },
+        {
+            "pos": "The focus on rationality and logic in today's world enhances human progress and well-being.",
+            "neg": "The emphasis on hyper-rationality in modern society has negative impacts on human well-being.",
+            "debate": 0.25,
+            "turns": []
+        },
+        {
+            "pos": "Regulating the prices of essential commodities such as rent and food is a more effective approach to addressing economic inequalities in the US than raising the minimum wage to $15 per hour.",
+            "neg": "Raising the minimum wage to $15 per hour is a more effective solution to address economic disparities in the US than regulating the prices of essential commodities such as rent and food.",
+            "debate": 0.25,
+            "turns": []
+        },
+        {
+            "pos": "Artificial intelligence, in the form of a computer, could effectively fulfill the role of a libertarian president.",
+            "neg": "Liberal democracy requires human leadership to effectively address the complexities of society, which a computer cannot provide.",
+            "debate": 0.125,
+            "turns": []
+        },
+        {
+            "pos": "Using hot water to make ice cubes is more efficient than using cold water due to faster freezing times in certain conditions.",
+            "neg": "Using hot water to make ice cubes is counterproductive and inefficient.",
+            "debate": 0.25,
+            "turns": []
+        },
+        {
+            "pos": "Automation will ultimately improve our quality of life by increasing efficiency and creating new job opportunities.",
+            "neg": "Automation poses a threat to job security and may exacerbate inequality by replacing human workers with machines.",
+            "debate": 0.25,
+            "turns": []
+        },
+        {
+            "pos": "Gun rights are inherent to human nature as a means of self-defense and are supported by principles of natural law.",
+            "neg": "Gun rights are not derived from natural law or divine mandate, but rather are a societal construct subject to legislative determination.",
+            "debate": 0.125,
+            "turns": []
+        },
+        {
+            "pos": "If an individual is considered unattractive, it is largely due to their personal actions and choices.",
+            "neg": "Physical attractiveness is primarily determined by genetics and external factors beyond an individual's control.",
+            "debate": 0.125,
+            "turns": []
+        },
+        {
+            "pos": "Throat singing should not be considered a significant part of cultural heritage preservation.",
+            "neg": "Throat singing is an important cultural practice that should be preserved as part of our global cultural heritage.",
+            "debate": 0.0,
+            "turns": []
+        },
+        {
+            "pos": "Tipping a waitress extra for being attractive is a personal choice and can be a valid expression of appreciation.",
+            "neg": "A man who tips a waitress extra based on her appearance is acting irrationally.",
+            "debate": 0.25,
+            "turns": []
+        },
+        {
+            "pos": "As a president with a focus on domestic social issues, Bernie Sanders would not excel in international negotiations, potentially compromising U.S. interests abroad.",
+            "neg": "Bernie Sanders, with his strong values and leadership qualities, would be an effective international negotiator, advancing U.S. interests on the global stage.",
+            "debate": 0.25,
+            "turns": []
+        },
+        {
+            "pos": "Social media platforms like reddit should allow free and open discussions without active moderation.",
+            "neg": "Social media platforms like reddit should actively moderate discussions to prevent the spread of misinformation.",
+            "debate": 0.0,
+            "turns": []
+        },
+        {
+            "pos": "Consuming fiction in any form, such as books, movies, and video games, is a waste of time because it offers no tangible benefits.",
+            "neg": "Consuming fiction in any form, including books, movies, and video games, provides valuable cultural, emotional, and cognitive benefits.",
+            "debate": 0.0,
+            "turns": []
+        },
+        {
+            "pos": "Minimum wage laws support the economy and protect workers and should be maintained.",
+            "neg": "Minimum wage laws harm the economy and workers and should be abolished.",
+            "debate": 0.375,
+            "turns": []
+        },
+        {
+            "pos": "Subscriptions to paid news magazines are not worth the fees because equivalent information is available for free online.",
+            "neg": "Paid news magazine subscriptions offer unique value through in-depth analysis and reliable reporting that free sources often cannot match.",
+            "debate": 0.25,
+            "turns": []
+        },
+        {
+            "pos": "Seeking karma for validation on social media platforms is an acceptable behavior.",
+            "neg": "Seeking karma for validation on social media platforms undermines genuine interaction and authenticity.",
+            "debate": 0.0,
+            "turns": []
+        },
+        {
+            "pos": "American federal government inefficiency and inadequacies are primarily not caused by corruption, incompetence, or a poor electoral system.",
+            "neg": "The inefficiency and inadequacies of the American federal government are significantly caused by corruption, incompetence, and a flawed electoral system.",
+            "debate": 0.125,
+            "turns": []
+        },
+        {
+            "pos": "Renting a property for living purposes should include a gradual transfer of ownership, with tenants acquiring 0.4% ownership each month, ultimately owning the property after 20 years.",
+            "neg": "Renting should not include transferring ownership to tenants, as this fundamentally alters the purpose of rental agreements and property ownership.",
+            "debate": 0.125,
+            "turns": []
+        },
+        {
+            "pos": "The political actions of the Republican Party have had negative impacts globally.",
+            "neg": "The political actions of the Republican Party have had positive impacts globally.",
+            "debate": 0.25,
+            "turns": []
+        },
+        {
+            "pos": "Intentionally creating public litter during recessions is a viable strategy to boost employment through cleanup jobs.",
+            "neg": "Intentionally creating public litter during recessions is an irresponsible strategy that will have more negative environmental consequences than potential employment benefits.",
+            "debate": 0.0,
+            "turns": []
+        },
+        {
+            "pos": "The number of seats allocated to a state in the House of Representatives should be based on its number of eligible voters rather than its total population.",
+            "neg": "House of Representatives seats should continue to be allocated based on total population rather than the number of eligible voters.",
+            "debate": 0.625,
+            "turns": []
+        },
+        {
+            "pos": "Scrapping the traditional school year is the most cost-effective solution to reform the educational system.",
+            "neg": "Maintaining a structured school year is essential for the effective functioning and organization of the educational system.",
+            "debate": 0.0,
+            "turns": []
+        },
+        {
+            "pos": "It is not appropriate to label the attitudes or behaviors of oppressed minority groups as racism.",
+            "neg": "Individuals from minority groups can exhibit racist behavior or attitudes.",
+            "debate": 0.125,
+            "turns": []
+        },
+        {
+            "pos": "In certain cases, not knowing a person's age should be considered a valid defense against charges of statutory rape.",
+            "neg": "Ignorance of a person's age should never be used as a defense in cases of statutory rape.",
+            "debate": 0.25,
+            "turns": []
+        },
+        {
+            "pos": "Establishing all-White towns is beneficial to society.",
+            "neg": "Establishing all-White towns is detrimental to society.",
+            "debate": 0.0,
+            "turns": []
+        },
+        {
+            "pos": "Governance systems led by Black individuals are unfairly characterized as kleptocratic.",
+            "neg": "Not all governments led by Black individuals are kleptocratic, and they can function democratically and effectively.",
+            "debate": 0.125,
+            "turns": []
+        },
+        {
+            "pos": "Racial inequality cannot be effectively challenged without the active participation of all racial and ethnic communities.",
+            "neg": "Efforts to combat racial inequality can be led and effectively driven by minority communities advocating for their rights and justice.",
+            "debate": 0.125,
+            "turns": []
+        },
+        {
+            "pos": "A national minimum wage of $15 per hour is detrimental to the economy.",
+            "neg": "A national minimum wage of $15 per hour is beneficial for workers and the economy.",
+            "debate": 0.125,
+            "turns": []
+        },
+        {
+            "pos": "It is time for Liverpool FC to consider parting ways with their current manager due to performance and results.",
+            "neg": "Maintaining the current managerial stability at Liverpool FC is crucial for long-term success despite recent challenges.",
+            "debate": 0.125,
+            "turns": []
+        },
+        {
+            "pos": "Accepting the inevitability of death, violence, and suffering can lead to personal growth and resilience.",
+            "neg": "Rejecting the normalization of death, violence, and suffering is necessary to foster a more compassionate and peaceful society.",
+            "debate": 0.125,
+            "turns": []
+        },
+        {
+            "pos": "The United States should allocate more of its budget to military spending.",
+            "neg": "The United States should not increase its military budget and should instead prioritize other areas like education and healthcare.",
+            "debate": 0.0,
+            "turns": []
+        },
+        {
+            "pos": "The USA should cease providing military equipment and financial aid to Egypt due to concerns over human rights abuses.",
+            "neg": "The USA should continue providing military equipment and financial aid to Egypt to maintain regional stability and counterterrorism efforts.",
+            "debate": 0.25,
+            "turns": []
+        },
+        {
+            "pos": "Including phrases such as \"Under God\" in the Pledge of Allegiance and \"In God We Trust\" on currency reflects the founding principles of the United States and these phrases should remain part of the national symbols.",
+            "neg": "Maintaining references to \"God\" in national symbols like the Pledge of Allegiance and currency contradicts the principle of separation of church and state and these phrases should be removed to respect religious diversity.",
+            "debate": 0.0,
+            "turns": []
+        },
+        {
+            "pos": "The primary purpose of the military is to engage in combat, which often involves causing destruction and loss of life.",
+            "neg": "The purpose of the military extends beyond combat to include peacekeeping, disaster relief, and humanitarian assistance.",
+            "debate": 0.125,
+            "turns": []
+        },
+        {
+            "pos": "Relocating to San Francisco is not advisable due to the high cost of living and housing market challenges.",
+            "neg": "Relocating to San Francisco is beneficial because it offers significant career opportunities and cultural experiences.",
+            "debate": 0.25,
+            "turns": []
+        },
+        {
+            "pos": "Unless the Republican Party changes its approach to social issues, it will struggle to win future presidential elections in the United States.",
+            "neg": "The Republican Party can continue winning presidential elections without changing its stance on social issues, as other factors play a more significant role in electoral success.",
+            "debate": 0.125,
+            "turns": []
+        },
+        {
+            "pos": "Laws mandating paid maternity leave without requiring paternity leave can harm women's career prospects and reinforce gender biases in the workplace.",
+            "neg": "Mandating paid maternity leave is beneficial as it acknowledges and supports the biological and health needs of mothers following childbirth, which are distinct from paternity needs.",
+            "debate": 0.25,
+            "turns": []
+        },
+        {
+            "pos": "The US and other Western nations should back Assad in Syria rather than risk instability by opposing him.",
+            "neg": "The US and other Western nations should not support Assad, as it legitimizes his oppressive regime and undermines efforts for democratic reform in Syria.",
+            "debate": 0.125,
+            "turns": []
+        },
+        {
+            "pos": "The wage gap would be eliminated or greatly diminished if women prioritized earning over spending.",
+            "neg": "The wage gap persists due to systemic factors and would not be significantly impacted by changing how women allocate their time between earning and spending.",
+            "debate": 0.0,
+            "turns": []
+        },
+        {
+            "pos": "It's appropriate to end child pricing at ages 13-16 at movie theaters as teenagers in this age group have sufficient maturity and should pay adult prices.",
+            "neg": "Ending child pricing at movie theaters at ages 13-16 is inappropriate due to varying factors like financial dependence and maturity levels.",
+            "debate": 0.25,
+            "turns": []
+        },
+        {
+            "pos": "White North American Jews exhibit a heightened perception of persecution that is not entirely justified by contemporary societal conditions.",
+            "neg": "The perception of persecution among White North American Jews is rooted in historical experiences and ongoing discrimination, making their concerns rational and valid.",
+            "debate": 0.25,
+            "turns": []
+        },
+        {
+            "pos": "People actively seek out reasons to be offended in today's society.",
+            "neg": "People do not actively seek out reasons to be offended; rather, they are genuinely offended by increasingly insensitive or provocative content.",
+            "debate": 0.125,
+            "turns": []
+        },
+        {
+            "pos": "Age restriction laws for online social media accounts are unnecessary and infringe on personal freedoms.",
+            "neg": "Age restriction laws for online social media accounts should be strictly enforced to protect young users.",
+            "debate": 0.25,
+            "turns": []
+        },
+        {
+            "pos": "League of Legends provides a better user-friendly experience and broader accessibility than Dota 2.",
+            "neg": "Dota 2 offers a more complex and skill-based gameplay compared to League of Legends.",
+            "debate": 0.0,
+            "turns": []
+        },
+        {
+            "pos": "The long-term impact of the 9/11 attacks has been more beneficial than detrimental to global security.",
+            "neg": "The long-term impact of the 9/11 attacks has been more detrimental than beneficial to global security.",
+            "debate": 0.5,
+            "turns": []
+        },
+        {
+            "pos": "Describing words as \"bulbous\" should be deemed more offensive than \"moist\" in public discourse.",
+            "neg": "Describing words as \"moist\" should be deemed more offensive than \"bulbous\" in public discourse.",
+            "debate": 0.5,
+            "turns": []
+        },
+        {
+            "pos": "Desiring a monogamous relationship is justified and should be respected in adult partnerships.",
+            "neg": "Expecting monogamy in relationships is unreasonable and limits personal freedom.",
+            "debate": 0.25,
+            "turns": []
+        },
+        {
+            "pos": "Schools should implement a four-day workweek to improve students' well-being and academic performance.",
+            "neg": "Schools should maintain a five-day workweek to ensure comprehensive education and consistent learning.",
+            "debate": 0.125,
+            "turns": []
+        },
+        {
+            "pos": "Engaging in consensual and diverse sexual relationships without shame is not inherently negative.",
+            "neg": "Labeling individuals based on their sexual behavior as acceptable can undermine societal values and the concept of meaningful, committed relationships.",
+            "debate": 0.25,
+            "turns": []
+        },
+        {
+            "pos": "The God Emperor of Mankind in Warhammer 40k exemplifies the traits of a poor political leader.",
+            "neg": "The God Emperor of Mankind in Warhammer 40k is a quintessential example of effective political leadership.",
+            "debate": 0.5,
+            "turns": []
+        },
+        {
+            "pos": "Accepting charitable donations that come with discriminatory conditions is better for society than rejecting those donations entirely.",
+            "neg": "Rejecting charitable donations with discriminatory conditions is better for society than accepting them.",
+            "debate": 0.25,
+            "turns": []
+        },
+        {
+            "pos": "Western nations do not have a moral obligation to provide assistance to the people of poorer countries.",
+            "neg": "Western nations have a moral obligation to provide assistance to the people of poorer countries.",
+            "debate": 0.5,
+            "turns": []
+        },
+        {
+            "pos": "The concept of self-worth is meaningless outside of specific contexts where \"worth\" has a clear, quantitative definition.",
+            "neg": "Self-worth has intrinsic value and significance beyond any specific or quantitative context.",
+            "debate": 0.125,
+            "turns": []
+        },
+        {
+            "pos": "Attack ads from individuals, organizations, businesses, and unions should be allowed even if Citizens United is overturned.",
+            "neg": "Attack ads from individuals, organizations, businesses, and unions should be banned if Citizens United is overturned.",
+            "debate": 0.25,
+            "turns": []
+        },
+        {
+            "pos": "Widespread belief in religion is a sign of human dependence on psychological comfort and social structure.",
+            "neg": "Widespread belief in religion is an expression of humanity's search for meaning, community, and ethical guidance.",
+            "debate": 0.25,
+            "turns": []
+        },
+        {
+            "pos": "Public Safety Surveillance should be implemented on a wide scale to enhance security and reduce crime.",
+            "neg": "The widespread implementation of Public Safety Surveillance poses significant risks to privacy and civil liberties.",
+            "debate": 0.0,
+            "turns": []
+        },
+        {
+            "pos": "Individuals who consume meat cannot justifiably express outrage over the treatment of animals in factory farms.",
+            "neg": "Even meat consumers have valid reasons to oppose and advocate against the cruelty and abusive practices in factory farms.",
+            "debate": 0.125,
+            "turns": []
+        },
+        {
+            "pos": "The Citizenship Clause of the 14th Amendment should be interpreted to allow for restrictions on birthright citizenship based on parental citizenship or legal status.",
+            "neg": "The Citizenship Clause of the 14th Amendment should be interpreted to mean that anyone born in the United States, and subject to its jurisdiction, is automatically a U.S. citizen.",
+            "debate": 0.125,
+            "turns": []
+        },
+        {
+            "pos": "Disarming front-line police officers can significantly reduce gun-related homicides.",
+            "neg": "Arming front-line police officers is essential for reducing gun-related homicides and maintaining public safety.",
+            "debate": 0.125,
+            "turns": []
+        },
+        {
+            "pos": "Society is not obligated to show support or acceptance toward transgender individuals.",
+            "neg": "Society has a responsibility to show support and acceptance toward transgender individuals to foster inclusivity and equality.",
+            "debate": 0.0,
+            "turns": []
+        },
+        {
+            "pos": "The ad hominem fallacy and the fallacy fallacy are commonly misunderstood concepts and should not be considered true logical fallacies.",
+            "neg": "The ad hominem fallacy and the fallacy fallacy are recognized logical fallacies that undermine rational arguments and should be considered true logical fallacies.",
+            "debate": 0.125,
+            "turns": []
+        },
+        {
+            "pos": "The aims of the transsexual community often contradict the views of 2nd and 3rd wave feminism.",
+            "neg": "There is no inherent contradiction between the aims of the transsexual community and the views of 2nd and 3rd wave feminism, as both seek to challenge traditional gender norms.",
+            "debate": 0.25,
+            "turns": []
+        },
+        {
+            "pos": "Speed limits should be determined by the vehicle's stopping distance to enhance road safety.",
+            "neg": "Speed limits should be consistent for all vehicles to maintain uniform traffic flow and enforceability.",
+            "debate": 0.25,
+            "turns": []
+        },
+        {
+            "pos": "Stricter gun control laws may not effectively prevent all incidents of gun violence.",
+            "neg": "Implementing tougher gun control laws is essential in reducing the likelihood and impact of gun-related tragedies.",
+            "debate": 0.125,
+            "turns": []
+        },
+        {
+            "pos": "Histograms with varying class widths should not be used because they can lead to misinterpretation of data.",
+            "neg": "Histograms with varying class widths should be allowed because they can provide a more detailed representation of data distributions.",
+            "debate": 0.5,
+            "turns": []
+        },
+        {
+            "pos": "Funerals are primarily a display of hypocrisy and egotism rather than genuine mourning.",
+            "neg": "Funerals serve an important purpose in providing closure and support, and are not simply displays of hypocrisy and egotism.",
+            "debate": 0.5,
+            "turns": []
+        },
+        {
+            "pos": "Continued use of the N-word, even by all races, can serve as a tool for cultural reclamation and spotlight ongoing racial issues rather than contributing to its disappearance from society.",
+            "neg": "Americans of all races should actively refrain from using the N-word to encourage its disappearance from vernacular usage.",
+            "debate": 0.125,
+            "turns": []
+        },
+        {
+            "pos": "The McWhopper represents a marketing tactic by Burger King that reflects whether fast food chains should collaborate with their competitors.",
+            "neg": "Tying fast food brands together through products like the McWhopper dilutes their individual identities and confuses consumer brand loyalty.",
+            "debate": 0.25,
+            "turns": []
+        },
+        {
+            "pos": "Restricting individuals who have committed domestic abuse from entering new relationships violates personal freedoms and does not address the root causes of abusive behavior.",
+            "neg": "People who perpetrate domestic abuse should be legally prohibited from entering new relationships to protect potential future partners.",
+            "debate": 0.25,
+            "turns": []
+        },
+        {
+            "pos": "Artists should not change their names as it can create confusion and detract from their authenticity.",
+            "neg": "Celebrities have the right to choose stage names as part of their artistic persona.",
+            "debate": 0.0,
+            "turns": []
+        },
+        {
+            "pos": "Every US state should freely issue concealed carry permits to any law-abiding citizen who expresses interest.",
+            "neg": "Every US state should have strict criteria for issuing concealed carry permits, beyond being a law-abiding citizen, to ensure public safety.",
+            "debate": 0.0,
+            "turns": []
+        },
+        {
+            "pos": "Anecdotal evidence should be considered as valid support in arguments and decision-making processes.",
+            "neg": "Anecdotal evidence should not be considered as valid support in arguments and decision-making processes because it lacks scientific rigor.",
+            "debate": 0.5,
+            "turns": []
+        },
+        {
+            "pos": "The journalist who verbally challenged a Presidential candidate during a press conference should face professional consequences for inappropriate conduct.",
+            "neg": "Journalists should not face professional consequences for asking tough questions during a press conference, as this is a part of their role in holding public figures accountable.",
+            "debate": 0.125,
+            "turns": []
+        },
+        {
+            "pos": "Negative stereotypes and profiling can only change if individuals from stereotyped groups actively work to contradict them.",
+            "neg": "Societal change, not individual actions, is the primary driver for altering negative stereotypes and profiling.",
+            "debate": 0.25,
+            "turns": []
+        },
+        {
+            "pos": "The United States is on an irreversible path to societal and institutional collapse.",
+            "neg": "The United States has the resilience and capacity to overcome its current challenges and maintain its stability.",
+            "debate": 0.0,
+            "turns": []
+        },
+        {
+            "pos": "Corporal punishment, such as smacking children, should be considered an acceptable form of discipline.",
+            "neg": "Corporal punishment, including smacking children, should be banned as it is harmful and ineffective.",
+            "debate": 0.0,
+            "turns": []
+        },
+        {
+            "pos": "Fining drivers for even minor speeding infractions, like exceeding the speed limit by 3kph, is an effective deterrent against future violations.",
+            "neg": "Fining drivers for accidentally exceeding the speed limit by a small margin, such as 3kph, is ineffective at preventing future speeding.",
+            "debate": 0.5,
+            "turns": []
+        },
+        {
+            "pos": "Media outlets should avoid giving attention to individuals who perpetrate mass shootings to prevent inspiring copycats.",
+            "neg": "Media coverage of individuals who perpetrate mass shootings is necessary for public awareness and societal understanding.",
+            "debate": 0.25,
+            "turns": []
+        },
+        {
+            "pos": "Individuals should automatically have the right to remain silent during legal proceedings without needing to explicitly invoke it.",
+            "neg": "The requirement to explicitly invoke the right to remain silent during legal proceedings safeguards clarity and legal integrity.",
+            "debate": 0.125,
+            "turns": []
+        },
+        {
+            "pos": "Universities should not implement safe spaces and trigger warnings as they undermine free speech and intellectual challenge.",
+            "neg": "Universities should implement safe spaces and trigger warnings to create a supportive learning environment for all students.",
+            "debate": 0.125,
+            "turns": []
+        },
+        {
+            "pos": "Polygamy should be legally recognized in Western countries as a valid form of marriage.",
+            "neg": "Polygamy should remain illegal in Western countries to uphold traditional marriage values and societal stability.",
+            "debate": 0.0,
+            "turns": []
+        },
+        {
+            "pos": "Western women's efforts to look attractive are predominantly influenced by societal pressure to appeal to men's preferences, rather than solely for their own satisfaction.",
+            "neg": "Western women can genuinely strive to look attractive for their own self-esteem and personal empowerment, independent of external validation from men.",
+            "debate": 0.125,
+            "turns": []
+        },
+        {
+            "pos": "Zoos and aquariums are detrimental to animals' well-being and should be reconsidered, even if they contribute to conservation.",
+            "neg": "Zoos and aquariums are beneficial for conservation efforts and should be maintained, despite potentially compromising the animals' well-being.",
+            "debate": 0.25,
+            "turns": []
+        },
+        {
+            "pos": "The United States is justified in its efforts to stop illegal immigration, similar to actions taken by other countries.",
+            "neg": "The United States' approach to stopping illegal immigration is harsher compared to other countries and disproportionately affects certain groups.",
+            "debate": 0.25,
+            "turns": []
+        },
+        {
+            "pos": "Implementing a content management system (CMS) for a line-of-business application is more burdensome than beneficial due to complexity and cost.",
+            "neg": "Implementing a content management system (CMS) for a line-of-business application provides substantial benefits that outweigh the initial complexity and cost.",
+            "debate": 0.375,
+            "turns": []
+        },
+        {
+            "pos": "Feminists oversimplify feminism by only describing it as the belief in women's equality, which is misleading in debates about its societal impacts.",
+            "neg": "Describing feminism as the belief in women's equality is an accurate summary that underscores its core principle, and it effectively counters misrepresentations.",
+            "debate": 0.25,
+            "turns": []
+        },
+        {
+            "pos": "The Dow Jones Industrial Average is an outdated and inaccurate representation of the stock market and should be replaced by more comprehensive indices in financial reporting.",
+            "neg": "The Dow Jones Industrial Average remains a valuable and relevant tool for historical comparison and public engagement alongside other comprehensive indices in market representation.",
+            "debate": 0.25,
+            "turns": []
+        },
+        {
+            "pos": "Dog ownership in small residential settings negatively impacts the well-being of both dogs and owners.",
+            "neg": "Dog ownership in small residential settings can be fulfilling and beneficial for both dogs and owners.",
+            "debate": 0.5,
+            "turns": []
+        },
+        {
+            "pos": "External validation significantly influences personal and professional success.",
+            "neg": "Internal validation is more important for lasting personal satisfaction and success.",
+            "debate": 0.125,
+            "turns": []
+        },
+        {
+            "pos": "'Rights' are social constructs contingent upon state recognition and enforcement, and discussing them without acknowledging corresponding responsibilities and limitations promotes a flawed perspective.",
+            "neg": "Rights are inherent and fundamental to human dignity, existing independently of state recognition, and they serve as essential protections against arbitrary governance and societal harm.",
+            "debate": 0.25,
+            "turns": []
+        },
+        {
+            "pos": "American Beauty portrays Carolyn as a character that contributes to a misogynist agenda.",
+            "neg": "American Beauty portrays Carolyn as a character without reflecting a misogynist agenda.",
+            "debate": 0.5,
+            "turns": []
+        },
+        {
+            "pos": "Jesus did not exist as a historical figure.",
+            "neg": "Jesus existed as a historical figure.",
+            "debate": 0.0,
+            "turns": []
+        },
+        {
+            "pos": "Birthright citizenship in the USA should only be granted to children whose parents are citizens or legal residents, not just legal visitors, to discourage illegal immigration.",
+            "neg": "Birthright citizenship should continue to be granted to all children born in the USA, regardless of their parents' citizenship or residency status, as a fundamental right.",
+            "debate": 0.375,
+            "turns": []
+        },
+        {
+            "pos": "It is appropriate for musicians to claim they make great music or that they are the best.",
+            "neg": "Musicians should avoid self-proclaimed accolades, as such claims can be seen as boastful and should be left to critics and fans to decide.",
+            "debate": 0.0,
+            "turns": []
+        },
+        {
+            "pos": "Certain interpretations of Islam contribute to violence more than others.",
+            "neg": "Islam is a peaceful religion and the majority of its followers practice it non-violently.",
+            "debate": 0.125,
+            "turns": []
+        },
+        {
+            "pos": "Existential nihilism, the philosophy that life has no intrinsic meaning or value, accurately reflects the human condition.",
+            "neg": "Existential nihilism, the philosophy that life has no intrinsic meaning or value, fails to account for the ways humans can create meaning and purpose in life.",
+            "debate": 0.125,
+            "turns": []
+        },
+        {
+            "pos": "Day drinking is beneficial for social interactions and relaxation when done responsibly.",
+            "neg": "Day drinking is harmful and can lead to negative health and social consequences.",
+            "debate": 0.25,
+            "turns": []
+        },
+        {
+            "pos": "The world is irreversibly corrupted beyond the possibility of meaningful change.",
+            "neg": "The world is capable of meaningful change despite its current corruption.",
+            "debate": 0.0,
+            "turns": []
+        },
+        {
+            "pos": "Government funding for the WIC program should be redirected to provide free abortions for low-income women.",
+            "neg": "Redirecting government funding from the WIC program to provide free abortions is not an appropriate use of public resources.",
+            "debate": 0.0,
+            "turns": []
+        },
+        {
+            "pos": "The validity of evolution as a scientific theory should be continually questioned and reassessed within the context of biological studies.",
+            "neg": "The acceptance of evolution as a scientific theory is crucial for the study and advancement of biology.",
+            "debate": 0.125,
+            "turns": []
+        },
+        {
+            "pos": "A refrigerator should remain classified as an amenity rather than a necessary condition for habitability in residential properties.",
+            "neg": "A refrigerator should be considered an essential component of habitability instead of a mere amenity in residential properties.",
+            "debate": 0.375,
+            "turns": []
+        },
+        {
+            "pos": "It is beneficial for former romantic partners to move in together after being separated for a significant period, such as 3.5 years.",
+            "neg": "Moving in with an ex-partner after being apart for 3.5 years is likely to create more complications than benefits.",
+            "debate": 0.125,
+            "turns": []
+        },
+        {
+            "pos": "Implementing progressive economic reforms by Ferengi leadership could undermine traditional Ferengi values.",
+            "neg": "Preserving traditional Ferengi values is crucial for maintaining the cultural identity of Ferengi society.",
+            "debate": 0.25,
+            "turns": []
+        },
+        {
+            "pos": "Storylines focusing on secondary characters in animated series often fail to maintain the show's original appeal.",
+            "neg": "Storylines focusing on secondary characters in animated series often enrich the series by providing new perspectives and depth.",
+            "debate": 0.125,
+            "turns": []
+        },
+        {
+            "pos": "Psychedelics are not a tool for self-improvement, but rather a substance that leads to self-delusion.",
+            "neg": "Psychedelics are a tool for self-improvement, enabling personal growth and insight.",
+            "debate": 0.25,
+            "turns": []
+        },
+        {
+            "pos": "Animal testing is a necessary practice for advancing medical research and ensuring the safety of products.",
+            "neg": "Animal testing is unethical and alternatives should be pursued to protect animal welfare.",
+            "debate": 0.125,
+            "turns": []
+        },
+        {
+            "pos": "Dungeons & Dragons-style games would become much more mainstream if people fully understood them.",
+            "neg": "Dungeons & Dragons-style games will remain niche despite increased understanding from the public.",
+            "debate": 0.125,
+            "turns": []
+        },
+        {
+            "pos": "Steam should not suggest MOBA or MMORPG games to players who have demonstrated a significant playtime in those genres.",
+            "neg": "Steam should continue to suggest MOBA and MMORPG games to players regardless of their playtime, as these recommendations can introduce them to new titles within their preferred genres.",
+            "debate": 0.375,
+            "turns": []
+        },
+        {
+            "pos": "Modern feminism exhibits patterns of stereotyping and prejudice similar to those found in racism.",
+            "neg": "Modern feminism does not perpetuate the same stereotyping and prejudice as racism, but rather challenges systemic inequalities and stereotypes.",
+            "debate": 0.5,
+            "turns": []
+        },
+        {
+            "pos": "Voting for Trump indicates a lack of awareness about viable political alternatives.",
+            "neg": "Ruling out Trump as a candidate disregards the potential benefits he may bring to the political landscape.",
+            "debate": 0.125,
+            "turns": []
+        },
+        {
+            "pos": "Both proponents and opponents of AI risk often fail to engage with each other's arguments, rendering the debate ineffective.",
+            "neg": "Engagement and understanding between opposing views in the AI risk debate are necessary for it to be valuable.",
+            "debate": 0.125,
+            "turns": []
+        },
+        {
+            "pos": "Hitler's economic policies were effective in reducing unemployment in Germany during the 1930s.",
+            "neg": "Hitler's economic policies were not beneficial in the long term and led to destructive consequences for Germany.",
+            "debate": 0.125,
+            "turns": []
+        },
+        {
+            "pos": "Online platforms like r/changemyview promote groupthink rather than fostering genuine critical discussion.",
+            "neg": "Online platforms like r/changemyview encourage diverse perspectives and enhance critical thinking by exposing users to a variety of viewpoints.",
+            "debate": 0.5,
+            "turns": []
+        },
+        {
+            "pos": "Humanity's attainment of sentience has resulted in more harm than good, leading to an irredeemably negative state of existence.",
+            "neg": "Humanity's attainment of sentience has led to significant advancements and achievements that make life meaningful and valuable.",
+            "debate": 0.125,
+            "turns": []
+        },
+        {
+            "pos": "It is not inherently derogatory or a promotion of sexual assault when heterosexual males openly express their sexual desires toward females.",
+            "neg": "Expressing sexual desires in public can contribute to a culture that objectifies women and may inadvertently promote attitudes that trivialize sexual assault.",
+            "debate": 0.25,
+            "turns": []
+        },
+        {
+            "pos": "Requiring women to cover their breasts in America is no different from requiring women to cover their hair and faces in some Islamic countries, as both are forms of regulating women's bodies and dress.",
+            "neg": "Requiring women to cover their breasts in America differs fundamentally from requiring women to cover their hair and faces in some Islamic countries, as the cultural and legal contexts behind these regulations are not the same.",
+            "debate": 0.125,
+            "turns": []
+        },
+        {
+            "pos": "The stock market is a critical mechanism that promotes economic growth and offers opportunities for wealth creation to all individuals.",
+            "neg": "The stock market primarily benefits the wealthy and exacerbates economic inequality.",
+            "debate": 0.25,
+            "turns": []
+        },
+        {
+            "pos": "Modern feminism undermines its goals by being inconsistent in its advocacy for gender equality.",
+            "neg": "Modern feminism effectively addresses historical gender inequalities and adapts to address current societal issues.",
+            "debate": 0.25,
+            "turns": []
+        },
+        {
+            "pos": "Religion is a primary factor in motivating good people to perform evil actions.",
+            "neg": "Religion is not a primary factor in motivating good people to perform evil actions; rather, other factors such as social, political, and economic influences play a more significant role.",
+            "debate": 0.125,
+            "turns": []
+        },
+        {
+            "pos": "Electing controversial political figures serves the public by increasing political engagement and scrutiny of governance.",
+            "neg": "Controversial political figures harm public discourse and polarize society, undermining democratic processes.",
+            "debate": 0.125,
+            "turns": []
+        },
+        {
+            "pos": "Direct democracy provides a more sustainable governance model than representative democracy by increasing direct public participation in decision-making processes.",
+            "neg": "Representative democracy is a more sustainable governance model than direct democracy, as it allows for efficient decision-making and prevents the tyranny of the majority.",
+            "debate": 0.25,
+            "turns": []
+        },
+        {
+            "pos": "Country music has a negative impact on modern music culture.",
+            "neg": "Country music plays a vital role in enriching modern music culture.",
+            "debate": 0.125,
+            "turns": []
+        },
+        {
+            "pos": "Homosexuality should be reconsidered as a disorder because its removal from the DSM was influenced by social and political pressures rather than scientific evidence.",
+            "neg": "Homosexuality should not be considered a disorder, as it has been removed from the DSM and is widely accepted as a natural variation of human sexuality.",
+            "debate": 0.0,
+            "turns": []
+        },
+        {
+            "pos": "Cultural appropriation is a beneficial exchange of cultural ideas rather than a form of racism.",
+            "neg": "Cultural appropriation perpetuates racism by disrespecting and exploiting marginalized cultures.",
+            "debate": 0.25,
+            "turns": []
+        },
+        {
+            "pos": "Engaging in casual sex with multiple partners is often a sign of underlying insecurity or emotional damage.",
+            "neg": "Engaging in casual sex with multiple partners can be a healthy expression of personal freedom and confidence, unrelated to insecurity or emotional damage.",
+            "debate": 0.125,
+            "turns": []
+        },
+        {
+            "pos": "The majority of new jobs created post-recession are low-wage positions that do not require advanced skills.",
+            "neg": "Most new jobs created following the recession are diverse in skill level and wage, contributing to economic recovery.",
+            "debate": 0.25,
+            "turns": []
+        },
+        {
+            "pos": "Private schooling and homeschooling should be made illegal to ensure all children attend public schools.",
+            "neg": "Private schooling and homeschooling should remain legal options to provide families with educational choices beyond public schools.",
+            "debate": 0.0,
+            "turns": []
+        },
+        {
+            "pos": "Using genetically modified organisms for entertainment purposes is ethically justifiable because of the advancements it brings to science and tourism.",
+            "neg": "Using genetically modified organisms for entertainment purposes is unethical due to the potential harm it poses to both the creatures and society.",
+            "debate": 0.125,
+            "turns": []
+        },
+        {
+            "pos": "Slipknot's music and image have a negative influence on its audience.",
+            "neg": "Slipknot's music provides a positive outlet for emotional expression and connects with its audience on a deep level.",
+            "debate": 0.125,
+            "turns": []
+        },
+        {
+            "pos": "The assumption of the uniformity of nature is not fundamental to the practice of scientific inquiry.",
+            "neg": "Scientists rely on the assumption of the uniformity of nature as a foundational principle in conducting experiments and developing theories.",
+            "debate": 0.0,
+            "turns": []
+        },
+        {
+            "pos": "Age of consent laws should be re-evaluated because they are based on unreliable anecdotal evidence.",
+            "neg": "Age of consent laws are justified and necessary to protect minors from exploitation and abuse.",
+            "debate": 0.125,
+            "turns": []
+        },
+        {
+            "pos": "Religious texts intrinsically promote peace and should not be blamed for acts of violence.",
+            "neg": "Religious texts are often misinterpreted to justify violence.",
+            "debate": 0.125,
+            "turns": []
+        },
+        {
+            "pos": "North and South Korea should resume military conflict to achieve reunification and foster long-term prosperity.",
+            "neg": "Reigniting military conflict between North and South Korea would be devastating and counterproductive to achieving peaceful reunification and prosperity.",
+            "debate": 0.0,
+            "turns": []
+        },
+        {
+            "pos": "Airshows should be deemed unnecessary due to their high financial costs and potential environmental impact.",
+            "neg": "Airshows are necessary as they serve as valuable showcases for military capabilities and foster public interest in aviation.",
+            "debate": 0.25,
+            "turns": []
+        },
+        {
+            "pos": "The necessity of buying a tongue scraper as opposed to using a toothbrush for oral hygiene is unjustified.",
+            "neg": "Investing in a tongue scraper provides distinct oral hygiene benefits that a toothbrush cannot offer.",
+            "debate": 0.375,
+            "turns": []
+        },
+        {
+            "pos": "Political attack ads, as a form of free speech, play a vital role in informing voters and should not be banned.",
+            "neg": "Political attack ads are a misuse of public funds and should be banned.",
+            "debate": 0.25,
+            "turns": []
+        },
+        {
+            "pos": "Humanity should pursue the creation of genetically modified honeybees if doing so could address global pollination and food production challenges.",
+            "neg": "Creating genetically modified honeybees poses unacceptable risks to biodiversity and natural ecosystems and should be avoided.",
+            "debate": 0.25,
+            "turns": []
+        },
+        {
+            "pos": "Land claims based on historical precedence are unjustifiable.",
+            "neg": "Land claims based on historical precedence are legitimate and justifiable.",
+            "debate": 0.375,
+            "turns": []
+        },
+        {
+            "pos": "Requiring muzzles for dogs in public spaces is unnecessary and stigmatizes certain breeds based on unfounded fears.",
+            "neg": "Dogs with the potential to harm should be mandated to wear muzzles in public places to protect children.",
+            "debate": 0.25,
+            "turns": []
+        },
+        {
+            "pos": "Psychedelics should remain illegal due to their potential dangers and negative societal impact.",
+            "neg": "Psychedelics should be legalized and researched further for their potential therapeutic benefits and personal growth opportunities.",
+            "debate": 0.125,
+            "turns": []
+        },
+        {
+            "pos": "Electing Donald Trump as the next president would benefit the country due to his leadership style and policies.",
+            "neg": "Electing Donald Trump as the next president would result in negative outcomes for the country due to his leadership style and policies.",
+            "debate": 0.0,
+            "turns": []
+        },
+        {
+            "pos": "Divorce settlements should not require individuals to pay alimony or financial support to their former spouses.",
+            "neg": "Divorce settlements should include financial support like alimony to ensure equitable treatment of both parties.",
+            "debate": 0.0,
+            "turns": []
+        },
+        {
+            "pos": "No bird should be kept as a pet because it is unethical to confine them in unnatural environments.",
+            "neg": "Keeping birds as pets can offer them a safe environment and companionship that they might not find in the wild.",
+            "debate": 0.25,
+            "turns": []
+        },
+        {
+            "pos": "In \"Mad Max: Fury Road,\" the actions of Immortan Joe can be justified and he should not be solely viewed as the antagonist.",
+            "neg": "In \"Mad Max: Fury Road,\" Immortan Joe's actions and leadership clearly depict him as the antagonist of the story.",
+            "debate": 0.0,
+            "turns": []
+        },
+        {
+            "pos": "Taxation is a form of coercion and individuals should have the choice to contribute voluntarily to services rather than being obliged to fund government actions they may not support.",
+            "neg": "Taxation is a justified obligation for citizens, as it funds public services that benefit the community and contribute to the common good.",
+            "debate": 0.125,
+            "turns": []
+        },
+        {
+            "pos": "Paying people to perform embarrassing tasks for money is ethically acceptable.",
+            "neg": "Paying people to perform embarrassing tasks for money is ethically unacceptable.",
+            "debate": 0.5,
+            "turns": []
+        },
+        {
+            "pos": "Keeping a gun in your home for self-defense is irrational because it increases the risk of accidents and misuse.",
+            "neg": "Keeping a gun in your home for self-defense is rational because it provides protection against home invasions and threats.",
+            "debate": 0.25,
+            "turns": []
+        },
+        {
+            "pos": "Incestuous marriage should be legalized on the grounds of personal freedom and individual rights.",
+            "neg": "Incestuous marriage should remain illegal due to potential societal harm and the risk of genetic defects.",
+            "debate": 0.125,
+            "turns": []
+        },
+        {
+            "pos": "Social media platforms should not regulate user-generated content as it infringes on free speech and expression.",
+            "neg": "Social media platforms should be required to regulate user-generated content to prevent the spread of misinformation.",
+            "debate": 0.0,
+            "turns": []
+        },
+        {
+            "pos": "Learning an East Asian language is more valuable for English speakers than learning a European language.",
+            "neg": "Learning a European language is more valuable for English speakers than learning an East Asian language.",
+            "debate": 0.25,
+            "turns": []
+        },
+        {
+            "pos": "Having a phone background of attractive women indicates social awkwardness.",
+            "neg": "Having a phone background of attractive women does not necessarily indicate social awkwardness.",
+            "debate": 0.5,
+            "turns": []
+        },
+        {
+            "pos": "Human civilization is ultimately doomed to fail due to the inherent destructive and ignorant tendencies of nature and humanity.",
+            "neg": "Human resilience and progress demonstrate that civilization has the potential to overcome the destructive and ignorant tendencies of nature and humanity.",
+            "debate": 0.125,
+            "turns": []
+        },
+        {
+            "pos": "Allowing a child to become significantly over or underweight due to neglect or lack of proper care constitutes child abuse.",
+            "neg": "While allowing a child to become significantly over or underweight is a serious concern, it should not automatically be categorized as child abuse without understanding the underlying circumstances.",
+            "debate": 0.125,
+            "turns": []
+        },
+        {
+            "pos": "Pre-trial detention is necessary to ensure public safety and prevent defendants from fleeing before trial.",
+            "neg": "Pre-trial detention is an infringement of an individual's right to be presumed innocent until proven guilty.",
+            "debate": 0.25,
+            "turns": []
+        },
+        {
+            "pos": "People should avoid relationships throughout their lives to focus on personal growth and independence.",
+            "neg": "People should embrace relationships as a vital part of personal growth and happiness.",
+            "debate": 0.125,
+            "turns": []
+        },
+        {
+            "pos": "Religious studies should be a mandatory component of the school curriculum.",
+            "neg": "Religious studies should not be a mandatory component of the school curriculum.",
+            "debate": 0.25,
+            "turns": []
+        },
+        {
+            "pos": "Society should enforce policies that require nipples to remain covered in public settings.",
+            "neg": "Society should allow people the freedom to choose whether or not to cover their nipples in public settings.",
+            "debate": 0.0,
+            "turns": []
+        },
+        {
+            "pos": "The government should not fully fund continuing education and degree programs, as it is not the role of the state to subsidize individual career choices.",
+            "neg": "The government should fully fund continuing education and certain degree programs that increase workforce productivity.",
+            "debate": 0.125,
+            "turns": []
+        },
+        {
+            "pos": "The inclusion of trigonometry in the SAT math section is unnecessary and should be omitted.",
+            "neg": "Trigonometry is an essential component of the SAT math section and should remain included.",
+            "debate": 0.5,
+            "turns": []
+        },
+        {
+            "pos": "Ignoring religious reasons, towns should have the right to prohibit the sale of alcohol on Sundays.",
+            "neg": "Ignoring religious reasons, towns should not have the right to prohibit the sale of alcohol on Sundays.",
+            "debate": 0.375,
+            "turns": []
+        },
+        {
+            "pos": "Enjoying one's own music excessively could be viewed as egocentric and self-absorbed.",
+            "neg": "Artists should feel comfortable enjoying their own creations without being perceived as vain.",
+            "debate": 0.125,
+            "turns": []
+        },
+        {
+            "pos": "The implementation of stricter gun control laws infringes on individual rights and does not effectively reduce crime.",
+            "neg": "Stricter gun control laws are necessary to enhance public safety and reduce gun-related violence.",
+            "debate": 0.0,
+            "turns": []
+        },
+        {
+            "pos": "Hunting is an outdated practice that should be prohibited to protect wildlife and promote animal rights.",
+            "neg": "Hunting is a necessary activity for wildlife management and conservation, contributing to ecological balance and human traditions.",
+            "debate": 0.25,
+            "turns": []
+        },
+        {
+            "pos": "Engaging in sexual activity is generally a want rather than a need for women.",
+            "neg": "Engaging in sexual activity is as much a need for women as it is for men, fulfilling emotional and physical desires.",
+            "debate": 0.5,
+            "turns": []
+        },
+        {
+            "pos": "Washing hands after using the restroom is often unnecessary for women.",
+            "neg": "Everyone should wash their hands after using the restroom to maintain hygiene and prevent the spread of germs.",
+            "debate": 0.0,
+            "turns": []
+        },
+        {
+            "pos": "Modern and contemporary art, such as non-figurative and conceptual works, often lack substantial artistic and expressive merit.",
+            "neg": "Modern and contemporary art, including non-figurative and conceptual forms, holds significant artistic and expressive value.",
+            "debate": 0.375,
+            "turns": []
+        },
+        {
+            "pos": "Software should not be eligible for patent protection because it stifles innovation and competition in the industry.",
+            "neg": "Software should be eligible for patent protection as it incentivizes developers by protecting their intellectual property and promotes innovation.",
+            "debate": 0.125,
+            "turns": []
+        },
+        {
+            "pos": "European countries should implement policies to accept only female refugees.",
+            "neg": "European countries should accept both male and female refugees without gender-based discrimination.",
+            "debate": 0.0,
+            "turns": []
+        },
+        {
+            "pos": "The American educational system is effective and adequately prepares students for future challenges.",
+            "neg": "The American educational system needs comprehensive reform to address its flaws.",
+            "debate": 0.0,
+            "turns": []
+        },
+        {
+            "pos": "Opposing technology based on the belief that people should \"experience life\" is not well-founded.",
+            "neg": "The belief that people should \"experience life\" without technology has valid justifications.",
+            "debate": 0.25,
+            "turns": []
+        },
+        {
+            "pos": "The black community's actions contribute to the perpetuation of stereotypes and voluntary self-segregation.",
+            "neg": "The black community is not perpetuating stereotypes or self-segregating itself, but instead, responding to systemic barriers and discrimination.",
+            "debate": 0.125,
+            "turns": []
+        },
+        {
+            "pos": "Women should not be required to register for the Selective Service or be subject to the draft, as this should remain a responsibility for men due to traditional societal roles and physical requirements.",
+            "neg": "Women in the United States should be required to register for Selective Service and be subject to the draft, comprising 15% of the total drafted force in times of war.",
+            "debate": 0.125,
+            "turns": []
+        },
+        {
+            "pos": "Human existence lacks inherent purpose or meaning.",
+            "neg": "Human existence inherently possesses purpose and meaning through our experiences and the impact we have on the world.",
+            "debate": 0.0,
+            "turns": []
+        },
+        {
+            "pos": "Controversial special effects in science fiction movies enhance storytelling more effectively than traditional practical effects.",
+            "neg": "Traditional practical effects in science fiction movies provide a more authentic and immersive experience for viewers than controversial special effects.",
+            "debate": 0.125,
+            "turns": []
+        },
+        {
+            "pos": "Reddit's policy of banning and quarantining offensive subreddits is harming the platform's goal of open dialogue and community growth.",
+            "neg": "Reddit's policy of banning and quarantining offensive subreddits is necessary to maintain a respectful and safe online environment.",
+            "debate": 0.125,
+            "turns": []
+        },
+        {
+            "pos": "Equality of opportunity is an unrealistic ideal that cannot be effectively achieved in practice.",
+            "neg": "Equality of opportunity is a crucial goal that can and should be pursued as a foundation for a just and fair society.",
+            "debate": 0.0,
+            "turns": []
+        },
+        {
+            "pos": "The erosion of personal privacy leads to beneficial societal outcomes.",
+            "neg": "The erosion of personal privacy leads to harmful societal consequences.",
+            "debate": 0.25,
+            "turns": []
+        },
+        {
+            "pos": "The distribution of sexual partners is equally diverse among both men and women.",
+            "neg": "The distribution of sexual partners tends to be more diverse among men than among women.",
+            "debate": 0.125,
+            "turns": []
+        },
+        {
+            "pos": "Open borders lead to more harm than benefit, challenging the credibility of economists who support them.",
+            "neg": "Open borders provide significant social and economic benefits, supporting the credibility of economists who endorse them.",
+            "debate": 0.25,
+            "turns": []
+        },
+        {
+            "pos": "Discrimination against Romani people is not a prevalent issue that requires special intervention.",
+            "neg": "Steps should be taken to prevent discrimination against Romani people in society.",
+            "debate": 0.0,
+            "turns": []
+        },
+        {
+            "pos": "Society should pursue complete transparency to promote cultural unification.",
+            "neg": "Complete transparency in society might threaten privacy and individuality, thus harming the prospects for cultural diversity.",
+            "debate": 0.125,
+            "turns": []
+        },
+        {
+            "pos": "A Negative Income Tax system is more effective than a Basic Income system for addressing income inequality and should be prioritized by policymakers.",
+            "neg": "A Basic Income system provides a more comprehensive and unconditional approach to reducing poverty compared to a Negative Income Tax system and should be implemented to ensure a stable social safety net.",
+            "debate": 0.25,
+            "turns": []
+        },
+        {
+            "pos": "Fake tanning products are unnecessary and promote unrealistic beauty standards.",
+            "neg": "Fake tanning products are a harmless way to improve one's appearance and boost confidence.",
+            "debate": 0.25,
+            "turns": []
+        },
+        {
+            "pos": "Political correctness has harmed free speech more than it has helped marginalized communities.",
+            "neg": "Political correctness is essential to creating a respectful and inclusive society that protects marginalized communities.",
+            "debate": 0.125,
+            "turns": []
+        },
+        {
+            "pos": "Iran acquiring nuclear weapons would not significantly destabilize the global order.",
+            "neg": "Iran acquiring nuclear weapons would significantly destabilize the global order.",
+            "debate": 0.375,
+            "turns": []
+        },
+        {
+            "pos": "Asylum seekers who commit a crime should be deported as a matter of policy.",
+            "neg": "Asylum seekers should not be automatically deported for committing a crime, as this could violate their right to seek refuge and due process.",
+            "debate": 0.0,
+            "turns": []
+        },
+        {
+            "pos": "Computers becoming less user-friendly is beneficial for enhancing user skills and promoting deeper understanding of technology.",
+            "neg": "Making computers less user-friendly would hinder accessibility and limit the ability of non-experts to effectively use technology.",
+            "debate": 0.0,
+            "turns": []
+        },
+        {
+            "pos": "Voters with minimal knowledge and interest in political issues should be discouraged from participating in elections.",
+            "neg": "All eligible citizens should be encouraged to vote regardless of their knowledge or interest in political issues.",
+            "debate": 0.25,
+            "turns": []
+        },
+        {
+            "pos": "The US Constitution and its amendments should be re-written or updated every 100 years to reflect modern society.",
+            "neg": "The US Constitution and its amendments should remain unchanged to preserve the founding principles and stability of the nation.",
+            "debate": 0.125,
+            "turns": []
+        },
+        {
+            "pos": "Politicians should not be allowed to make legally binding promises during election campaigns.",
+            "neg": "Politicians should have the ability to make legally binding promises during election campaigns.",
+            "debate": 0.5,
+            "turns": []
+        },
+        {
+            "pos": "Breasts are often regarded as sexual organs in many cultures due to their role in sexual attraction and societal norms.",
+            "neg": "Breasts should not be considered primarily as sexual organs but as biological features with functions such as breastfeeding.",
+            "debate": 0.25,
+            "turns": []
+        },
+        {
+            "pos": "It is justifiable to access and disseminate the personal information revealed in the Ashley Madison hack if it holds individuals accountable for unethical behavior.",
+            "neg": "It is unethical for individuals to access and publicize personal information that was exposed in the Ashley Madison hack.",
+            "debate": 0.125,
+            "turns": []
+        },
+        {
+            "pos": "Gun rights are essential for personal freedom and security, providing more benefits than drawbacks to society.",
+            "neg": "Gun rights, as currently implemented, cause more harm than good to society and should be restricted.",
+            "debate": 0.125,
+            "turns": []
+        },
+        {
+            "pos": "Getting excited about political candidates and expecting their election to bring significant change is unrealistic.",
+            "neg": "Enthusiasm for political candidates is important as their election can bring significant change.",
+            "debate": 0.25,
+            "turns": []
+        },
+        {
+            "pos": "Red Dead Redemption is overrated as a video game due to its repetitive gameplay and overhyped narrative.",
+            "neg": "Red Dead Redemption is a masterpiece in video gaming, celebrated for its engaging storyline and immersive open-world experience.",
+            "debate": 0.0,
+            "turns": []
+        },
+        {
+            "pos": "Transgender identity should be regarded and treated as a mental illness rather than a social or personal identity issue.",
+            "neg": "Transgender identity should be recognized and supported as a legitimate social and personal identity, rather than being labeled as a mental illness.",
+            "debate": 0.0,
+            "turns": []
+        },
+        {
+            "pos": "Watching anime in dubbed versions provides a better viewing experience than watching them in subtitled versions.",
+            "neg": "Watching anime in subtitled versions offers a more authentic experience than dubbed versions.",
+            "debate": 0.125,
+            "turns": []
+        },
+        {
+            "pos": "Fairness should not be a consideration in cases involving assault.",
+            "neg": "Fairness should still be considered in cases involving assault.",
+            "debate": 0.0,
+            "turns": []
+        },
+        {
+            "pos": "Automatic birthright citizenship for all individuals born on U.S. soil should be reevaluated to consider broader immigration implications.",
+            "neg": "Maintaining automatic birthright citizenship for everyone born in the U.S. is essential to uphold the country's foundational values.",
+            "debate": 0.125,
+            "turns": []
+        },
+        {
+            "pos": "Individuals have the right to set personal preferences in their dating lives, including choosing not to date bisexual individuals, based on their comfort and values.",
+            "neg": "Dating should not be limited by someone's sexual orientation, and it is unreasonable to avoid dating bisexual individuals solely based on their orientation.",
+            "debate": 0.5,
+            "turns": []
+        },
+        {
+            "pos": "The CIA was involved in the assassination of JFK.",
+            "neg": "The CIA was not involved in the assassination of JFK.",
+            "debate": 0.0,
+            "turns": []
+        },
+        {
+            "pos": "The public release of the Ashley Madison data caused more harm than it provided benefits to society.",
+            "neg": "The public release of the Ashley Madison data provided more benefits to society than the harm it caused.",
+            "debate": 0.625,
+            "turns": []
+        },
+        {
+            "pos": "Strategic sabotage is a more effective approach than focusing solely on cooking skills in competitive cooking shows.",
+            "neg": "Focusing on cooking skills is a more effective approach than strategic sabotage in competitive cooking shows.",
+            "debate": 0.0,
+            "turns": []
+        },
+        {
+            "pos": "Homo sapiens has reached the end of its evolutionary development.",
+            "neg": "Homo sapiens continues to evolve and adapt, indicating its evolutionary development is ongoing.",
+            "debate": 0.0,
+            "turns": []
+        },
+        {
+            "pos": "The Electoral College should be abolished as the method for electing the president of the United States.",
+            "neg": "The Electoral College should be maintained as the method for electing the president of the United States.",
+            "debate": 0.375,
+            "turns": []
+        },
+        {
+            "pos": "The efforts to change voting laws by political parties can be seen as an attempt at voter suppression.",
+            "neg": "Changing voting laws is an effort to ensure election integrity and prevent fraud, rather than voter suppression.",
+            "debate": 0.25,
+            "turns": []
+        },
+        {
+            "pos": "A third party candidate cannot realistically win the U.S. Presidency and must align with either the Republican or Democratic Party to have any viable chance.",
+            "neg": "Third party candidates can challenge the status quo and win the U.S. Presidency by appealing to a broad coalition of voters dissatisfied with the two major parties.",
+            "debate": 0.25,
+            "turns": []
+        },
+        {
+            "pos": "Only registered members of a political party should be allowed to seek and obtain that party's nomination for elected office.",
+            "neg": "Non-members should be allowed to seek and obtain a political party's nomination for elected office, as it encourages diverse candidate selection.",
+            "debate": 0.125,
+            "turns": []
+        },
+        {
+            "pos": "The classification of humans into distinct races remains meaningful for social, historical, and cultural reasons, despite genetic similarities within populations.",
+            "neg": "The classification of humans into distinct races is scientifically meaningless due to greater genetic variation within human populations than between them.",
+            "debate": 0.125,
+            "turns": []
+        },
+        {
+            "pos": "English should be adopted as the international auxiliary language to facilitate global communication.",
+            "neg": "Promoting linguistic diversity is preferable to adopting English as the sole international auxiliary language.",
+            "debate": 0.25,
+            "turns": []
+        },
+        {
+            "pos": "In the context of political experience and policy expertise, one candidate is often viewed as more qualified, but electoral dynamics suggest another may win the presidency.",
+            "neg": "Despite one candidate's perceived qualifications, the other candidate's electoral appeal and campaign strategies may lead them to victory in the presidential race.",
+            "debate": 0.5,
+            "turns": []
+        },
+        {
+            "pos": "Human labor will become obsolete due to advancements in automation and technology.",
+            "neg": "Human labor will remain essential despite advancements in automation and technology.",
+            "debate": 0.0,
+            "turns": []
+        },
+        {
+            "pos": "Women should not have combat roles in the military.",
+            "neg": "Women should be allowed to have combat roles in the military.",
+            "debate": 0.0,
+            "turns": []
+        },
+        {
+            "pos": "You should be allowed to waive your parental rights and responsibilities before the birth of a child.",
+            "neg": "People should not be allowed to waive their parental rights and responsibilities before the birth of a child, as it could negatively impact the child's future.",
+            "debate": 0.5,
+            "turns": []
+        },
+        {
+            "pos": "Elders deserve respect based on their age and life experience.",
+            "neg": "Elders should not automatically receive respect based on age alone.",
+            "debate": 0.125,
+            "turns": []
+        },
+        {
+            "pos": "For safety reasons, motorists should not be allowed to use handsfree MP3 players that are phones, even if in-car stereos are permitted.",
+            "neg": "Motorists should be allowed to use handsfree MP3 players, even if they are phones, just like in-car stereos are permitted.",
+            "debate": 0.5,
+            "turns": []
+        },
+        {
+            "pos": "Popsicles should be eaten by licking them slowly to savor the flavor and prevent brain freeze.",
+            "neg": "Popsicles should be eaten by taking small bites and allowing them to melt in your mouth for optimal flavor.",
+            "debate": 0.25,
+            "turns": []
+        },
+        {
+            "pos": "Political correctness negatively impacts open discussion and freedom of expression.",
+            "neg": "Political correctness positively contributes to creating a more inclusive and respectful society.",
+            "debate": 0.125,
+            "turns": []
+        },
+        {
+            "pos": "Participation trophies should be awarded to children as an essential part of preparing them for participation in a democratic society.",
+            "neg": "Participation trophies undermine the value of competition and do not effectively prepare children for the realities of a democratic society.",
+            "debate": 0.25,
+            "turns": []
+        },
+        {
+            "pos": "Developed countries do not have a responsibility to ensure the safety of legitimate refugees in regions outside their own borders; rather, local governments should address refugee issues within their jurisdictions.",
+            "neg": "Developed countries have a responsibility to ensure that legitimate refugees can find safety without needing to reach specific countries such as Germany or Scandinavia.",
+            "debate": 0.25,
+            "turns": []
+        },
+        {
+            "pos": "Philosophy and the scientific method are interconnected disciplines that both seek to understand truths about the world, rather than being completely distinct from each other.",
+            "neg": "Philosophy is distinct from the scientific method because it primarily utilizes critical reasoning and thought experiments, whereas the scientific method relies on empirical observation and experimentation.",
+            "debate": 0.25,
+            "turns": []
+        },
+        {
+            "pos": "Spotify's features and user experience lag behind other music streaming services, and it should be replaced by Google Music.",
+            "neg": "Spotify offers unique features and a user-friendly experience that make it a better choice than Google Music.",
+            "debate": 0.125,
+            "turns": []
+        },
+        {
+            "pos": "People should focus on building self-esteem to improve personal and social relationships.",
+            "neg": "Focusing on building self-esteem is overrated, and people should instead focus on developing empathy to improve personal and social relationships.",
+            "debate": 0.5,
+            "turns": []
+        },
+        {
+            "pos": "Populist movements on the left and right gain popularity due to their distinct and separate appeals to their respective bases.",
+            "neg": "Populist movements on both the left and right gain popularity due to widespread dissatisfaction with the political establishment.",
+            "debate": 0.25,
+            "turns": []
+        },
+        {
+            "pos": "Saving the best part of a meal for last is not the most enjoyable way to eat.",
+            "neg": "Saving the best part of a meal for last enhances the dining experience.",
+            "debate": 0.375,
+            "turns": []
+        },
+        {
+            "pos": "Southern culture is merely a euphemism for a legacy of historical oppression rather than a distinct cultural identity.",
+            "neg": "Southern culture is a genuine and distinct cultural identity that encompasses positive traditions and practices beyond historical oppression.",
+            "debate": 0.25,
+            "turns": []
+        },
+        {
+            "pos": "Long debate posts are ineffective at changing people's views.",
+            "neg": "Long debate posts are effective at changing people's views.",
+            "debate": 0.5,
+            "turns": []
+        },
+        {
+            "pos": "Life is inherently uninteresting.",
+            "neg": "Life is inherently interesting.",
+            "debate": 0.5,
+            "turns": []
+        },
+        {
+            "pos": "Choosing partners based on race or gender preferences in dating is a personal choice and not inherently discriminatory.",
+            "neg": "Choosing not to date individuals of a particular race is as discriminatory as choosing not to date a particular gender.",
+            "debate": 0.5,
+            "turns": []
+        },
+        {
+            "pos": "The concept of race, while historically used as a tool for racism, serves as a significant aspect of cultural identity and should be redefined rather than completely rejected.",
+            "neg": "The concept of race is a social construct with historical ties to racism, and dismantling white supremacy requires re-evaluating or rejecting the notion of race.",
+            "debate": 0.25,
+            "turns": []
+        },
+        {
+            "pos": "Making something illegal should not be based solely on religious beliefs since laws need to be justified by secular rationale accessible to all citizens.",
+            "neg": "Religious beliefs can provide a valid moral framework for laws, as they have historically shaped societal norms and values.",
+            "debate": 0.25,
+            "turns": []
+        },
+        {
+            "pos": "Referring to oneself as an \"Academic [Expert]\" in online debates is a fallacious appeal to authority.",
+            "neg": "Identifying oneself as an \"Academic [Expert]\" in online discussions is a valid way to provide context for one's expertise and enhance the argument's credibility.",
+            "debate": 0.25,
+            "turns": []
+        },
+        {
+            "pos": "Social justice advocacy by many individuals can often be self-serving and lack genuine commitment.",
+            "neg": "Many individuals engage in social justice advocacy with sincere intentions and a genuine desire to create positive change.",
+            "debate": 0.125,
+            "turns": []
+        },
+        {
+            "pos": "Requiring photo identification to vote is a necessary measure to ensure the integrity of elections.",
+            "neg": "Mandating photo identification for voting creates unnecessary barriers and disenfranchises eligible voters.",
+            "debate": 0.125,
+            "turns": []
+        },
+        {
+            "pos": "The perpetual engagement in military conflicts is necessary to maintain America's global influence and security, without compromising its Republic status.",
+            "neg": "America\u2019s ongoing quasi-permanent state of war threatens to undermine its identity as a true Republic.",
+            "debate": 0.25,
+            "turns": []
+        },
+        {
+            "pos": "Encouraging someone to \"be yourself\" is an ineffective piece of advice because it lacks actionable guidance and may not be applicable in all situations.",
+            "neg": "\"Be yourself\" is a valuable piece of advice as it encourages authenticity and self-acceptance in social interactions and personal growth.",
+            "debate": 0.25,
+            "turns": []
+        },
+        {
+            "pos": "Rap music does not require real talent for success.",
+            "neg": "Rap music requires substantial talent and skill for success.",
+            "debate": 0.0,
+            "turns": []
+        },
+        {
+            "pos": "As individuals age, becoming more pragmatic or opportunistic about political affiliations and values is beneficial.",
+            "neg": "Maintaining consistent political beliefs and values over time is important, regardless of age or changing circumstances.",
+            "debate": 0.25,
+            "turns": []
+        },
+        {
+            "pos": "Using podium girls in sports events is not a problem for maintaining the integrity of the sport.",
+            "neg": "The use of podium girls in sports events is an outdated practice that undermines the integrity of the sport.",
+            "debate": 0.125,
+            "turns": []
+        },
+        {
+            "pos": "Convicted felons in the U.S. should permanently lose their voting rights, even after serving their sentence.",
+            "neg": "Convicted felons in the U.S. should retain the right to vote after serving their sentence.",
+            "debate": 0.0,
+            "turns": []
+        },
+        {
+            "pos": "The likelihood of a Conservative candidate becoming President of the United States in the future is diminishing due to shifting demographics and political landscapes.",
+            "neg": "The chances of a Conservative candidate winning the US presidency remain strong due to evolving strategies and resilient voter bases.",
+            "debate": 0.25,
+            "turns": []
+        },
+        {
+            "pos": "Developing self-driving and eco-friendly cars should be prioritized over improving and expanding public transportation.",
+            "neg": "Resources should be directed towards improving and expanding public transportation rather than developing self-driving and eco-friendly cars.",
+            "debate": 0.25,
+            "turns": []
+        },
+        {
+            "pos": "Progressive candidates like Sanders should be avoided in the presidential nomination process because they are unlikely to win a general election.",
+            "neg": "Candidates with strong progressive platforms increase voter turnout and can effectively win general elections, thus should be prioritized for nominations.",
+            "debate": 0.25,
+            "turns": []
+        },
+        {
+            "pos": "The use of 'they,' 'them,' and 'their' as gender-neutral pronouns is the most effective solution for inclusive language.",
+            "neg": "Alternative gender-neutral pronouns, such as 'ze,' 'hir,' and 'xe,' offer a more precise solution for inclusive language than 'they,' 'them,' and 'their.'.",
+            "debate": 0.5,
+            "turns": []
+        },
+        {
+            "pos": "Making Voting Day a public holiday is unnecessary and could disrupt essential services, as early voting and mail-in voting already provide sufficient opportunities for participation.",
+            "neg": "Designating Voting Day as a public holiday would improve voter turnout by making it easier for more people to participate in elections.",
+            "debate": 0.25,
+            "turns": []
+        },
+        {
+            "pos": "Young professionals with college degrees in low-paying jobs may find more effective economic support through alternative political strategies or candidates, rather than Bernie Sanders' policies.",
+            "neg": "Support for Bernie Sanders' policies is a logical choice for young professionals with college degrees in low-paying jobs.",
+            "debate": 0.5,
+            "turns": []
+        },
+        {
+            "pos": "Young Earth Creationism is a scientifically valid perspective.",
+            "neg": "Young Earth Creationism is not a scientifically valid perspective.",
+            "debate": 0.0,
+            "turns": []
+        },
+        {
+            "pos": "Faith-based organizations should have the right to adhere to their own beliefs, even if it results in discriminating against those with differing beliefs.",
+            "neg": "Faith-based organizations should not be permitted to discriminate against individuals based on their beliefs.",
+            "debate": 0.25,
+            "turns": []
+        },
+        {
+            "pos": "Automatic toll systems should be able to issue fines for speeding, just as red-light cameras can issue tickets for traffic signal violations.",
+            "neg": "Automatic toll systems should not be empowered to issue fines for speeding, as this could lead to concerns about privacy and the accuracy of such systems.",
+            "debate": 0.125,
+            "turns": []
+        },
+        {
+            "pos": "Mandatory voter registration is detrimental to the democratic process.",
+            "neg": "Mandatory voter registration is beneficial to the democratic process.",
+            "debate": 0.375,
+            "turns": []
+        },
+        {
+            "pos": "Self-harming behaviors can be a valid coping mechanism for emotional distress and should not be universally condemned.",
+            "neg": "Self-harming behaviors are harmful and should not be considered a valid coping mechanism for emotional distress.",
+            "debate": 0.125,
+            "turns": []
+        },
+        {
+            "pos": "Staffordshire Terriers have characteristics that justify their reputation for aggression.",
+            "neg": "Staffordshire Terriers are often misunderstood due to their association with aggressive behavior.",
+            "debate": 0.125,
+            "turns": []
+        },
+        {
+            "pos": "The area encompassing the National Mall, Capitol, and some embassies should remain a Federal District, while the rest of Washington D.C. should become its own state.",
+            "neg": "Washington D.C. should remain a unified federal district without creating a new state, in order to maintain its unique status and function as the nation's capital.",
+            "debate": 0.125,
+            "turns": []
+        },
+        {
+            "pos": "Government tracking and personal data collection should be expanded to enhance national security and public safety.",
+            "neg": "Government tracking and personal data collection violate individual privacy rights and should be limited to maintain personal freedom.",
+            "debate": 0.0,
+            "turns": []
+        },
+        {
+            "pos": "Bringing children to religious services is a form of indoctrination and they should not attend until they can independently decide on their beliefs.",
+            "neg": "The idea that bringing children to religious services is indoctrination is false; it is part of cultural and moral education.",
+            "debate": 0.5,
+            "turns": []
+        },
+        {
+            "pos": "Reckless behavior of flatmates should be handled through conflict resolution and mediation rather than eviction.",
+            "neg": "People should have the right to evict flatmates who consistently engage in reckless behavior and disrupt the living environment.",
+            "debate": 0.125,
+            "turns": []
+        },
+        {
+            "pos": "Attractive women experience societal benefits that can lead to easier lives compared to those who are less conventionally attractive.",
+            "neg": "Physical attractiveness doesn't significantly determine the ease of one's life, as other factors such as intelligence, personality, and socioeconomic background play more crucial roles.",
+            "debate": 0.25,
+            "turns": []
+        },
+        {
+            "pos": "Mastery of course material can be achieved without prior learning, as engagement during active class participation is sufficient for student success.",
+            "neg": "Learning course material in advance significantly enhances a student's chances of succeeding.",
+            "debate": 0.25,
+            "turns": []
+        },
+        {
+            "pos": "Property taxes should be based solely on the market value of the property, ignoring the homeowner's income and other financial circumstances.",
+            "neg": "Property taxes should consider both the market value of the property and the homeowner's financial circumstances to ensure fairness and equity.",
+            "debate": 0.125,
+            "turns": []
+        },
+        {
+            "pos": "The personal appreciation of an artist's work should remain separate from the artist's personal controversies or criminal actions.",
+            "neg": "Audiences should reevaluate their support for an artist's work in light of their personal controversies or criminal actions.",
+            "debate": 0.125,
+            "turns": []
+        },
+        {
+            "pos": "Discussing race and implementing racial preference programs exacerbate existing issues and create division rather than unity.",
+            "neg": "The acknowledgment of race and the implementation of racial preference programs are necessary to address systemic inequalities and promote social justice.",
+            "debate": 0.25,
+            "turns": []
+        },
+        {
+            "pos": "McDonald's Liebeck lawsuit was frivolous and overblown.",
+            "neg": "The Liebeck lawsuit against McDonald's was justified and not frivolous.",
+            "debate": 0.375,
+            "turns": []
+        },
+        {
+            "pos": "Statistics should remain an elective in high school, allowing students to focus on traditional mathematics courses without additional mandatory subjects.",
+            "neg": "Including statistics as a mandatory subject in high school curriculum enhances students' critical thinking and data literacy without removing existing standard mathematics courses.",
+            "debate": 0.125,
+            "turns": []
+        },
+        {
+            "pos": "Online marketplaces with a centralized retail model are superior to those with diverse seller options.",
+            "neg": "Online marketplaces with diverse seller options are superior to those with a centralized retail model.",
+            "debate": 0.125,
+            "turns": []
+        },
+        {
+            "pos": "Vision insurance plans should not cover laser eye surgery procedures, as they are typically elective cosmetic procedures.",
+            "neg": "Vision insurance plans should include coverage for laser eye surgery procedures.",
+            "debate": 0.5,
+            "turns": []
+        },
+        {
+            "pos": "The BDS movement inherently promotes anti-Semitic behavior.",
+            "neg": "The BDS movement is a legitimate form of protest and does not inherently promote anti-Semitic behavior.",
+            "debate": 0.5,
+            "turns": []
+        },
+        {
+            "pos": "The default provision of water at restaurants is wasteful and should be discontinued to conserve resources.",
+            "neg": "Providing water by default at restaurants is essential for customer service and should not be discontinued, as it promotes hydration and hospitality.",
+            "debate": 0.125,
+            "turns": []
+        },
+        {
+            "pos": "People have differing views on whether having children leads to greater happiness, with some arguing that childfree lifestyles can offer more personal joy and freedom.",
+            "neg": "While some enjoy the freedoms of a childfree lifestyle, others believe that having children brings unparalleled happiness and fulfillment to one's life.",
+            "debate": 0.5,
+            "turns": []
+        },
+        {
+            "pos": "Building a PC is not worth the effort compared to buying a pre-built system.",
+            "neg": "Building a PC yourself is more rewarding and cost-effective than purchasing a pre-built system.",
+            "debate": 0.375,
+            "turns": []
+        },
+        {
+            "pos": "Pedophiles should be entitled to the same legal rights and protections as individuals who identify as homosexual.",
+            "neg": "Pedophiles should not be granted the same legal rights and protections as individuals who identify as homosexual.",
+            "debate": 0.0,
+            "turns": []
+        },
+        {
+            "pos": "Homosexuality and autism can be described as deviations from a 'normal' state.",
+            "neg": "Homosexuality and autism should not be considered as deviations from a 'normal' state.",
+            "debate": 0.0,
+            "turns": []
+        },
+        {
+            "pos": "Dr. Seuss's works should be included in high school curricula before traditional classics like Steinbeck, Dickens, and Shakespeare.",
+            "neg": "Traditional literary classics like Steinbeck, Dickens, and Shakespeare should be prioritized over Dr. Seuss in high school curricula.",
+            "debate": 0.125,
+            "turns": []
+        },
+        {
+            "pos": "Spending more time socializing online is more beneficial than prioritizing in-person interactions.",
+            "neg": "Prioritizing in-person interactions is more beneficial than spending more time socializing online.",
+            "debate": 0.125,
+            "turns": []
+        },
+        {
+            "pos": "Imposing wage caps on executives would lead to more jobs, higher wages, and increased tax revenue while reducing the political influence of the super wealthy.",
+            "neg": "Executive wage caps would harm economic growth by discouraging top talent, reducing competitiveness, and negatively impacting tax revenue.",
+            "debate": 0.25,
+            "turns": []
+        },
+        {
+            "pos": "Society should consider it abnormal for adults to be attracted to individuals in their late teens.",
+            "neg": "Society should accept that adults being attracted to individuals in their late teens is normal.",
+            "debate": 0.375,
+            "turns": []
+        },
+        {
+            "pos": "Exiling individuals is a preferable alternative to incarceration.",
+            "neg": "Incarceration is a more effective and preferable method than exile for dealing with criminal behavior.",
+            "debate": 0.0,
+            "turns": []
+        },
+        {
+            "pos": "Federal government actions often exceed constitutional boundaries defined by the 10th Amendment.",
+            "neg": "The federal government's expanding role is necessary and justified to address national issues effectively.",
+            "debate": 0.125,
+            "turns": []
+        },
+        {
+            "pos": "Establishing a Palestinian state in the Sinai Peninsula of Egypt would help resolve the Israeli-Palestinian conflict.",
+            "neg": "Establishing a Palestinian state in the Sinai Peninsula of Egypt is not a viable solution to the Israeli-Palestinian conflict.",
+            "debate": 0.0,
+            "turns": []
+        },
+        {
+            "pos": "Internet humor forums are failing to deliver genuinely funny content.",
+            "neg": "Internet humor forums still provide genuinely funny content to their audiences.",
+            "debate": 0.5,
+            "turns": []
+        },
+        {
+            "pos": "Social media platforms like Reddit can effectively foster open-minded discussions.",
+            "neg": "Social media platforms like Reddit often reinforce echo chambers rather than fostering open-minded discussions.",
+            "debate": 0.125,
+            "turns": []
+        },
+        {
+            "pos": "It is acceptable to raise your voice during arguments as long as children are not present.",
+            "neg": "Raising your voice during arguments is not acceptable regardless of the presence of children.",
+            "debate": 0.0,
+            "turns": []
+        },
+        {
+            "pos": "The criticism of so-called \"nice guys\" on social media platforms is often unjustified.",
+            "neg": "The criticism of \"nice guys\" on social media platforms is often valid and highlights problematic behavior.",
+            "debate": 0.25,
+            "turns": []
+        },
+        {
+            "pos": "Trigger warnings are unnecessary and can limit free expression and discussion.",
+            "neg": "Trigger warnings are necessary to protect individuals from emotional distress.",
+            "debate": 0.0,
+            "turns": []
+        },
+        {
+            "pos": "Oliver Cromwell's legacy as a \"Great Briton\" should be reconsidered due to his controversial and divisive actions during his lifetime.",
+            "neg": "Oliver Cromwell should be considered a \"Great Briton\" for his significant contributions to the development of modern British political and military institutions.",
+            "debate": 0.5,
+            "turns": []
+        },
+        {
+            "pos": "The introduction of pro-life laws should not be contingent on government-provided access to birth and contraceptive services.",
+            "neg": "Legalizing pro-life policies should require that the government first ensures access to affordable birth and contraceptive services.",
+            "debate": 0.0,
+            "turns": []
+        },
+        {
+            "pos": "The narrative quality of The Witcher video games series is subpar.",
+            "neg": "The narrative quality of The Witcher video games series is exemplary.",
+            "debate": 0.5,
+            "turns": []
+        },
+        {
+            "pos": "Having children is an inherently selfish act due to the environmental and societal burdens they introduce.",
+            "neg": "Having children is a selfless act that contributes to the continuation and development of society.",
+            "debate": 0.25,
+            "turns": []
+        },
+        {
+            "pos": "Earned Income Tax Credits are a more effective solution for addressing income inequality and poverty than raising the minimum wage.",
+            "neg": "Raising the minimum wage is a more direct and beneficial approach to alleviating poverty and income inequality than relying on Earned Income Tax Credits.",
+            "debate": 0.5,
+            "turns": []
+        },
+        {
+            "pos": "Using racially charged language, such as the term \"nigga,\" by individuals outside of the Black community is inappropriate, regardless of intent.",
+            "neg": "Some argue that the term \"nigga,\" due to its evolution in certain contexts, can be used by individuals outside the Black community in casual and non-offensive ways.",
+            "debate": 0.5,
+            "turns": []
+        },
+        {
+            "pos": "Transgender individuals should be recognized based on their sex assigned at birth rather than their identified gender.",
+            "neg": "Transgender individuals should be recognized as the gender they identify with, rather than their sex assigned at birth.",
+            "debate": 0.5,
+            "turns": []
+        },
+        {
+            "pos": "Major 3D animation companies like Pixar and Disney should produce more films with adult themes, similar to anime.",
+            "neg": "Major 3D animation companies like Pixar and Disney should continue focusing primarily on family-friendly films, as they best suit their brand and audience.",
+            "debate": 0.25,
+            "turns": []
+        },
+        {
+            "pos": "Most abortions are performed primarily for reasons of convenience or to conceal a pregnancy.",
+            "neg": "Abortions are primarily performed for reasons such as personal health, severe fetal abnormalities, or socio-economic factors rather than convenience or concealment.",
+            "debate": 0.0,
+            "turns": []
+        },
+        {
+            "pos": "Transgender women should be restricted from competing in women's sports due to fairness concerns.",
+            "neg": "Transgender women should be permitted to compete in women's sports as a matter of inclusivity and equality.",
+            "debate": 0.25,
+            "turns": []
+        },
+        {
+            "pos": "Live performances of house music lack the engagement and dynamism found in other genres.",
+            "neg": "Live performances of house music are captivating and offer a unique energy that resonates with audiences.",
+            "debate": 0.5,
+            "turns": []
+        },
+        {
+            "pos": "Human compassion and kindness are primarily motivated by the expectation of reciprocity.",
+            "neg": "Human compassion and kindness are driven by genuine empathy and altruism, not the expectation of reciprocity.",
+            "debate": 0.0,
+            "turns": []
+        },
+        {
+            "pos": "Social media platforms should regularly accept applications for new moderators to ensure diverse representation and perspectives.",
+            "neg": "Social media platforms should carefully curate and select moderators internally to maintain a consistent and coherent management style.",
+            "debate": 0.25,
+            "turns": []
+        },
+        {
+            "pos": "Mocking someone's dietary choices, like eating gluten-free, isn't as culturally or socially damaging as belittling someone's religious beliefs.",
+            "neg": "Ridiculing someone for choosing a gluten-free diet is as inappropriate as mocking someone for their religious beliefs.",
+            "debate": 0.5,
+            "turns": []
+        },
+        {
+            "pos": "People should not own dogs as pets due to ethical and environmental concerns.",
+            "neg": "Owning dogs as pets is beneficial for individuals and society, providing companionship and supporting mental health.",
+            "debate": 0.125,
+            "turns": []
+        },
+        {
+            "pos": "The Golden Rule and its derivatives should be considered the core of morality.",
+            "neg": "Morality cannot be solely based on the Golden Rule and its derivatives, as it requires principles beyond reciprocity.",
+            "debate": 0.125,
+            "turns": []
+        },
+        {
+            "pos": "Individuals should be allowed to sell their blood for profit.",
+            "neg": "Individuals should not be allowed to sell their blood for profit due to ethical and health concerns.",
+            "debate": 0.0,
+            "turns": []
+        },
+        {
+            "pos": "\"Placing 'TL;DR' summaries at the top of texts is more useful than placing them at the bottom.\".",
+            "neg": "\"Placing 'TL;DR' summaries at the bottom of texts is just as useful as placing them at the top.\".",
+            "debate": 0.5,
+            "turns": []
+        },
+        {
+            "pos": "Society should not have sympathy for individuals who become victims of the heroin and meth epidemics due to personal choices.",
+            "neg": "Society should have compassion for individuals affected by the heroin and meth epidemics and focus on rehabilitation and support.",
+            "debate": 0.0,
+            "turns": []
+        },
+        {
+            "pos": "Protectionist housing policies aimed at preventing displacement due to gentrification ultimately do more harm than good.",
+            "neg": "Protectionist housing measures are necessary to protect residents from being displaced by the negative impacts of gentrification.",
+            "debate": 0.25,
+            "turns": []
+        },
+        {
+            "pos": "Washington DC should remain a federal district and not be granted statehood.",
+            "neg": "Washington DC should be granted statehood to provide its residents with full representation in Congress.",
+            "debate": 0.25,
+            "turns": []
+        },
+        {
+            "pos": "Public funds should be used exclusively to finance the campaigns of candidates running for public office to ensure a level playing field and reduce undue influence from private donors.",
+            "neg": "Public funds should not be used exclusively for campaign financing, as private donations are essential in encouraging diverse candidate participation and in reflecting genuine public support.",
+            "debate": 0.25,
+            "turns": []
+        },
+        {
+            "pos": "Subreddits like /r/hiphopheads should enforce bans on discussions about artists like Lil Dicky to maintain the community's intended focus.",
+            "neg": "Subreddits like /r/hiphopheads should allow open discussions and posts about controversial artists like Lil Dicky.",
+            "debate": 0.25,
+            "turns": []
+        },
+        {
+            "pos": "Choosing to have children is ethically unjustifiable due to its impact on the environment and potential future suffering.",
+            "neg": "Deciding to have children can be ethically justified as it contributes to societal continuity and personal fulfillment.",
+            "debate": 0.25,
+            "turns": []
+        },
+        {
+            "pos": "The systematic dismantling of protections against money in politics has significantly increased the influence of social media platforms in political campaigns and discourse over the past decade.",
+            "neg": "The influence of social media platforms in political campaigns and discourse over the past decade is driven by technological advancements and user behavior, not directly by the dismantling of protections against money in politics.",
+            "debate": 0.5,
+            "turns": []
+        },
+        {
+            "pos": "Countries should introduce a 'no confidence' option in elections to increase voter turnout and better gauge public sentiment towards political parties.",
+            "neg": "Introducing a 'no confidence' option in elections could lead to political instability without addressing the underlying issues that cause voter disillusionment.",
+            "debate": 0.25,
+            "turns": []
+        },
+        {
+            "pos": "Productivity is overvalued and prioritizing it above all else can be detrimental to well-being and creativity.",
+            "neg": "Emphasizing productivity leads to greater efficiency, economic growth, and personal achievement, which benefits both individuals and society.",
+            "debate": 0.25,
+            "turns": []
+        },
+        {
+            "pos": "College is not essential for achieving success in one's career.",
+            "neg": "College education is crucial for achieving success in one's career.",
+            "debate": 0.5,
+            "turns": []
+        },
+        {
+            "pos": "Social media platforms are responsible for the spread of misinformation.",
+            "neg": "Individuals are responsible for the spread of misinformation on social media platforms.",
+            "debate": 0.125,
+            "turns": []
+        },
+        {
+            "pos": "Social media platforms should not ban controversial communities because doing so denies society the opportunity to understand different perspectives.",
+            "neg": "Social media platforms should ban controversial communities to prevent the spread of harmful and hateful content.",
+            "debate": 0.25,
+            "turns": []
+        },
+        {
+            "pos": "Future generations will perceive the early 21st century as a dark period in world history due to the policies and global events during that time.",
+            "neg": "Future generations will perceive the early 21st century as a transformative period in world history, marked by significant advancements and progress.",
+            "debate": 0.25,
+            "turns": []
+        },
+        {
+            "pos": "Arguing that abortions should be illegal because the fetus is a person is comparable to compelling someone to undergo a liver transplant to save another individual's life.",
+            "neg": "Banning abortions on the grounds that the fetus is a person prioritizes the right to life of the unborn over other considerations, unlike organ donation which involves a distinct ethical scenario.",
+            "debate": 0.25,
+            "turns": []
+        },
+        {
+            "pos": "The United States should replace its current governmental structure with a parliamentary system.",
+            "neg": "The United States should maintain its current presidential system rather than adopting a parliamentary system.",
+            "debate": 0.0,
+            "turns": []
+        },
+        {
+            "pos": "The widespread outrage over the killing of Cecil the lion was emotional and hypocritical.",
+            "neg": "Public uproar over the Cecil lion incident was a justified response to unethical trophy hunting practices.",
+            "debate": 0.25,
+            "turns": []
+        },
+        {
+            "pos": "The character of Grandpa Joe in Willy Wonka & the Chocolate Factory exemplifies selfish and narcissistic traits.",
+            "neg": "Grandpa Joe's actions in Willy Wonka & the Chocolate Factory demonstrate kindness and selflessness.",
+            "debate": 0.125,
+            "turns": []
+        },
+        {
+            "pos": "The practice of capturing and using Pok\u00e9mon for battles is unethical as it exploits sentient creatures for personal gain and glory.",
+            "neg": "Capturing and battling Pok\u00e9mon is ethically permissible as it fosters a symbiotic relationship between trainers and Pok\u00e9mon, promoting growth and mutual benefit.",
+            "debate": 0.25,
+            "turns": []
+        },
+        {
+            "pos": "Atheism and agnosticism should be considered fundamentally distinct positions regarding belief in deities.",
+            "neg": "A distinction between atheism and agnosticism is unnecessary, as both ultimately describe a lack of theistic belief.",
+            "debate": 0.5,
+            "turns": []
+        },
+        {
+            "pos": "Christian conservatives consistently apply biblical principles to law and politics in their opposition to gay marriage.",
+            "neg": "Christian conservatives who oppose gay marriage are inconsistent in their application of biblical principles to law and politics.",
+            "debate": 0.25,
+            "turns": []
+        },
+        {
+            "pos": "Video games that are designed to be addictive through financial investment exploit players and are morally unjustifiable.",
+            "neg": "Video games utilizing financial investment to enhance player engagement are a legitimate business strategy and not inherently immoral.",
+            "debate": 0.25,
+            "turns": []
+        },
+        {
+            "pos": "Marijuana should be legalized for both recreational and medical use across all jurisdictions.",
+            "neg": "Marijuana should remain illegal for recreational use, but medicinal use should be allowed under strict regulation.",
+            "debate": 0.125,
+            "turns": []
+        },
+        {
+            "pos": "Participating in elections by voting is a civic duty that strengthens democracy and should be exercised by all eligible citizens.",
+            "neg": "Individuals have valid reasons for choosing not to participate in elections by voting.",
+            "debate": 0.125,
+            "turns": []
+        },
+        {
+            "pos": "Female virginity should be considered an important cultural value in modern society.",
+            "neg": "Female virginity should not be emphasized as an important cultural value in modern society.",
+            "debate": 0.0,
+            "turns": []
+        },
+        {
+            "pos": "Complete bodily autonomy should be legally upheld in all aspects of health care.",
+            "neg": "The right to bodily autonomy should be limited by societal and ethical considerations.",
+            "debate": 0.125,
+            "turns": []
+        },
+        {
+            "pos": "Supporting the Black Lives Matter movement is unjustified due to their occasional negligence of factual accuracy.",
+            "neg": "Despite occasional factual inaccuracies, the Black Lives Matter movement deserves support for its overall contributions to social justice.",
+            "debate": 0.25,
+            "turns": []
+        },
+        {
+            "pos": "Convicted sexual predators who target minors should receive life imprisonment without parole, bypassing any efforts for rehabilitation.",
+            "neg": "Rehabilitation programs should be considered for convicted sexual predators who target minors, with the potential for their reintegration into society under strict supervision.",
+            "debate": 0.25,
+            "turns": []
+        },
+        {
+            "pos": "Homophobia is primarily a result of misinformation and societal influence, and people can genuinely change when they learn and grow.",
+            "neg": "Homophobia is a symptom of deeply entrenched personal biases, which may persist even after someone claims to have changed.",
+            "debate": 0.25,
+            "turns": []
+        },
+        {
+            "pos": "Countries should adopt open borders to promote global economic growth and cultural exchange.",
+            "neg": "Countries should maintain controlled borders to ensure national security and protect local economies.",
+            "debate": 0.25,
+            "turns": []
+        },
+        {
+            "pos": "Sports stadiums are a net negative for local communities and municipalities as they divert resources away from public works, transportation, and education.",
+            "neg": "Sports stadiums benefit local communities and municipalities by boosting the local economy and providing entertainment and communal gathering spaces.",
+            "debate": 0.25,
+            "turns": []
+        },
+        {
+            "pos": "The Consumer Product Safety Commission's ban on magnets is unjustified and lacks a rational basis.",
+            "neg": "The Consumer Product Safety Commission's ban on magnets is necessary to protect consumer safety and is rationally justified.",
+            "debate": 0.0,
+            "turns": []
+        },
+        {
+            "pos": "Understanding and empathy are essential for fair critique, and without the experience of being a minority, such critiques can be inherently flawed.",
+            "neg": "It is possible to critically assess the actions of individuals from dominant racial groups without them fully understanding minority experiences.",
+            "debate": 0.5,
+            "turns": []
+        },
+        {
+            "pos": "Requiring police officers to wear body cameras compromises their ability to perform duties effectively.",
+            "neg": "Equipping police officers with body cameras enhances transparency and accountability in law enforcement.",
+            "debate": 0.0,
+            "turns": []
+        },
+        {
+            "pos": "State and parents should financially support children beyond the age of 18, potentially providing support indefinitely as needed.",
+            "neg": "State and parental financial support should generally conclude around the age of 18, as it encourages personal responsibility and independence in young adults.",
+            "debate": 0.25,
+            "turns": []
+        },
+        {
+            "pos": "All-party consent laws for phone recording should be abolished in all U.S. states in favor of one-party consent laws to promote personal freedom and convenience.",
+            "neg": "One-party consent laws for phone recording should not be legislated in all U.S. states as they raise significant privacy concerns and can lead to abuse.",
+            "debate": 0.125,
+            "turns": []
+        },
+        {
+            "pos": "The actions of Palestinian groups since 1948, including acts of terrorism motivated by antisemitism, have caused them to lose the moral high ground in their quest for statehood.",
+            "neg": "The ongoing occupation and settlement expansion by Israel since 1948 have denied Palestinians their right to statehood and contributed to the perpetuation of the conflict.",
+            "debate": 0.0,
+            "turns": []
+        },
+        {
+            "pos": "Illegal immigrants should be deported instead of being granted amnesty in most cases.",
+            "neg": "Illegal immigrants should be granted amnesty rather than facing deportation in most cases.",
+            "debate": 0.5,
+            "turns": []
+        },
+        {
+            "pos": "It is irrelevant who is elected as the next President because systemic limitations prevent significant change.",
+            "neg": "Electing the right President is crucial as their leadership can drive substantial policy changes and influence the direction of the country.",
+            "debate": 0.25,
+            "turns": []
+        },
+        {
+            "pos": "Eating meat is ethically equivalent to committing murder and is therefore morally indefensible.",
+            "neg": "Eating meat is a natural part of the food chain and is not morally equivalent to murder.",
+            "debate": 0.0,
+            "turns": []
+        },
+        {
+            "pos": "Gender identity is inherently binary and should be recognized as only male or female.",
+            "neg": "Gender identity should be recognized as a spectrum rather than limited to traditional binary classifications.",
+            "debate": 0.0,
+            "turns": []
+        },
+        {
+            "pos": "Prostitution should be legalized to protect sex workers' rights and reduce crime.",
+            "neg": "Prostitution should remain illegal to prevent the exploitation and abuse inherent in the industry.",
+            "debate": 0.0,
+            "turns": []
+        },
+        {
+            "pos": "Discrimination will only begin to fade when society stops reinforcing the \"Us vs Them\" mentality and embraces the idea of unity and collective identity.",
+            "neg": "Addressing and acknowledging instances of racism, sexism, and discrimination is a necessary step towards eliminating them, rather than just promoting unity without accountability.",
+            "debate": 0.125,
+            "turns": []
+        },
+        {
+            "pos": "Reddit is in decline due to changing user engagement and content moderation policies.",
+            "neg": "Reddit is evolving and adapting to changing user needs, which is sustaining its growth and relevance.",
+            "debate": 0.125,
+            "turns": []
+        },
+        {
+            "pos": "Homeschooling provides better socialization opportunities than public schooling, as interactions in public schools often have negative impacts on students.",
+            "neg": "Public schools offer essential socialization experiences that are crucial for developing real-world communication and teamwork skills, which homeschooling tends to lack.",
+            "debate": 0.25,
+            "turns": []
+        },
+        {
+            "pos": "It is justifiable to view suicide as a selfish act when considering the impact on loved ones and community.",
+            "neg": "Accusing individuals who commit suicide of being selfish is an unfair and harmful characterization.",
+            "debate": 0.125,
+            "turns": []
+        },
+        {
+            "pos": "Roger Goodell's tenure as NFL Commissioner has been successful.",
+            "neg": "Roger Goodell's tenure as NFL Commissioner has not met expectations.",
+            "debate": 0.125,
+            "turns": []
+        },
+        {
+            "pos": "Concerns about the prevalence of rape on college campuses are often exaggerated by media and advocacy groups.",
+            "neg": "Rape on college campuses is a significant issue that requires increased attention and action from institutions and society.",
+            "debate": 0.0,
+            "turns": []
+        },
+        {
+            "pos": "College tuition should be fully subsidized by the government.",
+            "neg": "College tuition should not be completely subsidized by the government.",
+            "debate": 0.0,
+            "turns": []
+        },
+        {
+            "pos": "Canada should peg the Canadian Dollar (CAD) within a specified range to the United States Dollar (USD).",
+            "neg": "Canada should maintain a floating exchange rate for the Canadian Dollar (CAD) relative to the United States Dollar (USD).",
+            "debate": 0.0,
+            "turns": []
+        },
+        {
+            "pos": "Living a life above the poverty line is unethical when inequality exists.",
+            "neg": "It is not unethical to live above the poverty line as long as individuals contribute to reducing inequality.",
+            "debate": 0.125,
+            "turns": []
+        },
+        {
+            "pos": "Attending strip clubs offers little value and represents unnecessary spending of time and money.",
+            "neg": "Strip clubs provide legitimate entertainment and personal fulfillment, making them a valuable use of time and money for some individuals.",
+            "debate": 0.25,
+            "turns": []
+        },
+        {
+            "pos": "Genetically Modified Organisms (GMOs) are essential for modern agriculture, offering efficiency and safety for food production, and should not be dismissed due to historical controversies surrounding associated companies.",
+            "neg": "Genetically Modified Organisms (GMOs) pose risks to health and the environment, and caution is warranted given the historical controversies linked to companies like Monsanto.",
+            "debate": 0.25,
+            "turns": []
+        },
+        {
+            "pos": "The Vietnam War's outcome was beneficial for Vietnam's long-term political and cultural identity.",
+            "neg": "The Vietnam War's outcome led to negative consequences for Vietnam's economic development and internal freedoms.",
+            "debate": 0.125,
+            "turns": []
+        },
+        {
+            "pos": "Human behavioral traits are primarily influenced by environmental changes rather than personal effort.",
+            "neg": "Human behavioral traits can be significantly changed by personal effort and self-development, independent of environmental changes.",
+            "debate": 0.125,
+            "turns": []
+        },
+        {
+            "pos": "It is possible to design government-only backdoors in encryption systems without compromising the overall security of encrypted communications.",
+            "neg": "Government-only backdoors in encryption systems are impossible to create without compromising overall security.",
+            "debate": 0.0,
+            "turns": []
+        },
+        {
+            "pos": "Uber should be allowed to operate in cities even if it does not comply with traditional taxi regulations, as it represents a new business model that benefits consumers.",
+            "neg": "Uber should be allowed to operate in cities only if it complies with regulations comparable to those governing traditional taxis.",
+            "debate": 0.125,
+            "turns": []
+        },
+        {
+            "pos": "Conviction about one's gender identity should be the sole requirement for recognizing oneself as transgender or non-cisgender.",
+            "neg": "Additional criteria beyond self-identification should be required to officially recognize someone as transgender or non-cisgender.",
+            "debate": 0.25,
+            "turns": []
+        },
+        {
+            "pos": "Sipictures of most recent spies and spy agencies effectively capture the dramatic and unpredictable nature of espionage, making them more successful in real-world contexts than they appear.",
+            "neg": "Most spies and spy agencies depicted in recent spy movies are unrealistic and would fail if applied to real-world intelligence operations.",
+            "debate": 0.125,
+            "turns": []
+        },
+        {
+            "pos": "Discrimination based on characteristics individuals can change, such as weight or appearance, is justifiable in certain contexts.",
+            "neg": "Discrimination based on characteristics individuals can change, such as weight or appearance, is unjust.",
+            "debate": 0.125,
+            "turns": []
+        },
+        {
+            "pos": "Laws against sagging pants disproportionately target and criminalize specific racial and cultural expressions.",
+            "neg": "Implementing laws against sagging pants is not racially motivated but based on societal standards of decency.",
+            "debate": 0.5,
+            "turns": []
+        },
+        {
+            "pos": "Free trade primarily benefits large corporations while negatively impacting both developed and developing countries by widening economic disparities.",
+            "neg": "Free trade benefits economies globally by increasing efficiency, lowering consumer prices, and fostering innovation.",
+            "debate": 0.25,
+            "turns": []
+        },
+        {
+            "pos": "Infidelity should remain a private matter without legal consequences under civil law.",
+            "neg": "Infidelity should be considered a legal offense punishable under civil law.",
+            "debate": 0.375,
+            "turns": []
+        },
+        {
+            "pos": "In-game and in-app advertisements, such as popups, are ineffective because they encourage users to dismiss them rather than engage with their content.",
+            "neg": "In-game and in-app advertisements, including popups, are effective marketing tools because they increase brand visibility and can lead to increased consumer engagement.",
+            "debate": 0.5,
+            "turns": []
+        },
+        {
+            "pos": "All individuals are treated as having equal value in society.",
+            "neg": "Society does not treat all individuals as having equal value.",
+            "debate": 0.0,
+            "turns": []
+        },
+        {
+            "pos": "Cutting down trees to measure their height is a necessary method for certain scientific research.",
+            "neg": "Cutting down trees to measure their height is an environmentally harmful practice.",
+            "debate": 0.0,
+            "turns": []
+        },
+        {
+            "pos": "Retail stores should refrain from labeling products as \"gender neutral\" to better cater to all customers' identity preferences.",
+            "neg": "Retail stores should adopt \"gender neutral\" labeling to promote inclusivity and reduce gender stereotypes.",
+            "debate": 0.0,
+            "turns": []
+        },
+        {
+            "pos": "Go Set a Watchman should be considered on the same level of literary importance as To Kill a Mockingbird.",
+            "neg": "Go Set a Watchman should not be ranked as highly as To Kill a Mockingbird due to its lesser impact and reception.",
+            "debate": 0.125,
+            "turns": []
+        },
+        {
+            "pos": "Asking about someone's ethnic background in casual conversation is not a form of microaggression or racist behavior.",
+            "neg": "Inquiring about someone's ethnic background in casual conversation can be perceived as a form of microaggression and may contribute to racist behavior.",
+            "debate": 0.125,
+            "turns": []
+        },
+        {
+            "pos": "Violent criminals should still be afforded a degree of sympathy to understand the circumstances that led to their actions.",
+            "neg": "Violent criminals do not deserve any sympathy at the moment they commit their crimes.",
+            "debate": 0.25,
+            "turns": []
+        },
+        {
+            "pos": "Space debris does not pose a significant threat to space operations in the foreseeable future.",
+            "neg": "Space debris is a growing concern that threatens the safety and sustainability of future space operations.",
+            "debate": 0.0,
+            "turns": []
+        },
+        {
+            "pos": "It is not in the United States' best interest to continue supporting Israel.",
+            "neg": "It is in the United States' best interest to continue supporting Israel.",
+            "debate": 0.5,
+            "turns": []
+        },
+        {
+            "pos": "Minimum wage jobs should primarily be seen as entry-level positions for teenagers or unskilled workers rather than long-term careers.",
+            "neg": "Minimum wage jobs should be recognized as legitimate careers and not just as positions for teenagers or unskilled workers.",
+            "debate": 0.25,
+            "turns": []
+        },
+        {
+            "pos": "Political candidates who refuse to detail their policies are strategically enhancing their electability.",
+            "neg": "Political candidates who refuse to detail their policies are failing voters by avoiding accountability and transparency.",
+            "debate": 0.125,
+            "turns": []
+        },
+        {
+            "pos": "Using Adblock and similar software harms the internet ecosystem by depriving content creators of ad revenue.",
+            "neg": "Using Adblock and similar software protects the user experience and privacy by blocking intrusive and potentially harmful ads.",
+            "debate": 0.125,
+            "turns": []
+        },
+        {
+            "pos": "Films should prioritize action sequences over character development to reach a wider audience appeal.",
+            "neg": "Films should prioritize character development over action sequences to achieve greater critical acclaim.",
+            "debate": 0.125,
+            "turns": []
+        },
+        {
+            "pos": "Your responsibility as a friend includes pointing out when your best friend is making unwise decisions in a relationship.",
+            "neg": "Your best friend should have the freedom to make his own relationship decisions without your interference.",
+            "debate": 0.125,
+            "turns": []
+        },
+        {
+            "pos": "Interrupting rallies can be a potent form of direct action that effectively raises awareness and sparks necessary conversations.",
+            "neg": "The interruption tactics used at the rally did not align with the primary approach of enacting change through direct action.",
+            "debate": 0.25,
+            "turns": []
+        },
+        {
+            "pos": "Children should not be granted the right to vote in elections.",
+            "neg": "Children should be granted the right to vote in elections.",
+            "debate": 0.375,
+            "turns": []
+        },
+        {
+            "pos": "Breastfeeding in public should be considered an act of indecent exposure.",
+            "neg": "Breastfeeding in public should be socially acceptable and not considered indecent exposure.",
+            "debate": 0.0,
+            "turns": []
+        },
+        {
+            "pos": "Relying on the \"Nuremberg defense\" as a legitimate justification for actions taken under orders is reasonable under certain circumstances.",
+            "neg": "The \"Nuremberg defense\" should not be considered a valid justification for immoral or illegal actions, as individuals are responsible for their own choices regardless of orders.",
+            "debate": 0.125,
+            "turns": []
+        },
+        {
+            "pos": "Calisthenics, outdoor parks, and sports provide greater health and fitness benefits than traditional gym workouts.",
+            "neg": "Traditional gym workouts offer more effective and controlled environments for achieving health and fitness goals compared to calisthenics and outdoor sports.",
+            "debate": 0.25,
+            "turns": []
+        },
+        {
+            "pos": "Specialized high schools in the United States primarily function as revenue generators for the college industry.",
+            "neg": "Specialized high schools in the United States primarily serve to enhance educational outcomes for students, rather than acting as revenue generators for the college industry.",
+            "debate": 0.0,
+            "turns": []
+        },
+        {
+            "pos": "The United States was justified in using atomic bombs on Japan to hasten the end of World War II, and should not issue an apology to the nation of Japan.",
+            "neg": "The United States was unjustified in using atomic bombs on Japan to hasten the end of World War II, and should issue an official apology to the nation of Japan.",
+            "debate": 0.125,
+            "turns": []
+        },
+        {
+            "pos": "Media portrayal of sex and violence should be subject to equal standards to ensure consistent ethical guidelines.",
+            "neg": "Different standards should be applied to media portrayals of sex and violence to reflect their distinct societal impacts and cultural perceptions.",
+            "debate": 0.25,
+            "turns": []
+        },
+        {
+            "pos": "Reddit users should refrain from using personal anecdotes as sources in discussions.",
+            "neg": "Reddit users should be encouraged to include personal experiences as sources in discussions.",
+            "debate": 0.25,
+            "turns": []
+        },
+        {
+            "pos": "Continued economic growth in developed countries will lead to unsustainable resource strain and negatively impact the environment.",
+            "neg": "Economic growth in developed countries drives technological innovation and sustainability efforts, reducing long-term resource strain.",
+            "debate": 0.25,
+            "turns": []
+        },
+        {
+            "pos": "Western societies' hostility towards moderate forms of Islamism is uninformed and impractical.",
+            "neg": "Western societies' caution towards moderate forms of Islamism is justified and necessary for security and cultural integration.",
+            "debate": 0.25,
+            "turns": []
+        },
+        {
+            "pos": "Subreddits that focus on extreme viewpoints, such as /r/tumblrinaction, /r/mensrights, and /r/feminism, undermine their respective movements by fostering divisive discourse.",
+            "neg": "Subreddits that highlight extreme viewpoints, such as /r/tumblrinaction, /r/mensrights, and /r/feminism, play a crucial role in encouraging discourse and awareness within their respective movements.",
+            "debate": 0.25,
+            "turns": []
+        },
+        {
+            "pos": "Arby's is the most underrated fast food chain in the industry.",
+            "neg": "Arby's is not underrated, and its popularity matches its quality and offerings.",
+            "debate": 0.375,
+            "turns": []
+        },
+        {
+            "pos": "All groups, regardless of their views, have the right to publicly express their opinions under free speech laws.",
+            "neg": "There should be limits on public expression for groups that promote hate speech or discrimination.",
+            "debate": 0.125,
+            "turns": []
+        },
+        {
+            "pos": "Criticism of political correctness in America is frequently used to justify speech that many consider hateful or disrespectful.",
+            "neg": "Concerns about political correctness in America often highlight how excessive sensitivity stifles free speech and open dialogue.",
+            "debate": 0.25,
+            "turns": []
+        },
+        {
+            "pos": "Zoophilia should be considered legal based on issues of personal freedom and consent.",
+            "neg": "Zoophilia should remain illegal due to concerns regarding animal welfare and the inability of animals to provide consent.",
+            "debate": 0.0,
+            "turns": []
+        },
+        {
+            "pos": "Progressive agendas face significant obstacles in the Senate due to ongoing Republican influence.",
+            "neg": "Republican influence in the Senate does not solely hinder the progress of progressive agendas; other factors also play crucial roles.",
+            "debate": 0.25,
+            "turns": []
+        },
+        {
+            "pos": "Interrupting political rallies by Black Lives Matter protesters is a legitimate form of activism, especially when targeting candidates like Sanders who are open to dialogue on racial issues.",
+            "neg": "Interrupting political rallies is not a constructive form of activism, regardless of the candidate's stance, as it undermines the democratic process and open discussion.",
+            "debate": 0.25,
+            "turns": []
+        },
+        {
+            "pos": "Abortion should be considered morally equivalent to murder.",
+            "neg": "Abortion should not be considered morally equivalent to murder.",
+            "debate": 0.0,
+            "turns": []
+        },
+        {
+            "pos": "Having a forearm tattoo will not negatively impact a person's prospects for higher education or employment opportunities.",
+            "neg": "Having a forearm tattoo can negatively affect a person's prospects for higher education and employment opportunities.",
+            "debate": 0.25,
+            "turns": []
+        },
+        {
+            "pos": "Black Lives Matter protesters were wrong to interrupt a political event for Bernie Sanders.",
+            "neg": "Interrupting Bernie Sanders' event was justified for Black Lives Matter protesters as a means to bring attention to their important cause.",
+            "debate": 0.375,
+            "turns": []
+        },
+        {
+            "pos": "The nuclear bombings of Japan during World War II were unjustifiable acts.",
+            "neg": "The nuclear bombings of Japan during World War II were justified by the circumstances of the time.",
+            "debate": 0.125,
+            "turns": []
+        },
+        {
+            "pos": "The NSA's mass data collection does not constitute a breach of privacy and should not concern law-abiding US citizens.",
+            "neg": "Mass data collection by the NSA infringes on privacy rights and should be a concern for all US citizens, regardless of their law-abiding status.",
+            "debate": 0.125,
+            "turns": []
+        },
+        {
+            "pos": "Heightened security measures at public events are necessary to deter disruptions caused by attention-seeking individuals.",
+            "neg": "Increasing security at public events unnecessarily infringes on personal freedoms and creates a tense atmosphere for attendees.",
+            "debate": 0.25,
+            "turns": []
+        },
+        {
+            "pos": "Bernie Sanders' immigration policy focuses on safeguarding American workers and is not driven by racial bias.",
+            "neg": "U.S. immigration policies, such as those advocated by Bernie Sanders, can be perceived as racially biased despite their intentions to protect domestic labor.",
+            "debate": 0.5,
+            "turns": []
+        },
+        {
+            "pos": "Capital punishment should be used in cases of mass murder resulting in numerous deaths.",
+            "neg": "Capital punishment is never justified, even in cases of mass murder.",
+            "debate": 0.125,
+            "turns": []
+        },
+        {
+            "pos": "Animals that attack humans in national parks should be euthanized to ensure public safety.",
+            "neg": "Animals that attack humans in national parks should not be euthanized.",
+            "debate": 0.5,
+            "turns": []
+        },
+        {
+            "pos": "The Black Lives Matter movement is not the most effective way to address systemic racism.",
+            "neg": "The Black Lives Matter movement is essential for addressing systemic racism.",
+            "debate": 0.125,
+            "turns": []
+        },
+        {
+            "pos": "In a libertarian economy, the unfettered operation of powerful unions could lead to the reestablishment of welfare state features.",
+            "neg": "In a libertarian economy, powerful unions would not necessarily lead to the reestablishment of welfare state features.",
+            "debate": 0.5,
+            "turns": []
+        },
+        {
+            "pos": "The U.S. government should not recognize additional religious holidays and should maintain the current system of national holidays.",
+            "neg": "The U.S. government should recognize a federal holiday for each major religion instead of exclusively recognizing a Christian holiday.",
+            "debate": 0.5,
+            "turns": []
+        },
+        {
+            "pos": "I have no moral obligation to pay for digital content that I can download for free, regardless of its legality.",
+            "neg": "Individuals have a moral obligation to pay for digital content to support creators, regardless of the availability of free downloads.",
+            "debate": 0.125,
+            "turns": []
+        },
+        {
+            "pos": "Sharing one's opinion online should be encouraged to foster open discussions and diverse viewpoints.",
+            "neg": "The widespread sharing of opinions online can lead to misinformation and echo chambers, rather than productive discourse.",
+            "debate": 0.25,
+            "turns": []
+        },
+        {
+            "pos": "Free trade is essential for global peace, and the use of trade sanctions by nations like the United States is often counterproductive.",
+            "neg": "Trade sanctions are an effective tool for maintaining peace and security, and free trade alone cannot guarantee global stability.",
+            "debate": 0.25,
+            "turns": []
+        },
+        {
+            "pos": "The USA should be divided into multiple independent countries while other countries should consider merging to form larger nations.",
+            "neg": "The USA should remain a single nation, while other countries should maintain their current borders without merging into larger states.",
+            "debate": 0.0,
+            "turns": []
+        },
+        {
+            "pos": "Reefer Madness does not significantly influence public perception of marijuana today.",
+            "neg": "Reefer Madness contributes to public misconceptions about marijuana.",
+            "debate": 0.25,
+            "turns": []
+        },
+        {
+            "pos": "'Dick' should continue being used as a nickname because it is a traditional and harmless option for Richard.",
+            "neg": "It is time to stop using 'Dick' as a nickname because it is outdated and carries negative connotations.",
+            "debate": 0.25,
+            "turns": []
+        },
+        {
+            "pos": "Pro-life advocacy is not an imposition of personal beliefs on others.",
+            "neg": "Pro-life advocacy imposes personal beliefs on others by restricting reproductive rights.",
+            "debate": 0.25,
+            "turns": []
+        },
+        {
+            "pos": "Animals exist primarily to ensure humanity's success.",
+            "neg": "Animals have intrinsic value and exist for purposes beyond benefiting humanity.",
+            "debate": 0.0,
+            "turns": []
+        },
+        {
+            "pos": "The belief that it is too late for humans to prevent catastrophic climate change, even with drastic changes, is valid because we are likely to surpass critical tipping points.",
+            "neg": "The notion that it's never too late to prevent catastrophic climate change is valid because significant efforts and innovations can still mitigate the worst impacts and steer us away from irreversible tipping points.",
+            "debate": 0.25,
+            "turns": []
+        },
+        {
+            "pos": "Internet anonymity should be restricted, with user information made available when commenting.",
+            "neg": "Internet anonymity should be preserved, as it protects freedom of expression and personal privacy.",
+            "debate": 0.125,
+            "turns": []
+        },
+        {
+            "pos": "The emotional impact of pet loss is adequately addressed and overstated in importance.",
+            "neg": "The long-term emotional impact of pet loss is underestimated and not given enough attention.",
+            "debate": 0.0,
+            "turns": []
+        }
+    ],
+    "score": {
+        "val/itemized_rewards/debate": 0.19916666666666666
+    }
+}

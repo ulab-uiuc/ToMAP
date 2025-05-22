@@ -1,0 +1,302 @@
+[
+    {
+        "pos": "Ice melting is a chemical change.",
+        "neg": "Ice melting is a physical change."
+    },
+    {
+        "pos": "Apples are not the healthiest fruit.",
+        "neg": "Apples are the healthiest fruit."
+    },
+    {
+        "pos": "Social media platforms should not moderate harmful content to protect free speech.",
+        "neg": "Social media platforms should actively moderate harmful content to protect users."
+    },
+    {
+        "pos": "Corporations should not be required to disclose their climate impacts.",
+        "neg": "Corporations should be required to disclose their climate impacts."
+    },
+    {
+        "pos": "Anti-aging therapies should not be made available if they are expensive.",
+        "neg": "Anti-aging therapies should be made available even if expensive."
+    },
+    {
+        "pos": "Genetic modification of unborn babies is unethical and dangerous.",
+        "neg": "Genetic modification of unborn babies is ethical and safe."
+    },
+    {
+        "pos": "Gas car sales should be banned after a set phase-out date.",
+        "neg": "Gas car sales should not be banned after a set phase-out date."
+    },
+    {
+        "pos": "Internet access should not be considered a basic human right.",
+        "neg": "Internet access should be considered a basic human right."
+    },
+    {
+        "pos": "Social media platforms should not be liable for harmful content posted by users.",
+        "neg": "Social media platforms should be liable for harmful content posted by users."
+    },
+    {
+        "pos": "Paris is the best capital city in Europe.",
+        "neg": "Paris is not the best capital city in Europe."
+    },
+    {
+        "pos": "Social media platforms should not be liable for harmful content posted by users.",
+        "neg": "Social media platforms should be liable for harmful content posted by users."
+    },
+    {
+        "pos": "Requiring all police officers to wear body cameras is unnecessary and infringes on privacy rights.",
+        "neg": "All police officers should be required to wear body cameras to increase accountability and transparency."
+    },
+    {
+        "pos": "College athletes should be paid salaries.",
+        "neg": "College athletes should not be paid salaries."
+    },
+    {
+        "pos": "Cultured meats should be allowed to be sold for their environmental benefits.",
+        "neg": "Cultured meats should not be allowed to be sold due to potential health concerns."
+    },
+    {
+        "pos": "Corporations should not be required to disclose their climate impacts.",
+        "neg": "Corporations should be required to disclose their climate impacts."
+    },
+    {
+        "pos": "The heart is not the most vital organ for oxygen distribution in the body.",
+        "neg": "The heart is the most vital organ for oxygen distribution in the body."
+    },
+    {
+        "pos": "The Great Wall of China is not representative of modern Chinese identity.",
+        "neg": "The Great Wall of China is a symbol of Chinese historical strength."
+    },
+    {
+        "pos": "Ice is not the most stable form of water.",
+        "neg": "Ice is the most stable form of water."
+    },
+    {
+        "pos": "Prescription drug importation will increase access and lower costs.",
+        "neg": "Prescription drug importation will compromise safety and quality."
+    },
+    {
+        "pos": "Dogs being mammals does not significantly impact their survival.",
+        "neg": "Dogs being mammals is beneficial for their survival."
+    },
+    {
+        "pos": "Tracking welfare recipients is necessary to prevent fraud and ensure accountability.",
+        "neg": "Tracking welfare recipients violates privacy and harms vulnerable populations."
+    },
+    {
+        "pos": "Banning gas car sales too soon will harm the economy.",
+        "neg": "Banning gas car sales soon will accelerate environmental progress."
+    },
+    {
+        "pos": "Social media platforms should not censor any legal speech.",
+        "neg": "Social media platforms should censor some legal speech."
+    },
+    {
+        "pos": "Smartphones/social media should be banned for kids under 16.",
+        "neg": "Smartphones/social media should not be banned for kids under 16."
+    },
+    {
+        "pos": "Social media companies should not be required to label AI-generated content.",
+        "neg": "Social media companies should be required to label AI-generated content."
+    },
+    {
+        "pos": "Water should remain a liquid at room temperature.",
+        "neg": "Water should not remain a liquid at room temperature."
+    },
+    {
+        "pos": "Smartphones and social media should be banned for kids under 16 to protect their mental health.",
+        "neg": "Smartphones and social media should not be banned for kids under 16 as they provide valuable learning opportunities."
+    },
+    {
+        "pos": "Virtual emotional companion AI should be allowed and unrestricted.",
+        "neg": "Virtual emotional companion AI should not be allowed and unrestricted."
+    },
+    {
+        "pos": "Penguins should evolve to regain the ability to fly.",
+        "neg": "Penguins should not evolve to regain the ability to fly."
+    },
+    {
+        "pos": "The metric system should remain unchanged to maintain consistency.",
+        "neg": "The metric system should be modified to better reflect modern needs."
+    },
+    {
+        "pos": "Water freezing point is always 32 degrees Fahrenheit under standard pressure.",
+        "neg": "Water freezing point can vary with changes in pressure."
+    },
+    {
+        "pos": "Space tourism should not be limited despite current safety regulations.",
+        "neg": "Space tourism should be limited until safety regulations are further developed."
+    },
+    {
+        "pos": "Humans can survive without oxygen.",
+        "neg": "Oxygen is essential for human survival."
+    },
+    {
+        "pos": "Government mandates are necessary to ensure online privacy.",
+        "neg": "Individuals should take responsibility for their online privacy."
+    },
+    {
+        "pos": "Employers should not be allowed to monitor employees through tracking mechanisms.",
+        "neg": "Employers should be allowed to monitor employees through tracking mechanisms."
+    },
+    {
+        "pos": "Recreational drone pilots should not be registered and tested as it infringes on personal freedom and is unnecessary.",
+        "neg": "Recreational drone pilots should be registered and tested to ensure safety and accountability."
+    },
+    {
+        "pos": "Charter schools increase educational opportunities and foster innovation.",
+        "neg": "Charter schools divert resources and undermine traditional public schools."
+    },
+    {
+        "pos": "A circle should have more than 360 degrees.",
+        "neg": "A circle should have exactly 360 degrees."
+    },
+    {
+        "pos": "Using credit scores for decisions ensures financial responsibility and risk assessment.",
+        "neg": "Using credit scores for decisions perpetuates economic inequality and bias."
+    },
+    {
+        "pos": "Russia's large land area provides significant geopolitical advantages.",
+        "neg": "Russia's vast land area poses challenges in governance and resource management."
+    },
+    {
+        "pos": "The British pound should be replaced by the euro.",
+        "neg": "The British pound should not be replaced by the euro."
+    },
+    {
+        "pos": "College athletes should be paid salaries.",
+        "neg": "College athletes should not be paid salaries."
+    },
+    {
+        "pos": "Climate geoengineering research should be pursued to mitigate the effects of climate change.",
+        "neg": "Climate geoengineering research should not be pursued due to potential environmental risks."
+    },
+    {
+        "pos": "A triangle's three sides do not necessarily determine its unique shape.",
+        "neg": "A triangle's three sides determine its unique shape."
+    },
+    {
+        "pos": "Genetic engineering of unborn babies should not be allowed to eliminate disease.",
+        "neg": "Genetic engineering of unborn babies should be allowed to eliminate disease."
+    },
+    {
+        "pos": "Raising the minimum wage to $15 per hour will increase unemployment and hurt small businesses.",
+        "neg": "Raising the minimum wage to $15 per hour will reduce poverty and improve living standards."
+    },
+    {
+        "pos": "Drug importation undermines safety and harms the domestic pharmaceutical industry.",
+        "neg": "Drug importation enhances competition and reduces medication costs."
+    },
+    {
+        "pos": "Lifespan extension would not exacerbate inequities and should be pursued.",
+        "neg": "Lifespan extension would exacerbate inequities and should not be pursued."
+    },
+    {
+        "pos": "Geoengineering poses unacceptable environmental risks.",
+        "neg": "Geoengineering offers necessary solutions to climate change."
+    },
+    {
+        "pos": "Self-driving cars will be safe enough to fully replace human drivers.",
+        "neg": "Self-driving cars will not be safe enough to fully replace human drivers."
+    },
+    {
+        "pos": "Charter schools divert necessary funds from traditional public schools.",
+        "neg": "Charter schools provide a more efficient use of public funds."
+    },
+    {
+        "pos": "Governments and technology companies are already doing enough to protect online privacy and security.",
+        "neg": "Governments and technology companies must do more to protect online privacy and security."
+    },
+    {
+        "pos": "Prescription drug ads should be allowed on television.",
+        "neg": "Prescription drug ads should not be allowed on television."
+    },
+    {
+        "pos": "Social media companies should not be required to label AI-generated content.",
+        "neg": "Social media companies should be required to label AI-generated content."
+    },
+    {
+        "pos": "No limits should be placed on acceptable human risk for initial Mars colonization missions.",
+        "neg": "Limits should be placed on acceptable human risk for initial Mars colonization missions."
+    },
+    {
+        "pos": "Tenure for university professors stifles innovation and accountability.",
+        "neg": "Tenure for university professors ensures academic freedom and job security."
+    },
+    {
+        "pos": "Recreational drone pilots should not require registration and testing.",
+        "neg": "Recreational drone pilots should require registration and testing."
+    },
+    {
+        "pos": "Tracking welfare recipients is necessary to prevent fraud and ensure resources are allocated correctly.",
+        "neg": "Tracking welfare recipients infringes on privacy and can lead to discrimination."
+    },
+    {
+        "pos": "University professor tenure should remain as is.",
+        "neg": "University professor tenure should be reformed."
+    },
+    {
+        "pos": "Insurers and lenders should not use credit scores and risk models.",
+        "neg": "Insurers and lenders should use credit scores and risk models."
+    },
+    {
+        "pos": "Gravity is the primary force causing objects to fall towards the earth.",
+        "neg": "Other forces and factors can influence the movement of falling objects."
+    },
+    {
+        "pos": "Social media should not be required to verify user identities.",
+        "neg": "Social media should be required to verify user identities."
+    },
+    {
+        "pos": "Internet access should not be considered a basic human right.",
+        "neg": "Internet access should be considered a basic human right."
+    },
+    {
+        "pos": "Social media should not verify user identities to protect user privacy and freedom of expression.",
+        "neg": "Social media should verify user identities to prevent misinformation and enhance accountability."
+    },
+    {
+        "pos": "The metric system's precision is not necessary for everyday measurements.",
+        "neg": "The metric system's precision makes it superior for scientific measurements."
+    },
+    {
+        "pos": "Emotional companion AI should be limited due to risks of unhealthy attachment.",
+        "neg": "Emotional companion AI should not be limited as it provides valuable emotional support."
+    },
+    {
+        "pos": "DNA is the only molecule that carries genetic information in living organisms.",
+        "neg": "Other molecules besides DNA can carry genetic information in living organisms."
+    },
+    {
+        "pos": "Raising the minimum wage to $15 will harm small businesses and reduce job opportunities.",
+        "neg": "Raising the minimum wage to $15 will boost worker income and stimulate economic growth."
+    },
+    {
+        "pos": "Limits should not be placed on acceptable human risk levels for initial Mars colonization missions.",
+        "neg": "Limits should be placed on acceptable human risk levels for initial Mars colonization missions."
+    },
+    {
+        "pos": "Self-driving cars will increase safety and should replace human drivers.",
+        "neg": "Self-driving cars will not increase safety and should not replace human drivers."
+    },
+    {
+        "pos": "Space tourism should be allowed without initial limits on safety regulations.",
+        "neg": "Space tourism should not be allowed without initial limits on safety regulations."
+    },
+    {
+        "pos": "Employee tracking infringes on privacy rights and should be restricted.",
+        "neg": "Employee tracking is necessary for productivity and security and should not face restrictions."
+    },
+    {
+        "pos": "Police officers should not be mandated to wear body cameras.",
+        "neg": "Police officers should be mandated to wear body cameras."
+    },
+    {
+        "pos": "The US should ban all cultured or lab-grown meat products.",
+        "neg": "The US should not ban cultured or lab-grown meat products."
+    },
+    {
+        "pos": "Prescription drug ads should be banned from television.",
+        "neg": "Prescription drug ads should remain allowed on television."
+    }
+]

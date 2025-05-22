@@ -85,12 +85,12 @@ Use the following scripts to obtain claims for both sides in the debate.
 python data_gen/process_debate_datasets.py --base_dir [BASE_DIR]
 python data_gen/debate.py --base_dir [BASE_DIR]
 ```
-We also release the preprocessed data in `data`.
+We also release the preprocessed data in `data`. Key files are `[dataset]/[train/test].[parquet/jsonl]`.
 
 ### Obtain Counterclaims
 We found the training process doesn't affect the persuader's prediction of counterclaims, so we preprocessed all counterclaims for efficiency consideration. 
 
-We released the preprocessed counterclaims in `data`. We collect 10 counterclaims each topic, but we only use 3 during training/evaluation.
+We released the preprocessed counterclaims in `data`. We collect 10 counterclaims each topic, but we only use 3 during training and evaluation. Key files are `[dataset]/[train/test]_argument_tree.pkl`.
 
 ### Obtain Initial Attitudes
 
@@ -98,7 +98,7 @@ We collect the persuadees' initial attitudes for efficiency consideration. To do
 
 You can also skip this step, and the training/evaluation script will do that.
 
-We released the attitudes for three persuadees in the main experiment in `data`.
+We released the attitudes for three persuadees in the main experiment in `data`. Key files are `[dataset]/[persuadee]/[train/test].pkl` (nodes in this file's trees have confidence values) and `[dataset]/[persuadee]/[train/test]_initial_attitude.json` (mode readable version).
 
 
 ### Train the Attitude Predictor
