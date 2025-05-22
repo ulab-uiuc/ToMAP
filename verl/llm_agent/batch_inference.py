@@ -16,7 +16,7 @@ def external_batch_inference(client, requests, sampling_params, text_only=True, 
         model = os.environ.get("EXTERNAL_MODEL_NAME", "gpt-4o")
         if model == "gpt-4o" or model == "gpt-4o-mini":
             active_client = OpenAI()
-        else:
+        else: # We use nvidia build here to run other open-source models
             import json
             if os.environ.get("NVIDIA_API_KEY") is not None:
                 nvidia_api_key = os.environ.get("NVIDIA_API_KEY")

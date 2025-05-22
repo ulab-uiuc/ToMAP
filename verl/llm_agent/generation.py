@@ -1,7 +1,6 @@
 import torch
 from collections import defaultdict
 from typing import List, Dict, Any, Tuple, Union
-from .tensor_helper import TensorHelper, TensorConfig
 from openai import OpenAI
 from verl import DataProto
 from verl.utils.tracking import Tracking
