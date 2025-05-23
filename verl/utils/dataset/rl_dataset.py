@@ -151,7 +151,7 @@ class RLHFDataset(Dataset):
         # truncate dataset based on proportion
         if self.proportion < 1:
             keep_elements = max(1, int(len(self.dataframe) * self.proportion))
-            self.dataframe = self.dataframe[:keep_elements]
+            self.dataframe = self.dataframe.select(range(keep_elements))
         
         print(f'filter dataset len: {len(self.dataframe)}')
 
