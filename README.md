@@ -13,7 +13,7 @@ Peixuan Han, Zijia Liu, Jiaxuan You
 
 
 <p align="center">
-📃<a href="xxx" target="_blank">Paper (TODO)</a> • 🤗<a href="https://huggingface.co/HakHan/Qwen2.5-3B-Instruct-ToMAP" target="_blank">Model (TODO)</a>
+📃<a href="xxx" target="_blank">Paper (TODO)</a> • 🤗<a href="https://huggingface.co/HakHan/Qwen2.5-3B-Instruct-ToMAP" target="_blank">Model</a>
 </p>
 
 
