@@ -13,7 +13,7 @@ Peixuan Han, Zijia Liu, Jiaxuan You
 
 
 <p align="center">
-📃<a href="xxx" target="_blank">Paper (TODO)</a> • 🤗<a href="https://huggingface.co/HakHan/Qwen2.5-3B-Instruct-ToMAP" target="_blank">Model</a>
+📃<a href="https://arxiv.org/pdf/2505.22961" target="_blank">Paper</a> • 🤗<a href="https://huggingface.co/HakHan/Qwen2.5-3B-Instruct-ToMAP" target="_blank">Model</a>
 </p>
 
 
@@ -154,14 +154,15 @@ Each validation result is saved in the following format:
 This repo is based on [TinyZero](https://github.com/Jiayi-Pan/TinyZero). We removed unrelated parts from the original repo.
 
 
-If you find this repo or the paper useful, please cite  (paper coming soooooon):
+If you find this repo or the paper useful, please cite:
 ```
-@misc{han2024tomap,
-  author       = {Peixuan Han},
-  title        = {ToMAP: Training Opponent-Aware LLM Persuaders with Theory of Mind},
-  year         = {2024},
-  howpublished = {\url{https://github.com/Hanpx20/ToMAP}},
-  note         = {GitHub repository},
+@article{han2025tomap,
+      title={ToMAP: Training Opponent-Aware LLM Persuaders with Theory of Mind}, 
+      author={Peixuan Han and Zijia Liu and Jiaxuan You},
+      year={2025},
+      journal={arXiv preprint arXiv:2505.22961},
+      archivePrefix={arXiv},
+      url={https://arxiv.org/abs/2505.22961}, 
 }
 ```
 
